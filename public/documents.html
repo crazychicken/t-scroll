@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animation Scroll</title>
+    <meta charset="UTF-8">
+    <link rel="icon shortcut" type="image/png" sizes="16x16" href="http://t-scroll.com/theme/images/favicon.png">
+    <link rel="stylesheet" href="./theme/css/animate-scroll.min.css">
+    <link rel="stylesheet" href="./theme/css/style.css">
+
+    <script type="text/javascript" src="./theme/js/jquery.js"></script>
+    <script type="text/javascript" src="./theme/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./theme/js/animate-scroll.min.js"></script>
+    <script type="text/javascript" src="./theme/js/animate-demo.js"></script>
+    <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+</head>
+
+<body class="docs">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="index.html">t-animate</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="demo.html">Demos</a></li>
+                    <li><a href="documents.html">Docs</a></li>
+                    <li><a href="https://github.com/crazychicken/t-scroll/archive/master.zip">Download</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="page-header">
+        <div class="container">
+            <h1>Documents</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <aside class="sider-bar">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="getting-started" role="tab" data-toggle="tab">Getting started</a></li>
+
+                        <li role="presentation"><a href="#options" aria-controls="options" role="tab" data-toggle="tab">Options</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-xs-9">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="getting-stared">
+                        <h2 class="tab-title">
+                            Getting Started
+                        </h2>
+                        <div class="page-body">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3 class="box-title">
+                                        Include CSS
+                                    </h3>
+                                    <p>First, include CSS files into your HTML head:</p>
+                                    <figure class="highlight">
+                                        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"./public/theme/css/animation-scroll.min.css"</span><span class="nt">&gt;</span></code></pre>
+                                    </figure>
+                                    <br>
+                                    <h3 class="box-title">
+                                        Include Javascript
+                                    </h3>
+                                    <p>Include file <code>animation-scroll.min.js</code> into the footer.</p>
+                                    <figure class="highlight">
+                                        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"./public/theme/js/animation-scroll.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script</span><span class="nt">&gt;</span></code></pre>
+                                    </figure>
+                                    <br>
+                                    <h3 class="box-title">
+                                        Set HTML
+                                    </h3>
+                                    <figure class="highlight">
+                                        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"zoomIn"</span><span class="nt">&gt;</span><span class="s">"..."</span><span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"zoomIn"</span><span class="nt">&gt;</span><span class="s">"..."</span><span class="nt">&lt;/div&gt;</span></code></pre>
+                                    </figure>
+                                    <p>
+                                        if you want <code>setTimeout</code>, you need inside the container attribute <code>t_show="..."</code>
+                                    </p>
+                                    <figure class="highlight">
+                                        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"zoomIn"</span> <span class="na">t_show=</span><span class="s">"1"</span><span class="nt">&gt;</span><span class="s">"..."</span><span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"zoomIn"</span> <span class="na">t_show=</span><span class="s">"2"</span><span class="nt">&gt;</span><span class="s">"..."</span><span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"zoomIn"</span> <span class="na">t_show=</span><span class="s">"3"</span><span class="nt">&gt;</span><span class="s">"..."</span><span class="nt">&lt;/div&gt;</span></code></pre>
+                                    </figure>
+                                    <br>
+                                    <h3 class="box-title">
+                                        Call the function
+                                    </h3>
+                                    <figure class="highlight">
+                                        <pre><code class="language-js" data-lang="js"><span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+    <span class="nt">Tu.animate_scroll</span><span class="p">({</span>
+      <span class="s1">'t_element': '.zoomIn'</span>
+    <span class="p">})</span>
+<span class="nt">&lt;/script</span><span class="nt">&gt;</span></code></pre>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer footer-gray">
+        Another thing from Tuds - Crazychicken.
+        <p>
+            <small>Code and documentation copyright 2017, MIT license.</small>
+        </p>
+    </footer>
+</body>
+
+</html>

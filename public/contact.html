@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>landing-flash-sales.html</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="theme/css/style.css">
+
+    <script type="text/javascript" src="theme/js/jquery.min.js"></script>
+    <script type="text/javascript" src="theme/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        .t_a_default {
+            opacity: 0;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
+            animation-duration: 0.25s;
+            animation-delay: 0;
+        }
+
+        .zoomIn {
+            animation-name: zoomIn;
+        }
+
+        .slideInUp {
+            animation-name: slideInUp;
+        }
+
+        .slideInLeft {
+            animation-name: slideInLeft;
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideInUp {
+            0% {
+                top: 100vh;
+            }
+            100% {
+                top: 0;
+            }
+        }
+
+        @keyframes slideInLeft {
+            0% {
+                right: 100vw;
+            }
+            100% {
+                right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="landing-flash-sales">
+    <section class="section banner-full-screen">
+        <div class="container">
+            <a href="mytour.vn" class="brand">
+                <img src="./theme/images/landing-flash-sales/logo-mt-white.png" alt="">
+            </a>
+            <div class="col-md-8 col-md-offset-2 content-center">
+                <div class="box-sales animated bounceInLeft">
+                    <i class="fa fa-tags"></i> <strong>FLASH SALES</strong>
+                    <div class="box-body">
+                        <h1>
+                            Get ready and start to make your trip to the next level
+                        </h1>
+                    </div>
+                </div>
+                <h4 class="h5 animated bounceInRight">
+                    Thông tin khuyến mãi HOT cho mùa hè sẽ được gửi đến Email của bạn
+                </h4>
+                <form class="form-contact row animated bounceInRight">
+                    <div class="form-group col-sm-9">
+                        <input type="text" class="form-control input-lg" placeholder="email2email@gmail.com">
+                    </div>
+                    <!-- <div class="form-group col-sm-9 has-error">
+                        <input type="text" class="form-control input-lg" placeholder="email2email@gmail.com">
+                        <span class="fa fa-warning" aria-hidden="true"></span>
+                        <span class="help-block">*Email sai định dạng, vui lòng nhập lại email</span>
+                    </div> -->
+                    <!-- <div class="form-group col-sm-9 has-success">
+                        <input type="text" class="form-control input-lg" placeholder="email2email@gmail.com">
+                        <span class="fa fa-check" aria-hidden="true"></span>
+                        <span class="help-block success">*Đăng ký thành công</span>
+                    </div> -->
+                    <div class="col-sm-3">
+                        <button class="btn btn-send btn-lg btn-block">Đăng ký</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <button class="btn btn-animation animated bounceInUp">
+            <span class="dot"></span>
+        </button>
+        <!-- <iframe class="playerBox" src="https://www.youtube.com/embed/BIaBSGgCzCc?autoplay=1" frameborder="0"></iframe> -->
+    </section>
+    <!-- /.banner-full-screen -->
+
+    <section class="section deal-bg-green">
+        <h2 class="section-title">
+            DEAL KHỦNG MÙA NÀY
+        </h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3" t_show='1'>
+                    <a href="#" class="box-deal">
+                        <img class="box-deal-img" src="theme/images/img-1600x916.jpg" alt="">
+                        <div class="box-deal-left">
+                            <h3 class="name">
+                                Khách sạn best western plaza Đà Lạt
+                            </h3>
+                            <span class="star">
+                                <span class="star-4"></span>
+                            </span>
+                            <br>
+                            <i class="fa fa-map-marker"></i> <span>Đà Nẵng</span>
+                        </div>
+                        <div class="box-deal-bottom">
+                            <div class="box-deal-discount">
+                                <strong>-50</strong><small>%</small>
+                            </div>
+                            <div class="price-old">2,000,000 <small>đ</small></div>
+                            <div class="price">1,000,000 <small>đ</small></div>
+                        </div>
+                    </a>
+                    <!-- /.box-deal -->
+                </div>
+
+                <div class="col-xs-3" t_show='2'>
+                    <a href="#" class="box-deal">
+                        <img class="box-deal-img" src="theme/images/img-1600x916.jpg" alt="">
+                        <div class="box-deal-left">
+                            <h3 class="name">
+                                Khách sạn best western plaza Đà Lạt
+                            </h3>
+                            <span class="star">
+                                <span class="star-4"></span>
+                            </span>
+                            <br>
+                            <i class="fa fa-map-marker"></i> <span>Đà Nẵng</span>
+                        </div>
+                        <div class="box-deal-bottom">
+                            <div class="box-deal-discount">
+                                <strong>-50</strong><small>%</small>
+                            </div>
+                            <div class="price-old">2,000,000 <small>đ</small></div>
+                            <div class="price">1,000,000 <small>đ</small></div>
+                        </div>
+                    </a>
+                    <!-- /.box-deal -->
+                </div>
+
+                <div class="col-xs-3" t_show='3'>
+                    <a href="#" class="box-deal">
+                        <img class="box-deal-img" src="theme/images/img-1600x916.jpg" alt="">
+                        <div class="box-deal-left">
+                            <h3 class="name">
+                                Khách sạn best western plaza Đà Lạt
+                            </h3>
+                            <span class="star">
+                                <span class="star-4"></span>
+                            </span>
+                            <br>
+                            <i class="fa fa-map-marker"></i> <span>Đà Nẵng</span>
+                        </div>
+                        <div class="box-deal-bottom">
+                            <div class="box-deal-discount">
+                                <strong>-50</strong><small>%</small>
+                            </div>
+                            <div class="price-old">2,000,000 <small>đ</small></div>
+                            <div class="price">1,000,000 <small>đ</small></div>
+                        </div>
+                    </a>
+                    <!-- /.box-deal -->
+                </div>
+
+                <div class="col-xs-3" t_show='4'>
+                    <a href="#" class="box-deal">
+                        <img class="box-deal-img" src="theme/images/img-1600x916.jpg" alt="">
+                        <div class="box-deal-left">
+                            <h3 class="name">
+                                Khách sạn best western plaza Đà Lạt
+                            </h3>
+                            <span class="star">
+                                <span class="star-4"></span>
+                            </span>
+                            <br>
+                            <i class="fa fa-map-marker"></i> <span>Đà Nẵng</span>
+                        </div>
+                        <div class="box-deal-bottom">
+                            <div class="box-deal-discount">
+                                <strong>-50</strong><small>%</small>
+                            </div>
+                            <div class="price-old">2,000,000 <small>đ</small></div>
+                            <div class="price">1,000,000 <small>đ</small></div>
+                        </div>
+                    </a>
+                    <!-- /.box-deal -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.deal-bg-green -->
+
+    <section class="section deal-area">
+        <h2 class="section-title">
+            DEAL HOT THEO KHU VỰC
+        </h2>
+        <div class="container">
+            <div class="row deal-area-top">
+                <div class="col-xs-3 animation-scroll">
+                    <a href="#" class="box-deal">
+                        <img class="box-deal-img" src="theme/images/img-1600x916.jpg" alt="">
+                        <h3 class="name">
+                            HÀ NỘI
+                        </h3>
+                    </a>
+                    <!-- /.box-deal -->
+                </div>
+
+                <div class="col-xs-6 box-deal-group animation-scroll">
+                    <a href="#" class="box-deal">
+                        <img class="box-deal-img" src="theme/images/img-1600x916.jpg" alt="">
+                        <h3 class="name">
+                            ĐÀ NẴNG
+                        </h3>
+                    </a>
+                    <!-- /.box-deal -->
+                    <a href="#" class="box-deal">
+                        <img class="box-deal-img" src="theme/images/img-1600x916.jpg" alt="">
+                        <h3 class="name">
+                            HỘI AN
+                        </h3>
+                    </a>
+                    <!-- /.box-deal -->
+                </div>
+
+                <div class="col-xs-3 animation-scroll">
+                    <a href="#" class="box-deal">
+                        <img class="box-deal-img" src="theme/images/img-1600x916.jpg" alt="">
+                        <h3 class="name">
+                            HỒ CHÍ MINH
+                        </h3>
+                    </a>
+                    <!-- /.box-deal -->
+                </div>
+            </div>
+            <!-- /.deal-area-top -->
+
+            <div class="row deal-area-bottom">
+                <div class="col-xs-3 animation-scroll">
+                    <a href="#" class="box-deal">
+                        <img class="box-deal-img" src="theme/images/img-1600x916.jpg" alt="">
+                        <h3 class="name">
+                            VŨNG TÀU
+                        </h3>
+                    </a>
+                    <!-- /.box-deal -->
+                </div>
+                <div class="col-xs-3 animation-scroll">
+                    <a href="#" class="box-deal">
+                        <img class="box-deal-img" src="theme/images/img-1600x916.jpg" alt="">
+                        <h3 class="name">
+                            PHAN THIẾT
+                        </h3>
+                    </a>
+                    <!-- /.box-deal -->
+                </div>
+                <div class="col-xs-3 animation-scroll">
+                    <a href="#" class="box-deal">
+                        <img class="box-deal-img" src="theme/images/img-1600x916.jpg" alt="">
+                        <h3 class="name">
+                            PHÚ QUỐC
+                        </h3>
+                    </a>
+                    <!-- /.box-deal -->
+                </div>
+                <div class="col-xs-3 animation-scroll">
+                    <a href="#" class="box-deal">
+                        <img class="box-deal-img" src="theme/images/img-1600x916.jpg" alt="">
+                        <h3 class="name">
+                            HẠ LONG
+                        </h3>
+                    </a>
+                    <!-- /.box-deal -->
+                </div>
+            </div>
+            <!-- /.deal-area-bottom -->
+        </div>
+    </section>
+    <!-- /.deal-area -->
+
+    <section class="section deal-gird deal-gird-bg-blur">
+        <h2 class="section-title">
+            DEAL HOT GIÁ DƯỚI 500,000 Đ
+        </h2>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-4 col-md-3 animation-scroll">
+                    <a href="#" class="box-deal">
+                        <img class="box-deal-img" src="theme/images/img-1600x916.jpg" alt="">
+                        <div class="box-deal-left">
+                            <h3 class="name">
+                                Khách sạn best Đà Lạt
+                            </h3>
+                            <span class="star">
+                                <span class="star-5"></span>
+                            </span>
+                            <br>
+                            <i class="fa fa-map-marker"></i> <span class="gray">Đà Nẵng</span>
+                        </div>
+                        <div class="box-deal-bottom">
+                            <div class="box-deal-discount">
+                                <strong>-50</strong><small>%</small>
+                            </div>
+                            <div class="price-old">2,000,000 <small>đ</small></div>
+                            <div class="price">1,000,000
+                                <smal>đ</smal>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- /.box-deal -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /.deal-gird-bg-blur -->
+
+    <section class="section deal-gird">
+        <h2 class="section-title">
+            MYTOUR GỢI Ý CHO BẠN
+        </h2>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-4 col-md-3 animation-scroll">
+                    <a href="#" class="box-deal">
+                        <img class="box-deal-img" src="theme/images/img-1600x916.jpg" alt="">
+                        <div class="box-deal-left">
+                            <h3 class="name">
+                                Khách sạn best Đà Lạt
+                            </h3>
+                            <span class="star">
+                                <span class="star-5"></span>
+                            </span>
+                            <br>
+                            <i class="fa fa-map-marker"></i> <span class="gray">Đà Nẵng</span>
+                        </div>
+                        <div class="box-deal-bottom">
+                            <div class="box-deal-discount">
+                                <strong>-50</strong><small>%</small>
+                            </div>
+                            <div class="price-old">2,000,000 <small>đ</small></div>
+                            <div class="price">1,000,000
+                                <smal>đ</smal>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- /.box-deal -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /.deal-gird -->
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">Giới thiệu Mytour</a>
+                            </li>
+                            <li>
+                                <a href="#">Đối tác khách sạn</a>
+                            </li>
+                            <li>
+                                <a href="#">Điều khoản sử dụng</a>
+                            </li>
+                        </ul>
+                        <div class="row mg-t-25">
+                            <a class="logo" href="#">
+                                <img class="img-responsive" src="theme/images/logo-congthuong-w165.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">Tích lũy Vpoint</a>
+                            </li>
+                            <li>
+                                <a href="#">Đăng nhập qua HMS</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">Báo chí</a>
+                            </li>
+                            <li>
+                                <a href="#">Liên hệ</a>
+                            </li>
+                            <li>
+                                <a href="#">Tuyển dụng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="contact-mytour">
+                            <p><strong>Công ty TNHH Mytour Việt Nam</strong></p>
+                            <p>Số GCNDT: 0105983269 cấp ngày 30/08/2012</p>
+                            <p>Văn phòng Hà Nội: Tầng 4, toà nhà GP Invest, 170 Đê la Thành, Đống Đa</p>
+                            <p>Văn phòng HCM:&nbsp;Tầng 5, Tòa Nhà HDTC, Số 36 Bùi Thị Xuân, Q.1</p>
+
+                            <ul class="list-inline mg-t-20">
+                                <li>
+                                    <a href="#" class="btn btn-block btn-facebook">
+                                        <i class="fa fa-facebook"></i> Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-block btn-instaram">
+                                        <i class="fa fa-instagram"></i> Instaram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-block btn-google">
+                                        <i class="fa fa-google-plus"></i> Google
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /bottom-footer -->
+            </div>
+        </div>
+    </div>
+    <!-- /.footer -->
+    <script type="text/javascript">
+        function include(pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr_duration, pr_count, pr_timing_function) {
+            var set_w_height = document.querySelector('html').offsetHeight; // set height window device
+            // Check value element selector default when do not value
+            if (pr_el === undefined) {
+                return console.log("%c'Thank you for used. Please, you must insert element selector t_element: 'element here'", 'background: #f16d99; color: #fff');
+                return false;
+            }
+            // Check value element animation default when do not value
+            if (pr_ani === undefined) {
+                return console.log("%c'Thank you for used. Please, you must insert element selector t_animate: 'element here'", 'background: #f16d99; color: #fff');
+            }
+            // Check value defualt css animation
+            if (isNaN(pr_position) && pr_position != undefined) {
+                return console.log("%c'Thank you for used. Please, you must insert element selector t_position: 'number here'", 'background: #f16d99; color: #fff');
+            }
+
+            var elment_select_html = document.querySelectorAll(pr_el);
+            // Set custom css and option animation
+            elment_select_html.forEach(e => {
+                e.style.opacity = 0.0000001 * pr_position; // hack position only element
+                var pr_t_a_css = e.className + " " + 't_a_default'; // set add class
+                if (!e.classList.contains('t_a_default')) {
+                    e.setAttribute('class', pr_t_a_css);
+                }
+
+                if ((e.hasAttribute('t_show') === true) && pr_duration === undefined) {
+                    pr_duration = 0.25;
+                }
+                if ((e.hasAttribute('t_show') === true) && pr_delay === undefined) {
+                    pr_delay = 0;
+                }
+            })
+            // Check animation-direction user insert custom style
+            if (pr_direction != undefined) {
+                elment_select_html.forEach(e => {
+                    e.style.animationDirection = pr_direction;
+                    e.style.WebkitAnimationDirection = pr_direction; // Safari4.0 - 8.0
+                })
+            }
+            // Check animation-duration user insert custom style
+            if (pr_duration != undefined) {
+                elment_select_html.forEach(e => {
+                    e.style.animationDuration = pr_duration + 's';
+                    e.style.WebkitAnimationDuration = pr_duration + 's'; // Safari4.0 - 8.0
+                })
+            }
+            // Check animation-interation-count user insert custom style
+            if (pr_count != undefined) {
+                elment_select_html.forEach(e => {
+                    e.style.animationIterationCount = pr_count;
+                    e.style.WebkitAnimationIterationCount = pr_count; // Safari4.0 - 8.0
+                })
+            }
+            // Check animation-timing-function user insert custom style
+            if (pr_timing_function != undefined) {
+                elment_select_html.forEach(e => {
+                    e.style.animationTimingFunction = pr_timing_function;
+                    e.style.WebkitAnimationTimingFunction = pr_timing_function; // Safari4.0 - 8.0
+                })
+            }
+
+            // Run animation when action scroll apply
+            window.addEventListener('scroll', function() {
+                var set_top = window.scrollY; // set scroll top
+                elment_select_html.forEach(e => { // filter
+                    pr_position = e.style.opacity * 10000000; // include position only element
+                    var sum = e.offsetTop + e.offsetHeight;
+                    console.log(sum + "sum");
+                    console.log(set_top + set_w_height + pr_position);
+                    if ((set_top + set_w_height + pr_position) > sum && !e.classList.contains(pr_ani) && !e.classList.contains('animated')) {
+                        // set position element when event add class
+                        // 1. Scroll top window more than element
+                        // 2. Stop add class run animation
+                        // 3. Stop add class run animation if element has runed
+                        if (e.hasAttribute('t_show') === true) { // Check show only item, sort 1,2,3,4 ...
+                            pr_delay = pr_delay + pr_duration;
+                        }
+                        var class_animation_css = e.className + " " + pr_ani + " " + 'animated'; // set add class
+                        setTimeout(function() {
+                            e.setAttribute('class', class_animation_css); // set class run animate
+                            e.style.opacity = '1';
+                        }, pr_delay * 1000)
+                    }
+                });
+            });
+        }
+
+        // include object
+        function animate_scroll(T) {
+
+            var myArray = [];
+
+            // Options Library => libSort
+            var libArray = [
+                't_element',
+                't_animate',
+                't_position',
+                't_delay',
+                't_direction',
+                't_duration',
+                't_count',
+                't_function'
+            ];
+            libArray.forEach(el => {
+                myArray.push(T[el]);
+            })
+
+            var myObject = include.apply(myObject, myArray); // apply Array in param function
+        }
+
+        // Call and run function
+        animate_scroll({
+            't_element': '.section-title',
+            't_animate': 'zoomIn',
+            't_position': 10,
+            't_direction': 'normal',
+            't_duration': 0.25,
+            't_function': 'linear'
+        })
+
+        // Call all run function animation-scroll
+        animate_scroll({
+            't_element': '.animation-scroll',
+            't_animate': 'zoomIn',
+            't_position': 20
+        })
+
+        // Modify element
+        animate_scroll({
+            't_element': '.deal-bg-green .col-xs-3',
+            't_animate': 'slideInUp',
+            't_position': 100,
+            't_duration': 0.25
+        })
+    </script>
+</body>
+
+</html>

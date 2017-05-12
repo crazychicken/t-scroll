@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Demo | Animation Scroll</title>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <link rel="icon shortcut" type="image/png" sizes="16x16" href="http://t-scroll.com/theme/images/favicon.png">
+    <link rel="stylesheet" href="./theme/css/animate-scroll.min.css">
+    <link rel="stylesheet" href="./theme/css/style.css">
+
+    <script type="text/javascript" src="./theme/js/jquery.js"></script>
+    <script type="text/javascript" src="./theme/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./theme/js/animate-scroll.min.js"></script>
+    <script type="text/javascript" src="./theme/js/animate-demo.js"></script>
+    <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+</head>
+
+<body class="demo">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="index.html">t-animate</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="demo.html">Demos</a></li>
+                    <li><a href="documents.html">Docs</a></li>
+                    <li><a href="https://github.com/crazychicken/t-scroll/archive/master.zip">Download</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <section class="section section-banner">
+        <div class="section-content">
+            <h1 class="title">Scroll Down</h1>
+        </div>
+        <button class="btn btn-animation">
+            <span class="dot"></span>
+        </button>
+    </section>
+    <!-- /end .section-banner -->
+
+    <section class="section section-gray">
+        <h2 class="section-title">
+            Basic Demos
+        </h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3 zoomOut">
+                    <a target="_blank" href="./t-default.html" class="box-demo">
+                        <div class="box-demo-title">T_default</div>
+                    </a>
+                </div>
+                <div class="col-xs-3 zoomOut">
+                    <a target="_blank" href="./t-animate.html" class="box-demo">
+                        <div class="box-demo-title">T_animate</div>
+                    </a>
+                </div>
+                <div class="col-xs-3 zoomOut">
+                    <a target="_blank" href="./t-show.html" class="box-demo">
+                        <div class="box-demo-title">T_show</div>
+                    </a>
+                </div>
+                <div class="col-xs-3 zoomOut">
+                    <a target="_blank" href="./t-position.html" class="box-demo">
+                        <div class="box-demo-title">T_position</div>
+                    </a>
+                </div>
+                <div class="col-xs-3 zoomOut">
+                    <a target="_blank" href="./t-duration.html" class="box-demo">
+                        <div class="box-demo-title">T_duration</div>
+                    </a>
+                </div>
+                <div class="col-xs-3 zoomOut">
+                    <a target="_blank" href="./t-delay.html" class="box-demo">
+                        <div class="box-demo-title">T_delay</div>
+                    </a>
+                </div>
+                <div class="col-xs-3 zoomOut">
+                    <a target="_blank" href="./t-infinite.html" class="box-demo">
+                        <div class="box-demo-title">T_infinite</div>
+                    </a>
+                </div>
+                <div class="col-xs-3 zoomOut">
+                    <a target="_blank" href="./t-dunction.html" class="box-demo">
+                        <div class="box-demo-title">T_function</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-animation">
+            <span class="dot"></span>
+        </button>
+    </section>
+    <footer class="section thanks">
+        <div class="text-center">
+            <h2 class="section-title slideInDown">
+                Thanks you ;)
+            </h2>
+            <a href="git@github.com:crazychicken/t-scroll.git" class="btn btn-border btn-lg slideInRight">Github</a>
+            <a href="https://github.com/crazychicken/t-scroll/archive/master.zip" class="btn btn-main btn-lg slideInLeft">DownLoad</a>
+            <p>
+                Currently v1.0.0
+            </p>
+        </div>
+        <div class="author">
+            Another thing from Tuds - Crazychicken.
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.btn-animation').on('click', function() {
+                var st = $(this).parents('.section').next().offset().top;
+                $('html, body').animate({
+                    scrollTop: st
+                }, 300);
+            });
+            Tu.animate_scroll({
+                't_element': '.thanks .slideInDown',
+                't_duration': 1
+            })
+            Tu.animate_scroll({
+                't_element': '.thanks .slideInRight',
+                't_duration': 1
+            })
+            Tu.animate_scroll({
+                't_element': '.thanks .slideInLeft',
+                't_duration': 1
+            })
+        });
+    </script>
+
+    <script type="text/javascript">
+        Tu.animate_scroll({
+            't_element': '.zoomOut'
+        })
+    </script>
+</body>
+
+</html>
