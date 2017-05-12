@@ -1,0 +1,9 @@
+@keyframes slideInUp {
+    0% {top: 100vh;}
+    100% {top: 0;}
+}
+.slideInUp.t_default {
+    animation-name: slideInUp;
+}
+
+

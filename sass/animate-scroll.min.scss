@@ -1,0 +1,30 @@
+@import 'mixin';
+@import 'var';
+@import 'zoomIn/zoomIn';
+@import 'zoomOut/zoomOut';
+
+@import 'slideIn/slideInUp';
+@import 'slideIn/slideInDown';
+@import 'slideIn/slideInLeft';
+@import 'slideIn/slideInRight';
+
+// for animation options
+@each $name in
+slideInDown, zoomIn {
+    .#{$name}.t_default {
+        animation-name: #{$name};
+    }
+}
+
+.t_default {
+    opacity: 1;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    position: relative;
+}
+.t_infinite {
+    animation-iteration-count: infinite;
+}

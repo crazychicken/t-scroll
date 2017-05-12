@@ -1,0 +1,9 @@
+@keyframes slideInLeft {
+    0% {right: 100vw;}
+    100% {right: 0;}
+}
+.slideInLeft.t_default {
+    animation-name: slideInLeft;
+}
+
+

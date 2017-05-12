@@ -1,0 +1,9 @@
+@keyframes slideInRight {
+    0% {left: 100vw;}
+    100% {left: 0;}
+}
+.slideInRight.t_default {
+    animation-name: slideInRight;
+}
+
+

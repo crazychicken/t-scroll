@@ -1,0 +1,57 @@
+.btn {
+    transition-property: background box-shadow;
+    transition-duration: 1s;
+    &:hover {
+        background: none;
+        @include box-shadow(0 0 15px $purple);
+    }
+}
+.btn-animation {
+    border: 2px solid $gray-light-35;
+    height: 50px;
+    width: 30px;
+    background: none;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+    margin: 0 auto;
+    z-index: 3;
+    .dot {
+        @include border-radius(5px);
+        height: 16px;
+        width: 6px;
+        background: $gray-light-35;
+        display: inline-block;
+        position: relative;
+        animation-name: dot;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+}
+@keyframes dot {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 10px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.btn-border {
+    color: $purple;
+    border: 2px solid $purple;
+}
+.btn-main {
+    color: #fff;
+    background: $purple;
+    &:hover {
+        color: #fff;
+        background: $purple;
+    }
+}

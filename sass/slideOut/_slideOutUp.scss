@@ -1,0 +1,9 @@
+@keyframes slideOutUp {
+    0% {bottom: 0;}
+    100% {bottom: 100vw;}
+}
+.slideOutUp {
+    animation-name: slideOutUp;
+}
+
+

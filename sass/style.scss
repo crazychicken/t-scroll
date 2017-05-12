@@ -1,0 +1,145 @@
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import 'var';
+@import 'mixin';
+@import 'buttons';
+@import 'fonts';
+@import 'box';
+@import 'navbar';
+@import 'section';
+
+body {
+    background: #fff;
+    font-size: 14px;
+    font-family: 'Lato';
+    font-weight: normal;
+    color: #4b4b4b;
+}
+
+a {
+    &:active, &:focus {
+        color: $purple-dark-35;
+    }
+}
+
+
+.footer {
+    float: left;
+    width: 100%;
+    clear: both;
+    padding: 30px 0 25px 0;
+    background: #fff;
+    text-align: center;
+    small {
+        font-size: 11px;
+    }
+    &-gray {
+        margin-top: 50px;
+        background: $gray-light-95;
+    }
+}
+.page-header {
+    margin: 0;
+    background: $gray-light-95;
+}
+// DOCS
+// slide bar
+.sider-bar {
+    padding-top: 40px;
+    .nav {
+        border: none;
+        > li {
+            width: 100%;
+            > a {
+                color: $gray-dark-65;
+                width: 100%;
+                float: left;
+                border-radius: 0;
+                padding: 14px 30px 14px 0;
+                text-align: right;
+                border: none;
+                border-right: 3px solid transparent;
+            }
+            &:hover, &.active,
+            &.active:hover {
+                > a {
+                    border: none;
+                    border-right: 3px solid $purple-light-35;
+                    color: $purple-light-5;
+                    background: $gray-light-95;
+                    @include box-shadow(none);
+                }
+            }
+        }
+    }
+}
+.tab-content {
+    padding-top: 40px;
+}
+.tab-title {
+    margin: 0 0 15px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $gray-light-65;
+}
+.docs {
+    .navbar-default {
+        background: $purple-light-5;
+        .navbar-brand {
+            color: #fff;
+        }
+        .navbar-nav {
+            > li {
+                > a {
+                    &, &:focus, &:hover, &:active {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+// End slide bar
+
+.thanks {
+    .section-title {
+        margin-top: -20px;
+        font-size: 42px;
+    }
+    height: 100vh;
+    width: 100%;
+    @include display(box);
+    @include box-pack(center);
+    @include box-align(center);
+    .btn-lg {
+        min-width: 180px;
+        @include border-radius(30px);
+        margin: 20px 10px;
+        &:hover, &:focus, &:active {
+            color: $purple;
+        }
+    }
+    .btn-main {
+        &:hover, &:focus, &:active {
+            color: #fff;
+        }
+    }
+    .author {
+        font-size: 11px;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+}
+
+.well {
+    margin-top: 30px;
+}
+
+.demo {
+    .highlight {
+        text-align: left;
+    }
+}

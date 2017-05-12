@@ -1,0 +1,9 @@
+@keyframes slideOutLeft {
+    0% {right: 0;}
+    100% {right: 100vw;}
+}
+.slideOutLeft {
+    animation-name: slideOutLeft;
+}
+
+
