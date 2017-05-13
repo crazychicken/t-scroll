@@ -1,5 +1,5 @@
-@import 'mixin';
-@import 'var';
+@import './theme/mixin';
+@import './theme/var';
 @import 'zoomIn/zoomIn';
 @import 'zoomOut/zoomOut';
 
@@ -20,7 +20,7 @@ slideInDown, zoomIn {
     opacity: 1;
     animation-direction: normal;
     animation-iteration-count: 1;
-    animation-timing-function: ease;
+    animation-timing-function: earn;
     animation-duration: 0.5s;
     animation-delay: 0s;
     position: relative;

@@ -1,6 +1,6 @@
 # Animate-scroll
 
-![enter image description here](http://i.imgur.com/F3jgxTn.png)
+![enter image description here](http://t-scroll.com/theme/images/about.png)
 
 ## Quick start
 * Clone the repo: git clone git@github.com:crazychicken/t-scroll.git
@@ -14,7 +14,8 @@ http://t-scroll.com
 
 * Semantically Correct / Valid HTML Code
 * HTML5, CSS3
-* Full project and seed project (build with: Gulp, Sass, Javascript)
+* Javascript / JS6
+* Full project and seed project (build with: Gulp, Sass, Javascript, Npm, Babel)
 * Cross browser compatible ( Internet Explorer 8+, Firefox, Safari, Opera, Chrome etc. )
 * W3C Valid source code, properly formatted and commented
 * Animations CSS3

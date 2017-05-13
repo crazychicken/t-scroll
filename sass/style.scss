@@ -1,11 +1,11 @@
 @import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
-@import 'var';
-@import 'mixin';
-@import 'buttons';
-@import 'fonts';
-@import 'box';
-@import 'navbar';
-@import 'section';
+@import './theme/var';
+@import './theme/mixin';
+@import './theme/buttons';
+@import './theme/fonts';
+@import './theme/box';
+@import './theme/navbar';
+@import './theme/section';
 
 body {
     background: #fff;
@@ -151,4 +151,22 @@ a {
 .count-down-time {
     font-size: 20px;
     color: $gray-light-5;
+}
+
+.block-options {
+    border-bottom: 1px solid $gray-light-35;
+    padding-bottom: 15px;
+    .block-title {
+        margin-top: 15px;
+    }
+}
+.docs-options {
+    .list-unstyled {
+        li {
+            margin-bottom: 10px;
+        }
+    }
+    .block-options:last-child {
+        border: none;
+    }
 }

@@ -52,15 +52,20 @@
                 <aside class="sider-bar">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#home" aria-controls="getting-started" role="tab" data-toggle="tab">Getting started</a></li>
+                        <li role="presentation">
+                            <a href="#getting-started" aria-controls="getting-started" role="tab" data-toggle="tab">Getting started</a>
+                        </li>
 
-                        <li role="presentation"><a href="#options" aria-controls="options" role="tab" data-toggle="tab">Options</a></li>
+                        <li role="presentation" class="active">
+                            <a href="#options" aria-controls="options" role="tab" data-toggle="tab">Options</a>
+                        </li>
+
                     </ul>
                 </aside>
             </div>
             <div class="col-xs-9">
                 <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="getting-stared">
+                    <div role="tabpanel" class="tab-pane" id="getting-started">
                         <h2 class="tab-title">
                             Getting Started
                         </h2>
@@ -91,12 +96,22 @@
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"zoomIn"</span><span class="nt">&gt;</span><span class="s">"..."</span><span class="nt">&lt;/div&gt;</span></code></pre>
                                     </figure>
                                     <p>
-                                        if you want <code>setTimeout</code>, you need inside the container attribute <code>t_show="..."</code>
+                                        if you need <code>setTimeout</code>, you need insert the container attribute <code>t_show="..."</code>
                                     </p>
                                     <figure class="highlight">
                                         <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"zoomIn"</span> <span class="na">t_show=</span><span class="s">"1"</span><span class="nt">&gt;</span><span class="s">"..."</span><span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"zoomIn"</span> <span class="na">t_show=</span><span class="s">"2"</span><span class="nt">&gt;</span><span class="s">"..."</span><span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"zoomIn"</span> <span class="na">t_show=</span><span class="s">"3"</span><span class="nt">&gt;</span><span class="s">"..."</span><span class="nt">&lt;/div&gt;</span></code></pre>
+                                    </figure>
+                                    <p class="text-left">
+                                        Or you want to <code>'t_show'</code> run see first screen. You have to add <code>'.t_default .t_animated'</code>
+                                    </p>
+                                    <figure class="highlight">
+                                        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s1">&quot;box-center&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s1">&quot;zoomIn t_default t_animated&quot;</span> <span class="na">t_show=</span><span class="s1" style="background-color: #fff0f0">&quot;1&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s1">&quot;zoomIn t_default t_animated&quot;</span> <span class="na">t_show=</span><span class="s1" style="background-color: #fff0f0">&quot;2&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
                                     </figure>
                                     <br>
                                     <h3 class="box-title">
@@ -109,6 +124,137 @@
     <span class="p">})</span>
 <span class="nt">&lt;/script</span><span class="nt">&gt;</span></code></pre>
                                     </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane active" id="options">
+                        <h2 class="tab-title">
+                            Options
+                        </h2>
+                        <div class="page-body">
+                            <div class="row">
+                                <div class="col-xs-12 docs-options">
+                                    <!-- t_elemet -->
+                                    <div class="block-options">
+                                        <h3 class="block-title">
+                                            t_elemet
+                                        </h3>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                Type: <code>string</code>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- end t_elemet -->
+
+                                    <!-- t_animate -->
+                                    <div class="block-options">
+                                        <h3 class="block-title">
+                                            t_animate
+                                        </h3>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                Type: <code>string</code>
+                                            </li>
+                                            <li>
+                                                <code>zoomIn</code> <code>zoomOut</code>
+                                                <code>slideInUp</code> <code>slideInRight</code> <code>slideInDown</code> <code>slideInLeft</code> <span><a href="#">View more action options</a></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- end t_animate -->
+
+                                    <!-- t_show -->
+                                    <div class="block-options">
+                                        <h3 class="block-title">
+                                            t_show
+                                        </h3>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                Type: <code>Number</code>
+                                            </li>
+                                            <li>
+                                                Default: <code>1</code>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- end t_show -->
+
+                                    <!-- t_position -->
+                                    <div class="block-options">
+                                        <h3 class="block-title">
+                                            t_position
+                                        </h3>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                Type: <code>Number</code>
+                                            </li>
+                                            <li>
+                                                Default: <code>0</code>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- end t_position -->
+
+                                    <!-- t_delay -->
+                                    <div class="block-options">
+                                        <h3 class="block-title">
+                                            t_delay
+                                        </h3>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                Type: <code>Number</code>
+                                            </li>
+                                            <li>
+                                                Default: <code>0</code>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- end t_delay -->
+
+                                    <!-- t_infinite -->
+                                    <div class="block-options">
+                                        <h3 class="block-title">
+                                            t_infinite
+                                        </h3>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                Type: <code>string</code>
+                                            </li>
+                                            <li>
+                                                Default: <code>infinite</code>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- end t_infinite -->
+
+                                    <!-- t_function -->
+                                    <div class="block-options">
+                                        <h3 class="block-title">
+                                            t_function
+                                        </h3>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                Type: <code>string</code>
+                                            </li>
+                                            <li>
+                                                Default: <code>earn</code>
+                                            </li>
+                                            <li>
+                                                <code>linear</code>
+                                                <code>ease</code>
+                                                <code>ease-in</code>
+                                                <code>ease-out</code>
+                                                <code>ease-in-out</code>
+                                                <code>step-start</code>
+                                                <code>step-end</code>
+                                                <code>initial</code>
+                                                <code>inherit</code>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- end t_function -->
                                 </div>
                             </div>
                         </div>

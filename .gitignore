@@ -2,3 +2,5 @@ html
 node_modules
 sass/theme
 theme
+**.DS_Store
+.DS_Store?

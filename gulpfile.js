@@ -15,9 +15,9 @@ gulp.task('include-html', function(){
         "indent_size": 4
     };
     gulp.src([
-        '!./html/html-global/**/*.html',
-        '!./html/docs/*.html',
-        './html/*.html'
+        './html/index.html',
+        './html/demo.html',
+        './html/documents.html'
     ])
     .pipe(gulp_file_include())
     .pipe(htmlbeautify(options))
