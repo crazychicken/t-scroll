@@ -1,0 +1,11 @@
+@keyframes fadeOut {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.fadeOut.t_default {
+    animation-name: fadeOut;
+}

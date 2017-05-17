@@ -1,0 +1,12 @@
+@keyframes fadeLeft {
+    from {
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        transform: none;
+    }
+}
+.fadeLeft.t_default {
+    animation-name: fadeLeft;
+    transition: opacity 1s;
+}

@@ -1,0 +1,8 @@
+@keyframes rollRight {
+    0% {
+        transform: translate3d(100%, 0, 50vw) rotate3d(0, 0, 1, -120deg);
+    }
+    100% {
+        transform: none;
+    }
+}

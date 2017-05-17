@@ -1,0 +1,17 @@
+@keyframes lightSpeedLeft {
+    0% {
+        transform: translate3d(-100%, 0, 0) skewX(30deg);
+    }
+
+    60% {
+        transform: skewX(-20deg);
+    }
+
+    80% {
+        transform: skewX(5deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}

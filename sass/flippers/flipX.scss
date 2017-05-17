@@ -1,0 +1,29 @@
+@keyframes flipX {
+    from {
+        opacity: 0;
+
+        animation-timing-function: ease-in;
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    }
+
+    40% {
+        animation-timing-function: ease-in;
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    }
+
+    60% {
+        opacity: 1;
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    }
+
+    80% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+
+    to {
+        transform: perspective(400px);
+    }
+}
+.flipX.t_default {
+    animation-name: flipX;
+}

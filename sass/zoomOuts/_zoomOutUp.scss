@@ -1,0 +1,14 @@
+@keyframes zoomOutUp {
+    0% {
+        transform: scale(0);
+        top: 100vh;
+    }
+    50% {
+        transform: scale(0.15);
+        top: 70vh;
+    }
+    100% {
+        transform: scale(1);
+        top: 0;
+    }
+}

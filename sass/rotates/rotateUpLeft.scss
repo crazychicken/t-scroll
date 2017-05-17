@@ -1,0 +1,10 @@
+@keyframes rotateUpLeft {
+    0% {
+        transform: rotate3d(0, 0, 1, 45deg);
+        transform-origin: left bottom;
+    }
+    100% {
+        transform: none;
+        transform-origin: left bottom;
+    }
+}

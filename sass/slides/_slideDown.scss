@@ -1,0 +1,12 @@
+@keyframes slideDown {
+    0% {
+        bottom: 100vh;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+.slideDown.t_default {
+    animation-name: slideLeftDown;
+}
+

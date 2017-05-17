@@ -1,0 +1,10 @@
+@keyframes rotate {
+    0% {
+        transform: rotate3d(0, 0, 1, -200deg);
+        transform-origin: center;
+    }
+    100% {
+        transform: none;
+        transform-origin: center;
+    }
+}

@@ -1,0 +1,12 @@
+@keyframes fadeUpBig {
+    0% {
+        transform: translate3d(0, 2000px, 0);
+    }
+    100% {
+        transform: none;
+    }
+}
+.fadeUpBig.t_default {
+    animation-name: fadeUpBig;
+    transition: opacity 1.5s;
+}

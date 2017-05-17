@@ -1,0 +1,12 @@
+@keyframes fadeUp {
+    from {
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        transform: none;
+    }
+}
+.fadeUp.t_default {
+    animation-name: fadeUp;
+    transition: opacity 1s;
+}

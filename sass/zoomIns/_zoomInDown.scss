@@ -1,0 +1,10 @@
+@keyframes zoomInDown {
+    0% {
+        transform: scale(3);
+        bottom: 100vh;
+    }
+    100% {
+        transform: scale(1);
+        bottom: 0;
+    }
+}

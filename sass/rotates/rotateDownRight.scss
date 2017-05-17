@@ -1,0 +1,10 @@
+@keyframes rotateDownRight {
+    0% {
+        transform: rotate3d(0, 0, 1, 45deg);
+        transform-origin: right bottom;
+    }
+    100% {
+        transform: none;
+        transform-origin: right bottom;
+    }
+}
