@@ -1,6 +1,6 @@
 html
 node_modules
 sass/theme
-theme
+/theme
 **.DS_Store
 .DS_Store?
