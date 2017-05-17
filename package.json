@@ -1,5 +1,5 @@
 {
-  "name": "animate-scroll",
+  "name": "t-scroll",
   "version": "1.0.1",
   "description": "Library animation scroll with HTML5, CSS3, Javascript, ES6, Animate ...",
   "main": ".gulpfile.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crazychicken/animate-scroll.git"
+    "url": "git+https://github.com/crazychicken/t-scroll.git"
   },
   "keywords": [
     "HTML5",
@@ -30,9 +30,9 @@
   "author": "tuds - crazychicken",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/crazychicken/animate-scroll/issues"
+    "url": "https://github.com/crazychicken/t-scroll/issues"
   },
-  "homepage": "https://github.com/crazychicken/animate-scroll#readme",
+  "homepage": "https://github.com/crazychicken/t-scroll#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
