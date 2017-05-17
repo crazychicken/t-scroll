@@ -1,0 +1,12 @@
+@keyframes fadeDownBig {
+    0% {
+        transform: translate3d(0, -2000px, 0);
+    }
+    100% {
+        transform: none;
+    }
+}
+.fadeDownBig.t_default {
+    animation-name: fadeDownBig;
+    transition: opacity 1.5s;
+}

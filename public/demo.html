@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./theme/css/animate-scroll.min.css">
     <link rel="stylesheet" href="./theme/css/style.css">
 
-    <script type="text/javascript" src="./theme/js/jquery.js"></script>
+    <script type="text/javascript" src="./theme/js/jquery.min.js"></script>
     <script type="text/javascript" src="./theme/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./theme/js/animate-scroll.min.js"></script>
     <script type="text/javascript" src="./theme/js/animate-demo.js"></script>
@@ -44,7 +44,19 @@
     </nav>
     <section class="section section-banner">
         <div class="section-content">
-            <h1 class="title">Scroll Down</h1>
+            <h1 class="title">
+                <span class="slideDown t_default t_animated" t_show="1">S</span>
+                <span class="slideDown t_default t_animated" t_show="2">c</span>
+                <span class="slideDown t_default t_animated" t_show="3">r</span>
+                <span class="slideDown t_default t_animated" t_show="4">o</span>
+                <span class="slideDown t_default t_animated" t_show="5">l</span>
+                <span class="slideDown t_default t_animated" t_show="6">l</span>
+                <span class="slideDown t_default t_animated" t_show="7">_</span>
+                <span class="slideDown t_default t_animated" t_show="8">D</span>
+                <span class="slideDown t_default t_animated" t_show="9">o</span>
+                <span class="slideDown t_default t_animated" t_show="10">w</span>
+                <span class="slideDown t_default t_animated" t_show="11">n</span>
+            </h1>
         </div>
         <button class="btn btn-animation">
             <span class="dot"></span>
@@ -106,10 +118,10 @@
     </section>
     <footer class="section thanks">
         <div class="text-center">
-            <h2 class="section-title slideInDown">
+            <h2 class="section-title slideDown">
                 Thanks you ;)
             </h2>
-            <a href="https://github.com/crazychicken/t-scroll" class="btn btn-border btn-lg slideInRight">Github</a>
+            <a href="https://github.com/crazychicken/t-scroll" class="btn btn-border btn-lg slideRight">Github</a>
             <a href="https://github.com/crazychicken/t-scroll/archive/master.zip" class="btn btn-main btn-lg slideInLeft">DownLoad</a>
             <p>
                 Currently v1.0.0
@@ -128,11 +140,11 @@
                 }, 300);
             });
             Tu.animate_scroll({
-                't_element': '.thanks .slideInDown',
+                't_element': '.thanks .slideDown',
                 't_duration': 1
             })
             Tu.animate_scroll({
-                't_element': '.thanks .slideInRight',
+                't_element': '.thanks .slideRight',
                 't_duration': 1
             })
             Tu.animate_scroll({
@@ -145,6 +157,11 @@
     <script type="text/javascript">
         Tu.animate_scroll({
             't_element': '.zoomOut'
+        })
+        Tu.animate_scroll({
+            't_element': '.title .slideDown',
+            't_duration': 0.1,
+            't_delay': 0.5
         })
     </script>
 </body>

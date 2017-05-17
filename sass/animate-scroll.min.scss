@@ -1,16 +1,56 @@
 @import './theme/mixin';
 @import './theme/var';
-@import 'zoomIn/zoomIn';
-@import 'zoomOut/zoomOut';
 
-@import 'slideIn/slideInUp';
-@import 'slideIn/slideInDown';
-@import 'slideIn/slideInLeft';
-@import 'slideIn/slideInRight';
+// bounce
+@import './bounce/bounceIn';
+@import './bounce/bounceOut';
+@import './bounce/bounceUp';
+@import './bounce/bounceDown';
+@import './bounce/bounceLeft';
+@import './bounce/bounceRight';
+// end bounce
+
+// fade
+@import './fade/fadeIn';
+@import './fade/fadeUp';
+@import './fade/fadeDown';
+@import './fade/fadeLeft';
+@import './fade/fadeRight';
+
+@import './fade/fadeUpBig';
+@import './fade/fadeDownBig';
+@import './fade/fadeLeftBig';
+@import './fade/fadeRightBig';
+// end fade
+
+// Zoom
+@import './zoomIn/zoomIn';
+@import './zoomIn/zoomInUp';
+@import './zoomIn/zoomInLeft';
+@import './zoomIn/zoomInDown';
+@import './zoomIn/zoomInRight';
+
+@import './zoomOut/zoomOut';
+@import './zoomOut/zoomOutUp';
+@import './zoomOut/zoomOutLeft';
+@import './zoomOut/zoomOutDown';
+@import './zoomOut/zoomOutRight';
+// End Zoom
+
+// slide
+@import './slide/slideUp';
+@import './slide/slideDown';
+@import './slide/slideLeft';
+@import './slide/slideRight';
+// end slide
 
 // for animation options
 @each $name in
-slideInDown, zoomIn {
+bounceIn, bounceOut, bounceUp, bounceDown, bounceLeft, bounceRight,
+slideUp, slideDown, slideLeft, slideRight,
+zoomIn, zoomInUp, zoomInLeft, zoomInDown, zoomInRight,
+zoomOut, zoomOutUp, zoomOutLeft, zoomOutDown, zoomOutRight,
+fade, fadeUp, fadeDown, fadeLeft, fadeRight, fadeUpBig, fadeDownBig, fadeLeftBig, fadeRightBig {
     .#{$name}.t_default {
         animation-name: #{$name};
     }
@@ -20,7 +60,7 @@ slideInDown, zoomIn {
     opacity: 1;
     animation-direction: normal;
     animation-iteration-count: 1;
-    animation-timing-function: earn;
+    animation-timing-function: ease;
     animation-duration: 0.5s;
     animation-delay: 0s;
     position: relative;

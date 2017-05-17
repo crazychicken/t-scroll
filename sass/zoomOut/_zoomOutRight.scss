@@ -1,0 +1,14 @@
+@keyframes zoomOutRight {
+    0% {
+        transform: scale(0);
+        left: 100vw;
+    }
+    50% {
+        transform: scale(0.15);
+        left: 70vh;
+    }
+    100% {
+        transform: scale(1);
+        left: 0;
+    }
+}

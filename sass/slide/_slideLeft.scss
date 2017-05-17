@@ -1,0 +1,13 @@
+@keyframes slideLeft {
+    0% {
+        right: 100vw;
+    }
+    100% {
+        right: 0;
+    }
+}
+.slideLeft.t_default {
+    animation-name: slideLeft;
+}
+
+

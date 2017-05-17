@@ -45,7 +45,7 @@ gulp.task('js', function(){
 // COPY library js
 gulp.task('copy-js', function(){
     gulp.src([
-        './node_modules/jquery/dist/jquery.js',
+        './node_modules/jquery/dist/jquery.min.js',
         './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
         './theme/js/*.js'
     ])

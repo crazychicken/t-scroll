@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./theme/css/animate-scroll.min.css">
     <link rel="stylesheet" href="./theme/css/style.css">
 
-    <script type="text/javascript" src="./theme/js/jquery.js"></script>
+    <script type="text/javascript" src="./theme/js/jquery.min.js"></script>
     <script type="text/javascript" src="./theme/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./theme/js/animate-scroll.min.js"></script>
     <script type="text/javascript" src="./theme/js/animate-demo.js"></script>
@@ -43,21 +43,21 @@
     <section class="section section-banner">
         <div class="section-content">
             <h1 class="title">
-                <span class="slideInDown t_default t_animated" t_show="1">t</span>
-                <span class="slideInDown t_default t_animated" t_show="2">b</span>
-                <span class="slideInDown t_default t_animated" t_show="3">a</span>
-                <span class="slideInDown t_default t_animated" t_show="4">n</span>
-                <span class="slideInDown t_default t_animated" t_show="5">i</span>
-                <span class="slideInDown t_default t_animated" t_show="6">m</span>
-                <span class="slideInDown t_default t_animated" t_show="7">a</span>
-                <span class="slideInDown t_default t_animated" t_show="8">t</span>
-                <span class="slideInDown t_default t_animated" t_show="9">e</span>
+                <span class="slideDown t_default t_animated" t_show="1">t</span>
+                <span class="slideDown t_default t_animated" t_show="2">b</span>
+                <span class="slideDown t_default t_animated" t_show="3">a</span>
+                <span class="slideDown t_default t_animated" t_show="4">n</span>
+                <span class="slideDown t_default t_animated" t_show="5">i</span>
+                <span class="slideDown t_default t_animated" t_show="6">m</span>
+                <span class="slideDown t_default t_animated" t_show="7">a</span>
+                <span class="slideDown t_default t_animated" t_show="8">t</span>
+                <span class="slideDown t_default t_animated" t_show="9">e</span>
             </h1>
             <p class="section-info zoomIn t_default t_animated">
                 When you start scroll, you will see action and event interesting.
             </p>
-            <a href="https://github.com/crazychicken/t-scroll" class="btn btn-border btn-lg slideInRight t_default t_animated">Github</a>
-            <a href="https://github.com/crazychicken/t-scroll/archive/master.zip" class="btn btn-main btn-lg slideInLeft t_default t_animated">DownLoad</a>
+            <a href="https://github.com/crazychicken/t-scroll" class="btn btn-border btn-lg slideRight t_default t_animated">Github</a>
+            <a href="https://github.com/crazychicken/t-scroll/archive/master.zip" class="btn btn-main btn-lg slideLeft t_default t_animated">DownLoad</a>
             <p>
                 Currently v1.0.0
             </p>
@@ -71,7 +71,7 @@
         <h2 class="section-title">Why Choose t-animate</h2>
         <div class="container">
             <div class="row">
-                <div class="col-xs-4 slideInDown" t_show="1">
+                <div class="col-xs-4 slideDown" t_show="1">
                     <div class="box">
                         <div class="box-head">
                             <h3 class="title">
@@ -83,7 +83,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4 slideInDown" t_show="2">
+                <div class="col-xs-4 slideDown" t_show="2">
                     <div class="box box-es6">
                         <div class="box-head">
                             <h3 class="title">
@@ -95,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4 slideInDown" t_show="3">
+                <div class="col-xs-4 slideDown" t_show="3">
                     <div class="box box-sass">
                         <div class="box-head">
                             <h3 class="title">
@@ -108,7 +108,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-4 slideInUp" t_show="1">
+                <div class="col-xs-4 slideUp" t_show="1">
                     <div class="box box-gulp">
                         <div class="box-head">
                             <h3 class="title">
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4 slideInUp" t_show="2">
+                <div class="col-xs-4 slideUp" t_show="2">
                     <div class="box box-browser">
                         <div class="box-head">
                             <h3 class="title">
@@ -132,7 +132,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4 slideInUp" t_show="3">
+                <div class="col-xs-4 slideUp" t_show="3">
                     <div class="box box-npm">
                         <div class="box-head">
                             <h3 class="title">
@@ -167,24 +167,24 @@
     });
 
     Tu.animate_scroll({
-        't_element': '.title .slideInDown',
+        't_element': '.title .slideDown',
         't_duration': 0.1,
         't_delay': 0.5
     })
     Tu.animate_scroll({
-        't_element': '.section-function .slideInDown',
+        't_element': '.section-function .slideDown',
         't_duration': 0.5,
     })
     Tu.animate_scroll({
-        't_element': '.section-function .slideInUp',
+        't_element': '.section-function .slideUp',
         't_duration': 0.5,
     })
 
     Tu.animate_scroll({
-        't_element': '.slideInRight'
+        't_element': '.slideRight'
     })
     Tu.animate_scroll({
-        't_element': '.slideInLeft'
+        't_element': '.slideLeft'
     })
 
 

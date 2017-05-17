@@ -1,0 +1,10 @@
+@keyframes zoomInLeft {
+    0% {
+        transform: scale(5);
+        right: 100vw;
+    }
+    100% {
+        transform: scale(1);
+        right: 0;
+    }
+}
