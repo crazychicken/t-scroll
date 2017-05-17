@@ -4,3 +4,15 @@ sass/theme
 /theme
 **.DS_Store
 .DS_Store?
+
+.*.swp
+._*
+.git
+.hg
+.npmrc
+.lock-wscript
+.svn
+.wafpickle-*
+config.gypi
+CVS
+npm-debug.log
