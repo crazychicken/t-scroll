@@ -3,7 +3,7 @@
 ![enter image description here](http://t-scroll.com/theme/images/about.png)
 
 ## Quick start
-* Clone the repo: git clone git@github.com:crazychicken/t-scroll.git
+* Clone the repo: `git clone git@github.com:crazychicken/t-scroll.git`
 * Install with npm: `npm install --save-dev t-scroll`
 * Install with npm: `npm install --save-dev crazychicken/t-scroll`
 * Or download the [latest release] (https://github.com/crazychicken/t-scroll/archive/master.zip)
@@ -12,14 +12,12 @@
 
 * First, include CSS files into your HTML head:
 ```html
-<head>
-    <link type="text/css" rel="stylesheet" href="./public/theme/css/t-scroll.min.css">
-</head>
+<link type="text/css" rel="stylesheet" href="./public/theme/css/t-scroll.min.css">
 ```
 
 * Include file `t-scroll.min.js` into the footer.
 ```html
-<script type="text/javascript" src="./public/theme/js/animation-scroll.min.js"></script>
+<script type="text/javascript" src="./public/theme/js/t-scroll.min.js"></script>
 ```
 
 * Set HTML

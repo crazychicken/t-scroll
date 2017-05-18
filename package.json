@@ -4,7 +4,7 @@
   "description": "Library animation scroll with HTML5, CSS3, Javascript, ES6, Animate ...",
   "main": ".gulpfile.js",
   "scripts": {
-    "build": "babel ./theme/js/animate-scroll.js --minified --no-comments --out-file ./theme/js/animate-scroll.min.js --presets=es2015"
+    "build": "babel ./theme/js/t-scroll.js --minified --no-comments --out-file ./theme/js/t-scroll.min.js --presets=es2015"
   },
   "repository": {
     "type": "git",
