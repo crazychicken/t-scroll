@@ -6,14 +6,13 @@
     <meta charset="UTF-8">
     <meta charset="UTF-8">
     <link rel="icon shortcut" type="image/png" sizes="16x16" href="http://t-scroll.com/theme/images/favicon.png">
-    <link rel="stylesheet" href="./theme/css/animate-scroll.min.css">
+    <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+    <link rel="stylesheet" href="./theme/css/t-scroll.min.css">
     <link rel="stylesheet" href="./theme/css/style.css">
 
     <script type="text/javascript" src="./theme/js/jquery.min.js"></script>
     <script type="text/javascript" src="./theme/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./theme/js/animate-scroll.min.js"></script>
-    <script type="text/javascript" src="./theme/js/animate-demo.js"></script>
-    <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+    <script type="text/javascript" src="./theme/js/t-scroll.min.js"></script>
 </head>
 
 <body class="demo">
@@ -27,7 +26,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-                <a class="navbar-brand" href="index.html">t-animate</a>
+                <a class="navbar-brand" href="http://t-scroll.com">t-scroll</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -140,15 +139,15 @@
                     scrollTop: st
                 }, 300);
             });
-            Tu.animate_scroll({
+            Tu.t_scroll({
                 't_element': '.thanks .slideDown',
                 't_duration': 1
             })
-            Tu.animate_scroll({
+            Tu.t_scroll({
                 't_element': '.thanks .slideRight',
                 't_duration': 1
             })
-            Tu.animate_scroll({
+            Tu.t_scroll({
                 't_element': '.thanks .slideLeft',
                 't_duration': 1
             })
@@ -156,10 +155,10 @@
     </script>
 
     <script type="text/javascript">
-        Tu.animate_scroll({
+        Tu.t_scroll({
             't_element': '.zoomOut'
         })
-        Tu.animate_scroll({
+        Tu.t_scroll({
             't_element': '.title .slideDown',
             't_duration': 0.1,
             't_delay': 0.5

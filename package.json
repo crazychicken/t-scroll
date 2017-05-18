@@ -48,5 +48,9 @@
     "gulp-sass": "^3.1.0",
     "jquery": "^1.9.1",
     "perfect-scrollbar": "^0.7.0"
+  },
+  "dependencies": {
+    "checkbox-radio": "^1.0.4",
+    "perfect-scrollbar": "^0.7.0"
   }
 }

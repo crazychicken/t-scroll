@@ -1,0 +1,103 @@
+@import './theme/mixin';
+@import './theme/var';
+
+// bounce
+@import './bounces/bounceIn';
+@import './bounces/bounceOut';
+@import './bounces/bounceUp';
+@import './bounces/bounceDown';
+@import './bounces/bounceLeft';
+@import './bounces/bounceRight';
+// end bounce
+
+// fade
+@import './fades/fadeIn';
+@import './fades/fadeUp';
+@import './fades/fadeDown';
+@import './fades/fadeLeft';
+@import './fades/fadeRight';
+
+@import './fades/fadeUpBig';
+@import './fades/fadeDownBig';
+@import './fades/fadeLeftBig';
+@import './fades/fadeRightBig';
+// end fade
+
+// flip
+@import './flippers/flip';
+@import './flippers/flipX';
+@import './flippers/flipY';
+// end flip
+
+// flip
+@import './lightspeeds/lightSpeedUp';
+@import './lightspeeds/lightSpeedRight';
+@import './lightspeeds/lightSpeedDown';
+@import './lightspeeds/lightSpeedLeft';
+// end flip
+
+// flip
+@import './rolls/rollUp';
+@import './rolls/rollRight';
+@import './rolls/rollDown';
+@import './rolls/rollLeft';
+// end flip
+
+// rotate
+@import './rotates/rotate';
+@import './rotates/rotateUpLeft';
+@import './rotates/rotateUpRight';
+@import './rotates/rotateDownLeft';
+@import './rotates/rotateDownRight';
+// end rotate
+
+// slide
+@import './slides/slideUp';
+@import './slides/slideDown';
+@import './slides/slideLeft';
+@import './slides/slideRight';
+// end slide
+
+// Zoom
+@import './zoomIns/zoomIn';
+@import './zoomIns/zoomInUp';
+@import './zoomIns/zoomInLeft';
+@import './zoomIns/zoomInDown';
+@import './zoomIns/zoomInRight';
+
+@import './zoomOuts/zoomOut';
+@import './zoomOuts/zoomOutUp';
+@import './zoomOuts/zoomOutLeft';
+@import './zoomOuts/zoomOutDown';
+@import './zoomOuts/zoomOutRight';
+// End Zoom
+
+// for animation options
+@each $name in
+bounceIn, bounceOut, bounceUp, bounceDown, bounceLeft, bounceRight,
+fade, fadeUp, fadeDown, fadeLeft, fadeRight,
+fadeUpBig, fadeDownBig, fadeLeftBig, fadeRightBig,
+flip, flipX, flipY,
+lightSpeedUp, lightSpeedRight, lightSpeedLeft, lightSpeedDown,
+rollUp, rollRight, rollLeft, rollDown,
+rotate, rotateDownLeft, rotateDownRight, rotateUpLeft, rotateUpRight,
+slideUp, slideDown, slideLeft, slideRight,
+zoomIn, zoomInUp, zoomInLeft, zoomInDown, zoomInRight,
+zoomOut, zoomOutUp, zoomOutLeft, zoomOutDown, zoomOutRight {
+    .#{$name}.t_default {
+        animation-name: #{$name};
+    }
+}
+
+.t_default {
+    opacity: 1;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    position: relative;
+}
+.t_infinite {
+    animation-iteration-count: infinite;
+}

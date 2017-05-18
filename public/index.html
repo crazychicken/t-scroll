@@ -5,13 +5,13 @@
     <title>Index | Animation Scroll</title>
     <meta charset="UTF-8">
     <link rel="icon shortcut" type="image/png" sizes="16x16" href="http://t-scroll.com/theme/images/favicon.png">
-    <link rel="stylesheet" href="./theme/css/animate-scroll.min.css">
+    <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+    <link rel="stylesheet" href="./theme/css/t-scroll.min.css">
     <link rel="stylesheet" href="./theme/css/style.css">
 
     <script type="text/javascript" src="./theme/js/jquery.min.js"></script>
     <script type="text/javascript" src="./theme/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./theme/js/animate-scroll.min.js"></script>
-    <script type="text/javascript" src="./theme/js/animate-demo.js"></script>
+    <script type="text/javascript" src="./theme/js/t-scroll.min.js"></script>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-                <a class="navbar-brand" href="index.html">t-animate</a>
+                <a class="navbar-brand" href="http://t-scroll.com">t-scroll</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -54,7 +54,7 @@
                 <span class="slideDown t_default t_animated" t_show="8">l</span>
             </h1>
             <p class="section-info zoomIn t_default t_animated">
-                When you start scroll, you will see action and event interesting.
+                When you start scrolling, you will see interesting events.
             </p>
             <a href="https://github.com/crazychicken/t-scroll" class="btn btn-border btn-lg slideRight t_default t_animated">Github</a>
             <a href="https://github.com/crazychicken/t-scroll/archive/master.zip" class="btn btn-main btn-lg slideLeft t_default t_animated">DownLoad</a>
@@ -91,7 +91,7 @@
                             </h3>
                         </div>
                         <div class="box-body">
-                            t-animate do not used jQuery. It's used ES6
+                            t-scroll do not used jQuery. It's used ES6
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                             </h3>
                         </div>
                         <div class="box-body">
-                            t-animate ships with vanilla Sass. Quickly get started with precompiled CSS or build on the source.
+                            t-scroll ships with vanilla Sass. Quickly get started with precompiled CSS or build on the source.
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@
                             </h3>
                         </div>
                         <div class="box-body">
-                            t-animate had build for gulp
+                            t-scroll had is built by gulp
                         </div>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                             </h3>
                         </div>
                         <div class="box-body">
-                            Setup t-animate easy with node.js
+                            Setup t-scroll easily with node.js
                         </div>
                     </div>
                 </div>
@@ -166,24 +166,24 @@
         });
     });
 
-    Tu.animate_scroll({
+    Tu.t_scroll({
         't_element': '.title .slideDown',
         't_duration': 0.1,
         't_delay': 0.5
     })
-    Tu.animate_scroll({
+    Tu.t_scroll({
         't_element': '.section-function .slideDown',
         't_duration': 0.5,
     })
-    Tu.animate_scroll({
+    Tu.t_scroll({
         't_element': '.section-function .slideUp',
         't_duration': 0.5,
     })
 
-    Tu.animate_scroll({
+    Tu.t_scroll({
         't_element': '.slideRight'
     })
-    Tu.animate_scroll({
+    Tu.t_scroll({
         't_element': '.slideLeft'
     })
 

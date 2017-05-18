@@ -1,0 +1,33 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+kramdown:
+  auto_ids: true
+
+# Permalinks
+permalink:        pretty
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+# Social
+title: t-scroll
+description: Library animation scroll with HTML5, CSS3, Javascript, ES6, Animate ...
+twitter: https://twitter.com/mtu_truong
+authors: Tuds - Crazychicken
+social_logo_path: http://t-scroll.com/theme/images/favicon.png
+social_image_path: http://t-scroll.com/theme/images/about.png
+
+# Custom vars
+current_version:  1.0.2
+repo:             https://github.com/crazychicken/t-scroll.git
+
+download:
+  source:         https://github.com/crazychicken/t-scroll/archive/master.zip
+  dist:           https://github.com/crazychicken/t-scroll/archive/master.zip
+
+blog:             http://t-scroll.com/t-animate-options.html
+expo:             http://t-scroll.com/
+themes:           http://t-scroll.com/
