@@ -6,7 +6,13 @@
 * Clone the repo: `git clone git@github.com:crazychicken/t-scroll.git`
 * Install with npm: `npm install --save-dev t-scroll`
 * Install with npm: `npm install --save-dev crazychicken/t-scroll`
-* Or download the [latest release] (https://github.com/crazychicken/t-scroll/archive/master.zip)
+* Or download the [latest release](https://github.com/crazychicken/t-scroll/archive/master.zip)
+
+## Demo
+http://t-scroll.com/t-animate-options.html
+
+## Documentation
+http://t-scroll.com/documents.html
 
 ## How to use
 
@@ -50,26 +56,67 @@
 </script>
 ```
 
+## Options
+* bounceIn
+* bounceOut
+* bounceUp
+* bounceDown
+* bounceLeft
+* bounceRight
+* fadeIn
+* fadeUp
+* fadeDown
+* fadeLeft
+* fadeRight
+* fadeUpBig
+* fadeDownBig
+* fadeLeftBig
+* fadeRightBig
+* flip
+* flipX
+* flipY
+* lightSpeedUp
+* lightSpeedRight
+* lightSpeedDown
+* lightSpeedLeft
+* rollUp
+* rollRight
+* rollDown
+* rollLeft
+* rotate
+* rotateUpLeft
+* rotateUpRight
+* rotateDownLeft
+* rotateDownRight
+* slideUp
+* slideDown
+* slideLeft
+* slideRight
+* zoomIn
+* zoomInUp
+* zoomInLeft
+* zoomInDown
+* zoomInRight
+* zoomOut
+* zoomOutUp
+* zoomOutLeft
+* zoomOutDown
+* zoomOutRight
+
 ## Tree
 ```
 public/
-    └── theme/
-    |   └── css/
-    |       ├── style.css
-    |       └── t-scroll.min.css
-    |   └── js/
-    |       └── t-scroll.min.css
-    └── sass/
-        ├── // All Folders Sass Files
-        ├── style.scss
-        └── t-scroll.min.scss
+  └── theme/
+  └── css/
+  |   ├── style.css
+  |   └── t-scroll.min.css
+  └── js/
+        └── t-scroll.min.css
+sass/
+  ├── // All Folders Sass Files
+  ├── style.scss
+  └── t-scroll.min.scss
 ```
-
-## Demo
-http://t-scroll.com/t-animate-options.html
-
-## Documentation
-http://t-scroll.com/documents.html
 
 ## Template full feature list
 

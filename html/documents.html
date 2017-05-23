@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Documents | Animation Scroll | t-scroll </title>
+    @@include('./html-global/head.html')
+</head>
+<body class="docs">
+    @@include('./html-global/navbar.html')
+    <div class="page-header">
+        <div class="container">
+          <h1>Documents</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                @@include('./docs/sider-bar.html')
+            </div>
+            <div class="col-xs-9">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane" id="getting-started">
+                        @@include('./docs/getting-started.html')
+                    </div>
+                    <div role="tabpanel" class="tab-pane active" id="options">
+                        @@include('./docs/options.html')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer footer-gray">
+        Another thing from Tuds - Crazychicken.
+        <p>
+            <small>Code and documentation copyright 2017, MIT license.</small>
+        </p>
+    </footer>
+</body>
+</html>

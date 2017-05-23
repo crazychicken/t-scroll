@@ -1,4 +1,6 @@
-html
+html/demos
+html/docs
+html/html-global
 node_modules
 sass/theme
 /theme

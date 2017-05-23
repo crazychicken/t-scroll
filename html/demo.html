@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Demo | Animation Scroll | t-scroll</title>
+    <meta charset="UTF-8">
+    @@include('./html-global/head.html')
+</head>
+<body class="demo">
+    @@include('./html-global/navbar.html')
+    <section class="section section-banner">
+        <div class="section-content">
+            <h1 class="title">
+                <span class="slideDown t_default t_animated" t_show="1">S</span>
+                <span class="slideDown t_default t_animated" t_show="2">c</span>
+                <span class="slideDown t_default t_animated" t_show="3">r</span>
+                <span class="slideDown t_default t_animated" t_show="4">o</span>
+                <span class="slideDown t_default t_animated" t_show="5">l</span>
+                <span class="slideDown t_default t_animated" t_show="6">l</span>
+                <span class="slideDown t_default t_animated" t_show="7">_</span>
+                <span class="slideDown t_default t_animated" t_show="8">D</span>
+                <span class="slideDown t_default t_animated" t_show="9">o</span>
+                <span class="slideDown t_default t_animated" t_show="10">w</span>
+                <span class="slideDown t_default t_animated" t_show="11">n</span>
+            </h1>
+        </div>
+        <button class="btn btn-animation">
+            <span class="dot"></span>
+        </button>
+    </section>
+    <!-- /end .section-banner -->
+
+    <section class="section section-gray">
+        <h2 class="section-title">
+            Basic Demos
+        </h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3 zoomOut">
+                    <a target="_blank" href="http://t-scroll.com/t-default.html" class="box-demo">
+                        <div class="box-demo-title">T_default</div>
+                    </a>
+                </div>
+                <div class="col-xs-3 zoomOut">
+                    <a target="_blank" href="http://t-scroll.com/t-animate.html" class="box-demo">
+                        <div class="box-demo-title">T_animate</div>
+                    </a>
+                </div>
+                <div class="col-xs-3 zoomOut">
+                    <a target="_blank" href="http://t-scroll.com/t-show.html" class="box-demo">
+                        <div class="box-demo-title">T_show</div>
+                    </a>
+                </div>
+                <div class="col-xs-3 zoomOut">
+                    <a target="_blank" href="http://t-scroll.com/t-position.html" class="box-demo">
+                        <div class="box-demo-title">T_position</div>
+                    </a>
+                </div>
+                <div class="col-xs-3 zoomOut">
+                    <a target="_blank" href="http://t-scroll.com/t-duration.html" class="box-demo">
+                        <div class="box-demo-title">T_duration</div>
+                    </a>
+                </div>
+                <div class="col-xs-3 zoomOut">
+                    <a target="_blank" href="http://t-scroll.com/t-delay.html" class="box-demo">
+                        <div class="box-demo-title">T_delay</div>
+                    </a>
+                </div>
+                <div class="col-xs-3 zoomOut">
+                    <a target="_blank" href="http://t-scroll.com/t-infinite.html" class="box-demo">
+                        <div class="box-demo-title">T_infinite</div>
+                    </a>
+                </div>
+                <div class="col-xs-3 zoomOut">
+                    <a target="_blank" href="http://t-scroll.com/t-function.html" class="box-demo">
+                        <div class="box-demo-title">T_function</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-animation">
+            <span class="dot"></span>
+        </button>
+    </section>
+    @@include('./html-global/footer.html')
+
+    <script type="text/javascript">
+        Tu.t_scroll({
+            't_element': '.zoomOut'
+        })
+        Tu.t_scroll({
+            't_element': '.title .slideDown',
+            't_duration': 0.1,
+            't_delay': 0.5
+        })
+    </script>
+</body>
+</html>

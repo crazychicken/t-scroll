@@ -6520,6 +6520,11 @@ button.close {
       bottom: 0;
       height: 220px; } }
 
+.section-chart {
+  min-height: calc(100vh - 60px);
+  height: calc(100vh - 60px);
+  width: 100%; }
+
 body {
   background: #fff;
   font-size: 14px;
