@@ -1,6 +1,6 @@
 {
   "name": "t-scroll",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Library animation scroll with HTML5, CSS3, Javascript, ES6, Animate ...",
   "main": ".gulpfile.js",
   "scripts": {
