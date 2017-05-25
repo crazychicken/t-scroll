@@ -4,6 +4,7 @@
 <head>
     <title>Index | Animation Scroll | t-scroll</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This is website animate, easy way to add animate on scroll to your site or blog, all you need to do is add css class into your html tag, t-scroll do not used jQuery, It's used ES6.">
     <meta name="keywords" content="t-scroll,HTML,CSS,XML,JavaScript,Animate,Animation,CSS3,ES6,Npm,tuds,Crazychicken,animate,animation-name,animation-duration,animation-timing-function,animation-delay">
     <meta name="author" content="Tuds - Crazychicken">
@@ -18,7 +19,23 @@
 
     <script type="text/javascript" src="./theme/js/jquery.min.js"></script>
     <script type="text/javascript" src="./theme/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./theme/js/t-scroll.min.js"></script>
+    <script type="text/javascript" src="./theme/js/t-scroll.js"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-46711522-3', 'auto');
+        ga('send', 'pageview');
+    </script>
 </head>
 
 <body>
@@ -81,7 +98,7 @@
         <h2 class="section-title">Why Choose t-scroll</h2>
         <div class="container">
             <div class="row">
-                <div class="col-xs-4 slideDown" t_show="1">
+                <div class="col-sm-6 col-md-4 slideDown" t_show="1">
                     <div class="box">
                         <div class="box-head">
                             <h3 class="title">
@@ -93,7 +110,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4 slideDown" t_show="2">
+                <div class="col-sm-6 col-md-4 slideDown" t_show="2">
                     <div class="box box-es6">
                         <div class="box-head">
                             <h3 class="title">
@@ -105,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4 slideDown" t_show="3">
+                <div class="col-sm-6 col-md-4 slideDown" t_show="3">
                     <div class="box box-sass">
                         <div class="box-head">
                             <h3 class="title">
@@ -118,7 +135,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-4 slideUp" t_show="1">
+                <div class="col-sm-6 col-md-4 slideUp" t_show="1">
                     <div class="box box-gulp">
                         <div class="box-head">
                             <h3 class="title">
@@ -130,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4 slideUp" t_show="2">
+                <div class="col-sm-6 col-md-4 slideUp" t_show="2">
                     <div class="box box-browser">
                         <div class="box-head">
                             <h3 class="title">
@@ -142,7 +159,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4 slideUp" t_show="3">
+                <div class="col-sm-6 col-md-4 slideUp" t_show="3">
                     <div class="box box-npm">
                         <div class="box-head">
                             <h3 class="title">

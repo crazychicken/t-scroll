@@ -73,6 +73,23 @@ a {
             }
         }
     }
+    @media (max-width: 768px) {
+        .nav {
+            > li {
+                > a {
+                    text-align: left;
+                    padding: 14px 0 14px 14px;
+                }
+                &:hover, &.active,
+                &.active:hover {
+                    > a {
+                        border: none;
+                        border-left: 3px solid $purple-light-35;
+                    }
+                }
+            }
+        }
+    }
 }
 .tab-content {
     padding-top: 40px;
@@ -87,6 +104,14 @@ a {
         background: $purple-light-5;
         .navbar-brand {
             color: #fff;
+        }
+        .navbar-toggle {
+            &:hover, &:focus {
+                background: transparent;
+            }
+            .icon-bar {
+                background: #fff;
+            }
         }
         .navbar-nav {
             > li {

@@ -26,9 +26,6 @@ var Tu = {
     }
 }
 
-var el_Array = [];
-var delay_Array = [];
-
 // function check error value, number ...
 function checkValueInput( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr_duration, pr_count, pr_timing_function ) {
 
