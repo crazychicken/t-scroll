@@ -1,3 +1,8 @@
+/*!
+ * t-scroll v1.0.6 (https://t-scroll.com)
+ * Copyright 2017 Tuds - Crazychicken
+ * Licensed under the MIT license
+ */
 @keyframes bounceIn {
   from, 20%, 40%, 60%, 80%, to {
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
@@ -616,3 +621,6 @@
 
 .t_infinite {
   animation-iteration-count: infinite; }
+
+.t_animated {
+  opacity: 0; }

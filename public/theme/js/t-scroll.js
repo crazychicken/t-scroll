@@ -1,5 +1,5 @@
 /*!
- * animate-scroll v1.0.0 (https://t-animate.com)
+ * t-scroll v1.0.6 (https://t-scroll.com)
  * Copyright 2017 Tuds - Crazychicken
  * Licensed under the MIT license
  */
@@ -117,10 +117,13 @@ function include( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr_duratio
     // Set custom css and option animation
     elment_select_html.forEach( e => {
         e.style.opacity = 0.0000001 * pr_position; // hack position only element
-
-        if ( e.classList.contains('t_default') && e.classList.contains('t_animated') ) {
-            e.style.opacity = 1;
-        } // set run function first load, full screen
+        if ( e.classList.contains('t_animated') && e.hasAttribute('t_show') === false ) {
+            var class_animation_css = e.className + " " + pr_ani + " " + "t_default"; // set add class
+            setTimeout( function () {
+                e.setAttribute('class', class_animation_css); // set class run animate
+                e.style.opacity = 1;
+            }, pr_delay * 1000);
+        } // set run function first load, full screen with t_animated
 
         // check default t_show = 1 if it is not value
         if ( e.hasAttribute('t_show') === true && e.getAttribute('t_show') === '' ) {
@@ -128,21 +131,9 @@ function include( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr_duratio
         }
 
         if ( e.hasAttribute('t_show') === true && pr_duration != undefined && e.classList.contains('t_animated') ) {
-            e.classList.remove('t_default');
-            e.style.opacity = 0;
-
-            if ( pr_delay != undefined ) {
-                pr_delay = pr_delay;
-            } else {
-                pr_delay = 0;
+            if ( pr_delay === undefined ) {
+                pr_delay = pr_duration;
             }
-
-            // if (pr_delay === undefined) {
-                // var style = window.getComputedStyle(e);
-                // var top = style.getPropertyValue('animation-delay');
-                // top = top.replace('s', '');
-                // pr_delay = Number(top);
-            // }
 
             var num = Number(e.getAttribute('t_show'));
             var pr_delay_r = pr_duration*num + (pr_delay - pr_duration);
@@ -153,15 +144,7 @@ function include( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr_duratio
                 e.setAttribute('class', class_animation_css); // set class run animate
                 e.style.opacity = 1;
             }, pr_delay_r * 1000);
-        }
-
-        if (e.hasAttribute('t_show') === true && pr_duration === undefined && !e.classList.contains('t_animated')) {
-            pr_duration = 0.25;
-        } // set default value if t_duration no value and sort 1,2,3 ...
-
-        if (e.hasAttribute('t_show') === true && pr_delay === undefined && !e.classList.contains('t_animated')) {
-            pr_delay = 0;
-        } // set default value if t_delay no value and and sort 1,2,3 ...
+        } // set run function first load, sort 1,2,3 ... full screen with t_animated
     });
 
     // Run animation when action scroll apply
@@ -176,17 +159,18 @@ function include( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr_duratio
                 // set position element when event add class
                 // 1. Scroll top window more than element
                 // 2. Stop add class run animation
-                // 3. Stop add class run animation if element has runed
+                // 3. Stop add class run animation if element has runed for t_animated
                 var num = Number( e.getAttribute('t_show') );
-                var pr_delay_r = pr_delay;
+                var pr_delay = pr_duration;
                 if (e.hasAttribute('t_show') === true) {
                     // Check show only item, sort 1,2,3,4 ...
-                    pr_delay_r = pr_duration*num + (pr_delay - pr_duration);
+                    var pr_delay_r = pr_duration*num + (pr_delay - pr_duration);
                 }
+                // console.log(pr_delay_r);
                 var class_animation_css = e.className + " " + pr_ani + " " + "t_animated t_default"; // set add class
                 setTimeout( function () {
                     e.setAttribute('class', class_animation_css); // set class run animate
-                    e.style.opacity = '1';
+                    e.style.opacity = 1;
                 }, pr_delay_r * 1000);
             }
         });

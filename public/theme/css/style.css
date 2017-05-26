@@ -6532,6 +6532,9 @@ button.close {
     width: 680px; }
   .section-animate-options .box-center {
     margin-top: -100px; }
+    .section-animate-options .box-center [class*="col-xs"] {
+      padding-left: 8px;
+      padding-right: 8px; }
   @media (max-width: 980px) {
     .section-animate-options .container {
       width: 100%; }

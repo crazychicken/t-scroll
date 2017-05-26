@@ -38,11 +38,11 @@ http://t-scroll.com/documents.html
 <div class="zoomIn" t_show="2">"..."</div>
 ```
 
-* Or you want to `t_show` run see first screen. You have to add `.t_default .t_animated`
+* Or you want to `t_show` run see first screen. You have to add `.t_animated`
 ```html
 <div class="box-center">
-    <div class="zoomIn t_default t_animated" t_show="1"> ... </div>
-    <div class="zoomIn t_default t_animated" t_show="2"> ... </div>
+    <div class="zoomIn t_animated" t_show="1"> ... </div>
+    <div class="zoomIn t_animated" t_show="2"> ... </div>
 </div>
 ```
 
