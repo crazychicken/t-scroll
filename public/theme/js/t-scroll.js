@@ -161,7 +161,9 @@ function include( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr_duratio
                 // 2. Stop add class run animation
                 // 3. Stop add class run animation if element has runed for t_animated
                 var num = Number( e.getAttribute('t_show') );
-                var pr_delay = pr_duration;
+                if ( pr_delay === undefined ) {
+                    pr_delay = pr_duration;
+                }
                 if (e.hasAttribute('t_show') === true) {
                     // Check show only item, sort 1,2,3,4 ...
                     var pr_delay_r = pr_duration*num + (pr_delay - pr_duration);

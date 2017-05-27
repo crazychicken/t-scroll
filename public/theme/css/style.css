@@ -5848,6 +5848,25 @@ button.close {
 .checkbox input[type="checkbox"]:disabled:checked + .icon-checkbox {
   background-position: -96px 0; }
 
+/*CHECKBOX-XS*/
+.checkbox-xs input[type="checkbox"] + i,
+.radio-xs input[type="radio"] + i {
+  height: 16px;
+  width: 16px;
+  background-size: 160px 16px; }
+
+.checkbox-xs:hover input[type="checkbox"] + .icon-checkbox {
+  background-position: -16px 0; }
+
+.checkbox-xs input[type="checkbox"]:checked + .icon-checkbox {
+  background-position: -32px 0; }
+
+.checkbox-xs input[type="checkbox"]:disabled + .icon-checkbox {
+  background-position: -48px 0; }
+
+.checkbox-xs input[type="checkbox"]:disabled:checked + .icon-checkbox {
+  background-position: -64px 0; }
+
 /*RADIO*/
 .radio:hover input[type="radio"] + .icon-radio {
   background-position: -144px 0; }
@@ -5863,6 +5882,22 @@ button.close {
 
 .radio input[type="radio"]:disabled:checked + .icon-radio {
   background-position: -216px 0; }
+
+/*RADIO-XS*/
+.radio-xs:hover input[type="radio"] + .icon-radio {
+  background-position: -112px 0; }
+
+.radio-xs input[type="radio"] + .icon-radio {
+  background-position: -80px 0; }
+
+.radio-xs input[type="radio"]:checked + .icon-radio {
+  background-position: -112px 0; }
+
+.radio-xs input[type="radio"]:disabled + .icon-radio {
+  background-position: -128px 0; }
+
+.radio-xs input[type="radio"]:disabled:checked + .icon-radio {
+  background-position: -144px 0; }
 
 /* perfect-scrollbar v0.7.0 */
 .ps {
