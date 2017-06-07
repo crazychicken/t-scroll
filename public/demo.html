@@ -2,15 +2,19 @@
 <html lang="en">
 
 <head>
-    <title>Demo | Animation Scroll | t-scroll</title>
+    <title>tScroll Demo | Animation Scroll | t-scroll tuds</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This is website animate, easy way to add animate on scroll to your site or blog, all you need to do is add css class into your html tag, t-scroll do not used jQuery, It's used ES6.">
-    <meta name="keywords" content="t-scroll,HTML,CSS,XML,JavaScript,Animate,Animation,CSS3,ES6,Npm,tuds,Crazychicken,animate,animation-name,animation-duration,animation-timing-function,animation-delay">
+    <meta name="description" content="The t-scroll JavaScript library lets you apply more than 45 pretty cool animations to any elements when they appear in the viewport.">
+    <meta name="keywords" content="t-scroll, HTML, CSS, XML, JavaScript, Animate, Animation, CSS3, ES6, Npm, tuds, Crazychicken, animate, animation-name, animation-duration, animation-timing-function, animation-delay">
     <meta name="author" content="Tuds - Crazychicken">
-    <meta name="robots" content="noodp,index,follow" />
+    <meta name="robots" content="noodp, index, follow" />
     <meta name='revisit-after' content='1 days' />
     <meta http-equiv="content-language" content="en" />
+    <link rel="alternate" href="http://t-scroll.com" hreflang="en" />
+    <!-- master tool -->
+    <meta name="google-site-verification" content="RpjQcxeoQYyuXRapJgQqgHIaciI_KJoxXqSns4JjMg0" />
+    <!-- /master tool -->
 
     <link rel="icon shortcut" type="image/png" sizes="16x16" href="http://t-scroll.com/theme/images/favicon.png">
     <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
@@ -54,7 +58,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="http://t-scroll.com/index.html">Home</a></li>
+                    <li><a href="http://t-scroll.com">Home</a></li>
                     <li><a href="http://t-scroll.com/demo.html">Demos</a></li>
                     <li><a href="http://t-scroll.com/documents.html">Docs</a></li>
                     <li><a href="http://t-scroll.com/t-animate-options.html">Options</a></li>
@@ -142,19 +146,60 @@
             <span class="dot"></span>
         </button>
     </section>
+
+    <section class="section section-demo-chicken">
+        <div class="container">
+            <div class="chicken slideDown">
+                <div class="ck-shadow fadeIn" t_show="2"></div>
+                <div class="ck-body">
+                    <div class="ck-hair">
+                        <div class="ck-hair-small bounceDown" t_show="1"></div>
+                        <div class="ck-hair-default bounceDown" t_show="2"></div>
+                    </div>
+                    <div class="ck-eye">
+                        <div class="ck-eye-left bounceOut" t_show="2"></div>
+                        <div class="ck-eye-right bounceOut" t_show="2"></div>
+                    </div>
+                    <div class="ck-mouth bounceOut" t_show="3">
+                        <div class="ck-mouth-pink-left"></div>
+                        <div class="ck-mouth-default"></div>
+                        <!-- <div class="ck-mouth-down"></div> -->
+                        <div class="ck-mouth-pink-right"></div>
+                    </div>
+                    <div class="ck-hand">
+                        <div class="ck-hand-left bounceOut" t_show="4"></div>
+                        <div class="ck-hand-right bounceOut" t_show="4"></div>
+
+                        <!-- <div class="ck-hand-left up"></div>
+                        <div class="ck-hand-right up"></div>
+
+                        <div class="ck-hand-left border"></div>
+                        <div class="ck-hand-right border"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-animation">
+            <span class="dot"></span>
+        </button>
+    </section>
+
     <footer class="section thanks">
         <div class="text-center">
             <h2 class="section-title slideDown">
-                Thanks you ;)
+                Thank you ;)
             </h2>
             <a href="https://github.com/crazychicken/t-scroll" class="btn btn-border btn-lg slideRight">Github</a>
             <a href="https://github.com/crazychicken/t-scroll/archive/master.zip" class="btn btn-main btn-lg slideLeft">DownLoad</a>
             <p>
-                Currently v1.0.7
+                Currently v1.0.8
             </p>
         </div>
         <div class="author">
             Another thing from <a href="http://tuds.ninja">Tuds - Crazychicken.</a>
+            <p>
+                <small>Code and documentation copyright 2017, MIT license.</small>
+            </p>
         </div>
         <div class="hide">
             <strong>bounceIn</strong><strong>bounceOut</strong><strong>bounceUp</strong><strong>bounceDown</strong><strong>bounceLeft</strong><strong>bounceRight</strong><strong>fadeIn</strong><strong>fadeUp</strong><strong>fadeDown</strong><strong>fadeLeft</strong><strong>fadeRight</strong><strong>fadeUpBig</strong><strong>fadeDownBig</strong><strong>fadeLeftBig</strong><strong>fadeRightBig</strong><strong>flip</strong><strong>flipX</strong><strong>flipY</strong><strong>lightSpeedUp</strong><strong>lightSpeedRight</strong><strong>lightSpeedDown</strong><strong>lightSpeedLeft</strong><strong>rollUp</strong><strong>rollRight</strong><strong>rollDown</strong><strong>rollLeft</strong><strong>rotate</strong><strong>rotateUpLeft</strong><strong>rotateUpRight</strong><strong>rotateDownLeft</strong><strong>rotateDownRight</strong><strong>slideUp</strong><strong>slideDown</strong><strong>slideLeft</strong><strong>slideRight</strong><strong>zoomIn</strong><strong>zoomInUp</strong><strong>zoomInLeft</strong><strong>zoomInDown</strong><strong>zoomInRight</strong><strong>zoomOut</strong><strong>zoomOutUp</strong><strong>zoomOutLeft</strong><strong>zoomOutDown</strong>
@@ -186,12 +231,29 @@
 
     <script type="text/javascript">
         Tu.t_scroll({
-            't_element': '.zoomOut'
+            't_element': '.bounceOut'
         })
         Tu.t_scroll({
             't_element': '.title .slideDown',
             't_duration': 0.1,
             't_delay': 0.5
+        })
+        Tu.t_scroll({
+            't_element': '.chicken.slideDown',
+            't_duration': 0.25
+        })
+        Tu.t_scroll({
+            't_element': '.fadeIn',
+            't_duration': 1
+        })
+        Tu.t_scroll({
+            't_element': '.ck-hair .bounceDown',
+            't_duration': 0.25,
+            't_delay': 2
+        })
+        Tu.t_scroll({
+            't_element': '.chicken .bounceOut',
+            't_duration': 0.5
         })
     </script>
 </body>

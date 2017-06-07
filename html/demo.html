@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Demo | Animation Scroll | t-scroll</title>
+    <title>tScroll Demo | Animation Scroll | t-scroll tuds</title>
     @@include('./html-global/head.html')
 </head>
 <body class="demo">
@@ -80,16 +80,71 @@
             <span class="dot"></span>
         </button>
     </section>
+
+    <section class="section section-demo-chicken">
+        <div class="container">
+            <div class="chicken slideDown">
+                <div class="ck-shadow fadeIn" t_show="2"></div>
+                <div class="ck-body">
+                    <div class="ck-hair">
+                        <div class="ck-hair-small bounceDown" t_show="1"></div>
+                        <div class="ck-hair-default bounceDown" t_show="2"></div>
+                    </div>
+                    <div class="ck-eye">
+                        <div class="ck-eye-left bounceOut" t_show="2"></div>
+                        <div class="ck-eye-right bounceOut" t_show="2"></div>
+                    </div>
+                    <div class="ck-mouth bounceOut" t_show="3">
+                        <div class="ck-mouth-pink-left"></div>
+                        <div class="ck-mouth-default"></div>
+                        <!-- <div class="ck-mouth-down"></div> -->
+                        <div class="ck-mouth-pink-right"></div>
+                    </div>
+                    <div class="ck-hand">
+                        <div class="ck-hand-left bounceOut" t_show="4"></div>
+                        <div class="ck-hand-right bounceOut" t_show="4"></div>
+
+                        <!-- <div class="ck-hand-left up"></div>
+                        <div class="ck-hand-right up"></div>
+
+                        <div class="ck-hand-left border"></div>
+                        <div class="ck-hand-right border"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-animation">
+            <span class="dot"></span>
+        </button>
+    </section>
+
     @@include('./html-global/footer.html')
 
     <script type="text/javascript">
         Tu.t_scroll({
-            't_element': '.zoomOut'
+            't_element': '.bounceOut'
         })
         Tu.t_scroll({
             't_element': '.title .slideDown',
             't_duration': 0.1,
             't_delay': 0.5
+        })
+        Tu.t_scroll({
+            't_element': '.chicken.slideDown',
+            't_duration': 0.25
+        })
+        Tu.t_scroll({
+            't_element': '.fadeIn',
+            't_duration': 1
+        })
+        Tu.t_scroll({
+            't_element': '.ck-hair .bounceDown',
+            't_duration': 0.25,
+            't_delay': 2
+        })
+        Tu.t_scroll({
+            't_element': '.chicken .bounceOut',
+            't_duration': 0.5
         })
     </script>
 </body>
