@@ -6413,6 +6413,9 @@ button.close {
     color: #4b4b4b;
     background: none;
     padding: 20px; }
+  @media (max-width: 767px) {
+    .navbar-default .navbar-brand {
+      padding: 15px 20px 20px 20px; } }
 
 .section {
   width: 100%;
@@ -6587,7 +6590,12 @@ button.close {
   background: #f7f8f9;
   text-align: center;
   padding-top: 140px;
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  min-height: calc(100vh - 60px);
+  height: calc(100vh - 60px); }
+  @media (max-width: 767px) {
+    .section-demo-chicken {
+      height: auto; } }
 
 .chicken {
   width: 360px;
@@ -6617,6 +6625,15 @@ button.close {
     border-right: 0;
     border-left-width: 15px;
     z-index: 2; }
+  @media (max-width: 480px) {
+    .chicken {
+      width: 240px;
+      height: 240px; }
+      .chicken .ck-shadow {
+        width: 240px;
+        height: 240px;
+        border-width: 20px;
+        border-left-width: 15px; } }
 
 .ck-hair [class*="ck-hair"] {
   margin: 0 auto;
@@ -6638,6 +6655,10 @@ button.close {
   width: 20px;
   transform: rotate(-20deg); }
 
+@media (max-width: 480px) {
+  .ck-hair {
+    height: 100px; } }
+
 .ck-eye [class*="ck-eye"] {
   height: 70px;
   width: 70px;
@@ -6655,6 +6676,15 @@ button.close {
     position: absolute;
     background: #fff;
     border-radius: 50%; }
+  @media (max-width: 480px) {
+    .ck-eye [class*="ck-eye"] {
+      height: 40px;
+      width: 40px;
+      margin: -20px 25px 0 25px; }
+      .ck-eye [class*="ck-eye"]:before {
+        height: 16px;
+        width: 16px;
+        left: 5px; } }
 
 .ck-mouth {
   position: relative; }
@@ -6678,6 +6708,10 @@ button.close {
     left: 50px; }
   .ck-mouth-pink-right {
     right: 50px; }
+  @media (max-width: 480px) {
+    .ck-mouth-default {
+      width: 40px;
+      height: 40px; } }
 
 .ck-hand {
   height: 20px;
@@ -6699,6 +6733,14 @@ button.close {
     right: -30px;
     transform: rotate(-15deg);
     border-radius: 20% 70% 7% 100%; }
+  @media (max-width: 480px) {
+    .ck-hand [class*="ck-hand"] {
+      width: 40px;
+      height: 60px; }
+    .ck-hand-left {
+      left: -15px; }
+    .ck-hand-right {
+      right: -15px; } }
 
 body {
   background: #fff;
