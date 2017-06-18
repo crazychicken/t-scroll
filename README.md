@@ -1,4 +1,5 @@
 # t-scroll
+[![Backers on Open Collective](https://opencollective.com/t-scroll/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/t-scroll/sponsors/badge.svg)](#sponsors) 
 
 ![enter image description here](http://t-scroll.com/theme/images/about.png)
 
@@ -136,6 +137,36 @@ sass/
 * Facebook: https://www.facebook.com/tudscss/
 * Youtube:  https://www.youtube.com/channel/UCDACe-7BFGDucQoxTDfPotw
 * Twtter:   https://twitter.com/mtu_truong
+
+## Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute]](blob/master/CONTRIBUTING.md).
+<a href="graphs/contributors"><img src="https://opencollective.com/t-scroll/contributors.svg?width=890" /></a>
+
+
+## Backers
+
+Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/t-scroll#backer)]
+
+<a href="https://opencollective.com/t-scroll#backers" target="_blank"><img src="https://opencollective.com/t-scroll/backers.svg?width=890"></a>
+
+
+## Sponsors
+
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/t-scroll#sponsor)]
+
+<a href="https://opencollective.com/t-scroll/sponsor/0/website" target="_blank"><img src="https://opencollective.com/t-scroll/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/t-scroll/sponsor/1/website" target="_blank"><img src="https://opencollective.com/t-scroll/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/t-scroll/sponsor/2/website" target="_blank"><img src="https://opencollective.com/t-scroll/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/t-scroll/sponsor/3/website" target="_blank"><img src="https://opencollective.com/t-scroll/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/t-scroll/sponsor/4/website" target="_blank"><img src="https://opencollective.com/t-scroll/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/t-scroll/sponsor/5/website" target="_blank"><img src="https://opencollective.com/t-scroll/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/t-scroll/sponsor/6/website" target="_blank"><img src="https://opencollective.com/t-scroll/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/t-scroll/sponsor/7/website" target="_blank"><img src="https://opencollective.com/t-scroll/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/t-scroll/sponsor/8/website" target="_blank"><img src="https://opencollective.com/t-scroll/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/t-scroll/sponsor/9/website" target="_blank"><img src="https://opencollective.com/t-scroll/sponsor/9/avatar.svg"></a>
+
+
 
 ## Copyright and license
 
