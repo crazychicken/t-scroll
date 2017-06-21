@@ -1,5 +1,5 @@
 /*!
-* t-scroll v1.0.7 (https://t-scroll.com)
+* t-scroll v1.0.9 (https://t-scroll.com)
 * Copyright 2017 Tuds - Crazychicken
 * Licensed under the MIT license
 */
@@ -14,10 +14,11 @@
 @import './theme/box';
 @import './theme/navbar';
 @import './theme/section';
+@import './theme/topbar';
 
 body {
     background: #fff;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Lato';
     font-weight: normal;
     color: #4b4b4b;
@@ -34,11 +35,11 @@ a {
     float: left;
     width: 100%;
     clear: both;
-    padding: 30px 0 25px 0;
+    padding: 50px 0 25px 0;
     background: #fff;
     text-align: center;
     small {
-        font-size: 11px;
+        font-size: 12px;
     }
     &-gray {
         margin-top: 50px;
@@ -156,7 +157,6 @@ a {
         }
     }
     .author {
-        font-size: 11px;
         position: absolute;
         bottom: 20px;
         left: 0;
@@ -201,5 +201,8 @@ a {
     }
     .block-options:last-child {
         border: none;
+    }
+    .note {
+        margin: 20px 0 0 0;
     }
 }

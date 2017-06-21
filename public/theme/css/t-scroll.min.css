@@ -1,5 +1,5 @@
 /*!
-* t-scroll v1.0.7 (https://t-scroll.com)
+* t-scroll v1.0.9 (https://t-scroll.com)
 * Copyright 2017 Tuds - Crazychicken
 * Licensed under the MIT license
 */
@@ -99,7 +99,7 @@
   to {
     opacity: 1; } }
 
-.fadeIn.t_default {
+.fadeIn.t-default {
   animation-name: fadeIn; }
 
 @keyframes fadeUp {
@@ -108,7 +108,7 @@
   to {
     transform: none; } }
 
-.fadeUp.t_default {
+.fadeUp.t-default {
   animation-name: fadeUp;
   transition: opacity 1s; }
 
@@ -118,7 +118,7 @@
   to {
     transform: none; } }
 
-.fadeDown.t_default {
+.fadeDown.t-default {
   animation-name: fadeDown;
   transition: opacity 1s; }
 
@@ -128,7 +128,7 @@
   to {
     transform: none; } }
 
-.fadeLeft.t_default {
+.fadeLeft.t-default {
   animation-name: fadeLeft;
   transition: opacity 1s; }
 
@@ -138,7 +138,7 @@
   to {
     transform: none; } }
 
-.fadeRight.t_default {
+.fadeRight.t-default {
   animation-name: fadeRight;
   transition: opacity 1s; }
 
@@ -148,7 +148,7 @@
   100% {
     transform: none; } }
 
-.fadeUpBig.t_default {
+.fadeUpBig.t-default {
   animation-name: fadeUpBig;
   transition: opacity 1.5s; }
 
@@ -158,7 +158,7 @@
   100% {
     transform: none; } }
 
-.fadeDownBig.t_default {
+.fadeDownBig.t-default {
   animation-name: fadeDownBig;
   transition: opacity 1.5s; }
 
@@ -168,7 +168,7 @@
   100% {
     transform: none; } }
 
-.fadeLeftBig.t_default {
+.fadeLeftBig.t-default {
   animation-name: fadeLeftBig;
   transition: opacity 1.5s; }
 
@@ -178,7 +178,7 @@
   100% {
     transform: none; } }
 
-.fadeRightBig.t_default {
+.fadeRightBig.t-default {
   animation-name: fadeRightBig;
   transition: opacity 1.5s; }
 
@@ -199,7 +199,7 @@
     animation-timing-function: ease-in;
     transform: perspective(400px); } }
 
-.flip.t_default {
+.flip.t-default {
   animation-name: flip;
   backface-visibility: visible; }
 
@@ -219,7 +219,7 @@
   to {
     transform: perspective(400px); } }
 
-.flipX.t_default {
+.flipX.t-default {
   animation-name: flipX; }
 
 @keyframes flipY {
@@ -238,7 +238,7 @@
   to {
     transform: perspective(400px); } }
 
-.flipY.t_default {
+.flipY.t-default {
   animation-name: flipY; }
 
 @keyframes lightSpeedUp {
@@ -351,7 +351,7 @@
   100% {
     top: 0; } }
 
-.slideUp.t_default {
+.slideUp.t-default {
   animation-name: slideUp; }
 
 @keyframes slideDown {
@@ -360,7 +360,7 @@
   100% {
     bottom: 0; } }
 
-.slideDown.t_default {
+.slideDown.t-default {
   animation-name: slideLeftDown; }
 
 @keyframes slideLeft {
@@ -369,7 +369,7 @@
   100% {
     right: 0; } }
 
-.slideLeft.t_default {
+.slideLeft.t-default {
   animation-name: slideLeft; }
 
 @keyframes slideRight {
@@ -378,7 +378,7 @@
   100% {
     left: 0; } }
 
-.slideRight.t_default {
+.slideRight.t-default {
   animation-name: slideRight; }
 
 @keyframes zoomIn {
@@ -387,7 +387,7 @@
   100% {
     transform: scale(1); } }
 
-.zoomIn.t_default {
+.zoomIn.t-default {
   animation-name: zoomIn; }
 
 @keyframes zoomInUp {
@@ -428,7 +428,7 @@
   100% {
     transform: scale(1); } }
 
-.zoomOut.t_default {
+.zoomOut.t-default {
   animation-name: zoomOut; }
 
 @keyframes zoomOutUp {
@@ -475,142 +475,142 @@
     transform: scale(1);
     left: 0; } }
 
-.bounceIn.t_default {
+.bounceIn.t-default {
   animation-name: bounceIn; }
 
-.bounceOut.t_default {
+.bounceOut.t-default {
   animation-name: bounceOut; }
 
-.bounceUp.t_default {
+.bounceUp.t-default {
   animation-name: bounceUp; }
 
-.bounceDown.t_default {
+.bounceDown.t-default {
   animation-name: bounceDown; }
 
-.bounceLeft.t_default {
+.bounceLeft.t-default {
   animation-name: bounceLeft; }
 
-.bounceRight.t_default {
+.bounceRight.t-default {
   animation-name: bounceRight; }
 
-.fade.t_default {
+.fade.t-default {
   animation-name: fade; }
 
-.fadeUp.t_default {
+.fadeUp.t-default {
   animation-name: fadeUp; }
 
-.fadeDown.t_default {
+.fadeDown.t-default {
   animation-name: fadeDown; }
 
-.fadeLeft.t_default {
+.fadeLeft.t-default {
   animation-name: fadeLeft; }
 
-.fadeRight.t_default {
+.fadeRight.t-default {
   animation-name: fadeRight; }
 
-.fadeUpBig.t_default {
+.fadeUpBig.t-default {
   animation-name: fadeUpBig; }
 
-.fadeDownBig.t_default {
+.fadeDownBig.t-default {
   animation-name: fadeDownBig; }
 
-.fadeLeftBig.t_default {
+.fadeLeftBig.t-default {
   animation-name: fadeLeftBig; }
 
-.fadeRightBig.t_default {
+.fadeRightBig.t-default {
   animation-name: fadeRightBig; }
 
-.flip.t_default {
+.flip.t-default {
   animation-name: flip; }
 
-.flipX.t_default {
+.flipX.t-default {
   animation-name: flipX; }
 
-.flipY.t_default {
+.flipY.t-default {
   animation-name: flipY; }
 
-.lightSpeedUp.t_default {
+.lightSpeedUp.t-default {
   animation-name: lightSpeedUp; }
 
-.lightSpeedRight.t_default {
+.lightSpeedRight.t-default {
   animation-name: lightSpeedRight; }
 
-.lightSpeedLeft.t_default {
+.lightSpeedLeft.t-default {
   animation-name: lightSpeedLeft; }
 
-.lightSpeedDown.t_default {
+.lightSpeedDown.t-default {
   animation-name: lightSpeedDown; }
 
-.rollUp.t_default {
+.rollUp.t-default {
   animation-name: rollUp; }
 
-.rollRight.t_default {
+.rollRight.t-default {
   animation-name: rollRight; }
 
-.rollLeft.t_default {
+.rollLeft.t-default {
   animation-name: rollLeft; }
 
-.rollDown.t_default {
+.rollDown.t-default {
   animation-name: rollDown; }
 
-.rotate.t_default {
+.rotate.t-default {
   animation-name: rotate; }
 
-.rotateDownLeft.t_default {
+.rotateDownLeft.t-default {
   animation-name: rotateDownLeft; }
 
-.rotateDownRight.t_default {
+.rotateDownRight.t-default {
   animation-name: rotateDownRight; }
 
-.rotateUpLeft.t_default {
+.rotateUpLeft.t-default {
   animation-name: rotateUpLeft; }
 
-.rotateUpRight.t_default {
+.rotateUpRight.t-default {
   animation-name: rotateUpRight; }
 
-.slideUp.t_default {
+.slideUp.t-default {
   animation-name: slideUp; }
 
-.slideDown.t_default {
+.slideDown.t-default {
   animation-name: slideDown; }
 
-.slideLeft.t_default {
+.slideLeft.t-default {
   animation-name: slideLeft; }
 
-.slideRight.t_default {
+.slideRight.t-default {
   animation-name: slideRight; }
 
-.zoomIn.t_default {
+.zoomIn.t-default {
   animation-name: zoomIn; }
 
-.zoomInUp.t_default {
+.zoomInUp.t-default {
   animation-name: zoomInUp; }
 
-.zoomInLeft.t_default {
+.zoomInLeft.t-default {
   animation-name: zoomInLeft; }
 
-.zoomInDown.t_default {
+.zoomInDown.t-default {
   animation-name: zoomInDown; }
 
-.zoomInRight.t_default {
+.zoomInRight.t-default {
   animation-name: zoomInRight; }
 
-.zoomOut.t_default {
+.zoomOut.t-default {
   animation-name: zoomOut; }
 
-.zoomOutUp.t_default {
+.zoomOutUp.t-default {
   animation-name: zoomOutUp; }
 
-.zoomOutLeft.t_default {
+.zoomOutLeft.t-default {
   animation-name: zoomOutLeft; }
 
-.zoomOutDown.t_default {
+.zoomOutDown.t-default {
   animation-name: zoomOutDown; }
 
-.zoomOutRight.t_default {
+.zoomOutRight.t-default {
   animation-name: zoomOutRight; }
 
-.t_default {
+.t-default {
   opacity: 1;
   animation-direction: normal;
   animation-iteration-count: 1;
@@ -619,8 +619,8 @@
   animation-delay: 0s;
   position: relative; }
 
-.t_infinite {
+.t-infinite {
   animation-iteration-count: infinite; }
 
-.t_animated {
+.t-animated {
   opacity: 0; }

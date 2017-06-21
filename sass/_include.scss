@@ -84,7 +84,7 @@ rotate, rotateDownLeft, rotateDownRight, rotateUpLeft, rotateUpRight,
 slideUp, slideDown, slideLeft, slideRight,
 zoomIn, zoomInUp, zoomInLeft, zoomInDown, zoomInRight,
 zoomOut, zoomOutUp, zoomOutLeft, zoomOutDown, zoomOutRight {
-    .#{$name}.t_default {
+    .#{$name}.t-default {
         animation-name: #{$name};
     }
 }

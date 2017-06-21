@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-    <title>tScroll Index | Animation Scroll | t-scroll tuds</title>
+    <title>Tu.tScroll Index | Animation Scroll | t-scroll tuds</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="The t-scroll JavaScript library lets you apply more than 45 pretty cool animations to any elements when they appear in the viewport.">
-    <meta name="keywords" content="t-scroll, HTML, CSS, XML, JavaScript, Animate, Animation, CSS3, ES6, Npm, tuds, Crazychicken, animate, animation-name, animation-duration, animation-timing-function, animation-delay">
+    <meta name="keywords" content="t-scroll, tScroll, Animate Elements, HTML, CSS, XML, JavaScript, Animate, Animation, CSS3, ES6, Npm, tuds, Crazychicken, animate, animation-name, animation-duration, animation-timing-function, animation-delay">
     <meta name="author" content="Tuds - Crazychicken">
     <meta name="robots" content="noodp, index, follow" />
     <meta name='revisit-after' content='1 days' />
-    <meta http-equiv="content-language" content="en" />
+    <meta name="language" content="english" />
     <link rel="alternate" href="http://t-scroll.com" hreflang="en" />
     <!-- master tool -->
     <meta name="google-site-verification" content="RpjQcxeoQYyuXRapJgQqgHIaciI_KJoxXqSns4JjMg0" />
     <!-- /master tool -->
 
-    <link rel="icon shortcut" type="image/png" sizes="16x16" href="http://t-scroll.com/theme/images/favicon.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="http://t-scroll.com/theme/images/favicon.png">
     <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
     <link rel="stylesheet" href="./theme/css/t-scroll.min.css">
     <link rel="stylesheet" href="./theme/css/style.css">
@@ -40,11 +40,60 @@
         ga('create', 'UA-46711522-3', 'auto');
         ga('send', 'pageview');
     </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Personal",
+            "url": "http://t-scroll.com",
+            "name": "t-scroll",
+            "author": "tuds - crazychicken",
+            "description": "The t-scroll JavaScript library lets you apply more than 45 pretty cool animations to any elements when they appear in the viewport.",
+            "image": "http://t-scroll.com/theme/images/favicon.png",
+            "logo": "http://t-scroll.com/theme/images/favicon.png",
+            "sameAs": ["https://www.facebook.com/tudscss",
+                "https://plus.google.com/u/0/111272361722398364018",
+                "https://twitter.com/mtu_truong",
+                "https://www.youtube.com/channel/UCDACe-7BFGDucQoxTDfPotw"
+            ]
+        }
+    </script>
     <link rel="canonical" href="http://t-scroll.com" />
     <link rel="amphtml" href="http://t-scroll.com" />
 </head>
 
 <body>
+    <div class="topbar-wrapper">
+        <div class="topbar hidden-xs">
+            <div class="topbar-content">
+                <strong class="topbar-deal">35,394</strong> Website templates and themes from $2
+                <a class="topbar-button" href="https://themeforest.net/?ref=tuds" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Go Now PC' });">Go now</a>
+            </div>
+        </div>
+
+        <a class="topbar visible-xs" href="https://themeforest.net/?ref=tuds" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Go Now MB' });">
+        <strong class="topbar-deal">35,394</strong> Themes from $2
+    </a>
+        <button class="topbar-close" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Close' });">
+        <img src="theme/images/topbar-close.png" alt="">
+    </button>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".topbar-close").on('click', function() {
+                $(this).parents(".topbar-wrapper").hide(400);
+            });
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 5) {
+                    $(".topbar").addClass("topbar-scroll");
+                } else {
+                    $(".topbar").removeClass("topbar-scroll");
+                }
+            });
+        });
+    </script>
+
     <nav class="navbar navbar-default">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -64,9 +113,9 @@
                     <li><a href="http://t-scroll.com/demo.html">Demos</a></li>
                     <li><a href="http://t-scroll.com/documents.html">Docs</a></li>
                     <li><a href="http://t-scroll.com/t-animate-options.html">Options</a></li>
-                    <!-- <li><a href="http://t-scroll.com/t-traffic.html">Traffic</a></li> -->
+                    <!-- <li><a href="http://t-scroll.com/t-fun-demo.html" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Fun Demos' });">Fun Demos</a></li> -->
                     <li>
-                        <a href="https://github.com/crazychicken/t-scroll">Github</a>
+                        <a href="https://goo.gl/fo4Zep" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Github Navbar'});">Github</a>
                     </li>
                 </ul>
             </div>
@@ -77,22 +126,22 @@
     <section class="section section-banner">
         <div class="section-content">
             <h1 class="title">
-                <span class="slideDown t_animated" t_show="1">t</span>
-                <span class="slideDown t_animated" t_show="2">-</span>
-                <span class="slideDown t_animated" t_show="3">s</span>
-                <span class="slideDown t_animated" t_show="4">c</span>
-                <span class="slideDown t_animated" t_show="5">r</span>
-                <span class="slideDown t_animated" t_show="6">o</span>
-                <span class="slideDown t_animated" t_show="7">l</span>
-                <span class="slideDown t_animated" t_show="8">l</span>
+                <span class="slideDown t-animated" data-t-show="1">t</span>
+                <span class="slideDown t-animated" data-t-show="2">-</span>
+                <span class="slideDown t-animated" data-t-show="3">s</span>
+                <span class="slideDown t-animated" data-t-show="4">c</span>
+                <span class="slideDown t-animated" data-t-show="5">r</span>
+                <span class="slideDown t-animated" data-t-show="6">o</span>
+                <span class="slideDown t-animated" data-t-show="7">l</span>
+                <span class="slideDown t-animated" data-t-show="8">l</span>
             </h1>
-            <p class="section-info zoomIn t_animated">
+            <p class="section-info zoomIn t-animated">
                 When you start scrolling, you will see interesting events.
             </p>
-            <a href="https://github.com/crazychicken/t-scroll/archive/master.zip" class="btn btn-main btn-lg slideLeft t_animated">DownLoad</a>
-            <a href="https://github.com/crazychicken/t-scroll" class="btn btn-border btn-lg slideRight t_animated">Github</a>
+            <a href="https://goo.gl/myr5D8" class="btn btn-main btn-lg slideLeft t-animated" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button DownLoad'});">DownLoad</a>
+            <a href="https://goo.gl/fo4Zep" class="btn btn-border btn-lg slideRight t-animated" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Github Header'});">Github</a>
             <p>
-                Currently v1.0.8
+                Currently v1.0.9
             </p>
         </div>
         <button class="btn btn-animation">
@@ -104,7 +153,7 @@
         <h2 class="section-title">Why Choose t-scroll</h2>
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-4 slideDown" t_show="1">
+                <div class="col-sm-6 col-md-4 slideDown" data-t-show="1">
                     <div class="box">
                         <div class="box-head">
                             <h3 class="title">
@@ -116,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 slideDown" t_show="2">
+                <div class="col-sm-6 col-md-4 slideDown" data-t-show="2">
                     <div class="box box-es6">
                         <div class="box-head">
                             <h3 class="title">
@@ -128,7 +177,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 slideDown" t_show="3">
+                <div class="col-sm-6 col-md-4 slideDown" data-t-show="3">
                     <div class="box box-sass">
                         <div class="box-head">
                             <h3 class="title">
@@ -141,7 +190,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4 slideUp" t_show="1">
+                <div class="col-sm-6 col-md-4 slideUp" data-t-show="1">
                     <div class="box box-gulp">
                         <div class="box-head">
                             <h3 class="title">
@@ -153,7 +202,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 slideUp" t_show="2">
+                <div class="col-sm-6 col-md-4 slideUp" data-t-show="2">
                     <div class="box box-browser">
                         <div class="box-head">
                             <h3 class="title">
@@ -165,7 +214,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 slideUp" t_show="3">
+                <div class="col-sm-6 col-md-4 slideUp" data-t-show="3">
                     <div class="box box-npm">
                         <div class="box-head">
                             <h3 class="title">
@@ -179,67 +228,94 @@
                 </div>
             </div>
         </div>
+        <button class="btn btn-animation">
+            <span class="dot"></span>
+        </button>
     </section>
     <!-- /end .section-function -->
 
-    <footer class="footer">
-        Another thing from <a href="http://tuds.ninja">Tuds - Crazychicken.</a>
-        <p>
-            <small>Code and documentation copyright 2017, MIT license.</small>
-        </p>
+    <footer class="section thanks">
+        <div class="text-center">
+            <h2 class="section-title slideDown">
+                Thank you ;)
+            </h2>
+            <p class="h3">
+                Become a backer
+            </p>
+            <p>
+                Support the community and keep development going strong.
+            </p>
+            <a href="https://goo.gl/fo4Zep" class="btn btn-border btn-lg slideRight" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Github Footer'});">Github</a>
+            <a href="https://goo.gl/C4trd9" class="btn btn-main btn-lg slideLeft" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Donate' });">Donate</a>
+            <p>
+                Currently v1.0.9
+            </p>
+        </div>
+        <div class="author">
+            Another thing from <a href="http://tuds.ninja">Tuds - Crazychicken.</a>
+            <p>
+                <small>Code and documentation copyright 2017, MIT license.</small>
+            </p>
+        </div>
+        <div class="hide">
+            <strong>bounceIn</strong><strong>bounceOut</strong><strong>bounceUp</strong><strong>bounceDown</strong><strong>bounceLeft</strong><strong>bounceRight</strong><strong>fadeIn</strong><strong>fadeUp</strong><strong>fadeDown</strong><strong>fadeLeft</strong><strong>fadeRight</strong><strong>fadeUpBig</strong><strong>fadeDownBig</strong><strong>fadeLeftBig</strong><strong>fadeRightBig</strong><strong>flip</strong><strong>flipX</strong><strong>flipY</strong><strong>lightSpeedUp</strong><strong>lightSpeedRight</strong><strong>lightSpeedDown</strong><strong>lightSpeedLeft</strong><strong>rollUp</strong><strong>rollRight</strong><strong>rollDown</strong><strong>rollLeft</strong><strong>rotate</strong><strong>rotateUpLeft</strong><strong>rotateUpRight</strong><strong>rotateDownLeft</strong><strong>rotateDownRight</strong><strong>slideUp</strong><strong>slideDown</strong><strong>slideLeft</strong><strong>slideRight</strong><strong>zoomIn</strong><strong>zoomInUp</strong><strong>zoomInLeft</strong><strong>zoomInDown</strong><strong>zoomInRight</strong><strong>zoomOut</strong><strong>zoomOutUp</strong><strong>zoomOutLeft</strong><strong>zoomOutDown</strong>
+            <strong>zoomOutRight</strong>
+        </div>
     </footer>
-</body>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('.btn-animation').on('click', $(this), function() {
-            var st = $(this).parents('.section-banner').next().offset().top;
-            $('html, body').animate({
-                scrollTop: st
-            }, 300);
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.btn-animation').on('click', function() {
+                var st = $(this).parents('.section').next().offset().top;
+                $('html, body').animate({
+                    scrollTop: st
+                }, 300);
+            });
+            Tu.tScroll({
+                't-element': '.thanks .slideDown',
+                't-duration': 1
+            })
+            Tu.tScroll({
+                't-element': '.thanks .slideRight',
+                't-duration': 1
+            })
+            Tu.tScroll({
+                't-element': '.thanks .slideLeft',
+                't-duration': 1
+            })
         });
-    });
+    </script>
 
-    Tu.t_scroll({
-        't_element': '.title .slideDown',
-        't_duration': 0.1,
-        't_delay': 0.5
-    })
-    Tu.t_scroll({
-        't_element': '.section-function .slideDown',
-        't_duration': 0.5,
-    })
-    Tu.t_scroll({
-        't_element': '.section-function .slideUp',
-        't_duration': 0.5,
-    })
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.btn-animation').on('click', $(this), function() {
+                var st = $(this).parents('.section-banner').next().offset().top;
+                $('html, body').animate({
+                    scrollTop: st
+                }, 300);
+            });
+        });
 
-    Tu.t_scroll({
-        't_element': '.slideRight'
-    })
-    Tu.t_scroll({
-        't_element': '.slideLeft'
-    })
+        Tu.tScroll({
+            't-element': '.title .slideDown',
+            't-duration': 0.1,
+            't-delay': 0.5
+        })
+        Tu.tScroll({
+            't-element': '.section-function .slideDown',
+            't-duration': 0.5,
+        })
+        Tu.tScroll({
+            't-element': '.section-function .slideUp',
+            't-duration': 0.5,
+        })
 
-
-    // var get_class = document.querySelectorAll('.btn-animation');
-    // var set = document.querySelectorAll('.section-function');
-
-    // get_class.forEach(e => {
-    //     e.onclick = function() {
-    //         set.forEach(el => {
-    //             el.offsetTop;
-    //             var play = 1;
-    //             function scroll_t () {
-    //                 if (play == el.offsetTop) {
-    //                     return false;
-    //                 } else {
-    //                     document.querySelector('body').scrollTop = play++;
-    //                 }
-    //             }
-    //             setInterval(scroll_t, 0);
-    //         })
-    //     }
-    // })
-</script>
+        Tu.tScroll({
+            't-element': '.slideRight'
+        })
+        Tu.tScroll({
+            't-element': '.slideLeft'
+        })
+    </script>
+</body>
 
 </html>

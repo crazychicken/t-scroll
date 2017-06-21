@@ -1,11 +1,10 @@
 {
   "name": "t-scroll",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "The t-scroll JavaScript library lets you apply more than 45 pretty cool animations to any elements when they appear in the viewport.",
   "main": ".gulpfile.js",
   "scripts": {
-    "build": "babel ./theme/js/t-scroll.js --minified --no-comments --out-file ./theme/js/t-scroll.min.js --presets=es2015",
-    "postinstall": "opencollective postinstall"
+    "build": "babel ./theme/js/t-scroll.js --minified --no-comments --out-file ./theme/js/t-scroll.min.js --presets=es2015"
   },
   "repository": {
     "type": "git",
@@ -94,12 +93,6 @@
     "perfect-scrollbar": "^0.7.0"
   },
   "dependencies": {
-    "checkbox-radio": "^1.0.9",
-    "opencollective": "^1.0.3"
-  },
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/t-scroll",
-    "logo": "https://opencollective.com/t-scroll/logo.txt"
+    "checkbox-radio": "^1.1.0"
   }
 }

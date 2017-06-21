@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-* t-scroll v1.0.7 (https://t-scroll.com)
+* t-scroll v1.0.9 (https://t-scroll.com)
 * Copyright 2017 Tuds - Crazychicken
 * Licensed under the MIT license
 */
@@ -5828,6 +5828,12 @@ button.close {
   .radio:hover {
     cursor: pointer; }
 
+.indent {
+  padding-left: 30px; }
+  .indent .icon-checkbox,
+  .indent .icon-radio {
+    margin-left: -30px; }
+
 .checkbox input[type="checkbox"],
 .radio input[type="radio"] {
   display: none; }
@@ -5854,6 +5860,11 @@ button.close {
   background-position: -96px 0; }
 
 /*CHECKBOX-XS*/
+.checkbox-xs.indent {
+  padding-left: 25px; }
+  .checkbox-xs.indent .icon-checkbox {
+    margin-left: -25px; }
+
 .checkbox-xs input[type="checkbox"] + i,
 .radio-xs input[type="radio"] + i {
   height: 16px;
@@ -5889,6 +5900,11 @@ button.close {
   background-position: -216px 0; }
 
 /*RADIO-XS*/
+.radio-xs.indent {
+  padding-left: 25px; }
+  .radio-xs.indent .icon-radio {
+    margin-left: -25px; }
+
 .radio-xs:hover input[type="radio"] + .icon-radio {
   background-position: -112px 0; }
 
@@ -5904,7 +5920,7 @@ button.close {
 .radio-xs input[type="radio"]:disabled:checked + .icon-radio {
   background-position: -144px 0; }
 
-/* perfect-scrollbar v0.7.0 */
+/* perfect-scrollbar v0.7.1 */
 .ps {
   -ms-touch-action: auto;
   touch-action: auto;
@@ -5946,8 +5962,8 @@ button.close {
   /* please don't change 'position' */
   opacity: 0;
   -webkit-transition: background-color .2s linear, opacity .2s linear;
-  -o-transition: background-color .2s linear, opacity .2s linear;
   -moz-transition: background-color .2s linear, opacity .2s linear;
+  -o-transition: background-color .2s linear, opacity .2s linear;
   transition: background-color .2s linear, opacity .2s linear;
   bottom: 0px;
   /* there must be 'bottom' for ps__scrollbar-x-rail */
@@ -5962,8 +5978,8 @@ button.close {
   border-radius: 6px;
   -webkit-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
   transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
-  -o-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
   -moz-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
+  -o-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
   transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
   transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -webkit-border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
   bottom: 2px;
@@ -5979,8 +5995,8 @@ button.close {
   /* please don't change 'position' */
   opacity: 0;
   -webkit-transition: background-color .2s linear, opacity .2s linear;
-  -o-transition: background-color .2s linear, opacity .2s linear;
   -moz-transition: background-color .2s linear, opacity .2s linear;
+  -o-transition: background-color .2s linear, opacity .2s linear;
   transition: background-color .2s linear, opacity .2s linear;
   right: 0;
   /* there must be 'right' for ps__scrollbar-y-rail */
@@ -5995,8 +6011,8 @@ button.close {
   border-radius: 6px;
   -webkit-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
   transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
-  -o-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
   -moz-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
+  -o-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
   transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
   transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -webkit-border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
   right: 2px;
@@ -6129,6 +6145,18 @@ button.close {
   font-weight: 700;
   src: local("Lato Bold"), local("Lato-Bold"), url(../fonts/Lato-latin-700.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(../fonts/Lato-latin-safari-400.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"), url(../fonts/Lato-latin-safari-700.woff) format("woff"); }
 
 .box-list-demo {
   margin-top: 50px; }
@@ -6487,6 +6515,8 @@ button.close {
         padding: 0 10px; }
       .section-banner .section-content {
         top: 0; } }
+  .section-banner .btn-animation {
+    bottom: 65px; }
 
 .section-function {
   padding: 60px 0;
@@ -6742,9 +6772,83 @@ button.close {
     .ck-hand-right {
       right: -15px; } }
 
+.topbar {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  display: inline-block;
+  font-family: inherit;
+  text-align: center;
+  padding-top: 10px;
+  background: #9C27B0;
+  left: 0;
+  top: 0;
+  color: #fff; }
+  .topbar.topbar-scroll {
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+  .topbar-wrapper {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 999;
+    display: block; }
+  .topbar-content {
+    font-size: 16px;
+    position: relative;
+    letter-spacing: 1px; }
+  .topbar-deal {
+    font-size: 20px;
+    color: #FFEB3B;
+    font-weight: bold;
+    margin-right: 5px; }
+    .topbar-deal span {
+      font-size: 18px;
+      margin-left: -7px;
+      font-weight: normal; }
+    .topbar-deal-sm {
+      font-size: 24px;
+      color: #FFEB3B;
+      font-weight: bold; }
+  .topbar-close {
+    top: 10px;
+    right: 20px;
+    position: fixed;
+    z-index: 123;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    border: none;
+    background: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0; }
+  .topbar-button {
+    background-color: #FFEB3B;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    padding: 4px 10px 6px 10px;
+    line-height: 1em;
+    margin-left: 5px;
+    color: #515151;
+    letter-spacing: 0; }
+    .topbar-button:hover {
+      color: #515151;
+      text-decoration: none; }
+  @media (max-width: 767px) {
+    .topbar:hover, .topbar:active {
+      color: #fff;
+      text-decoration: none; } }
+
 body {
   background: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Lato';
   font-weight: normal;
   color: #4b4b4b; }
@@ -6756,11 +6860,11 @@ a:active, a:focus {
   float: left;
   width: 100%;
   clear: both;
-  padding: 30px 0 25px 0;
+  padding: 50px 0 25px 0;
   background: #fff;
   text-align: center; }
   .footer small {
-    font-size: 11px; }
+    font-size: 12px; }
   .footer-gray {
     margin-top: 50px;
     background: #fcfcfc; }
@@ -6855,7 +6959,6 @@ a:active, a:focus {
   .thanks .btn-main:hover, .thanks .btn-main:focus, .thanks .btn-main:active {
     color: #fff; }
   .thanks .author {
-    font-size: 11px;
     position: absolute;
     bottom: 20px;
     left: 0;
@@ -6888,3 +6991,6 @@ a:active, a:focus {
 
 .docs-options .block-options:last-child {
   border: none; }
+
+.docs-options .note {
+  margin: 20px 0 0 0; }

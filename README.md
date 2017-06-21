@@ -1,15 +1,17 @@
-# t-scroll
-[![Backers on Open Collective](https://opencollective.com/t-scroll/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/t-scroll/sponsors/badge.svg)](#sponsors) 
-
 ![enter image description here](http://t-scroll.com/theme/images/about.png)
 
-## Quick start
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Backers on Open Collective](https://opencollective.com/t-scroll/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/t-scroll/sponsors/badge.svg)](#sponsors) 
+
+## Quick start t-scroll
 * Clone the repo: `git clone git@github.com:crazychicken/t-scroll.git`
 * Install with npm: `npm install --save-dev t-scroll`
 * Install with npm: `npm install --save-dev crazychicken/t-scroll`
 * Or download the [latest release](https://github.com/crazychicken/t-scroll/archive/master.zip)
 
 ## Demo
+http://t-scroll.com/demo.html
+
+## Demo Options
 http://t-scroll.com/t-animate-options.html
 
 ## Documentation
@@ -57,7 +59,7 @@ http://t-scroll.com/documents.html
 </script>
 ```
 
-## Options
+## Options t-animate
 * bounceIn
 * bounceOut
 * bounceUp
@@ -166,6 +168,10 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 <a href="https://opencollective.com/t-scroll/sponsor/8/website" target="_blank"><img src="https://opencollective.com/t-scroll/sponsor/8/avatar.svg"></a>
 <a href="https://opencollective.com/t-scroll/sponsor/9/website" target="_blank"><img src="https://opencollective.com/t-scroll/sponsor/9/avatar.svg"></a>
 
+
+[downloads-image]: https://img.shields.io/npm/dm/t-scroll.svg
+[npm-url]: https://www.npmjs.com/package/t-scroll
+[npm-image]: https://img.shields.io/npm/v/t-scroll.svg
 
 
 ## Copyright and license

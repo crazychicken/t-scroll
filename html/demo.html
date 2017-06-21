@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>tScroll Demo | Animation Scroll | t-scroll tuds</title>
+    <title>Tu.tScroll Demo | Animation Scroll | t-scroll tuds</title>
     @@include('./html-global/head.html')
 </head>
 <body class="demo">
@@ -9,17 +9,17 @@
     <section class="section section-banner">
         <div class="section-content">
             <h1 class="title">
-                <span class="slideDown t_animated" t_show="1">S</span>
-                <span class="slideDown t_animated" t_show="2">c</span>
-                <span class="slideDown t_animated" t_show="3">r</span>
-                <span class="slideDown t_animated" t_show="4">o</span>
-                <span class="slideDown t_animated" t_show="5">l</span>
-                <span class="slideDown t_animated" t_show="6">l</span>
-                <span class="slideDown t_animated" t_show="7">_</span>
-                <span class="slideDown t_animated" t_show="8">D</span>
-                <span class="slideDown t_animated" t_show="9">o</span>
-                <span class="slideDown t_animated" t_show="10">w</span>
-                <span class="slideDown t_animated" t_show="11">n</span>
+                <span class="slideDown t-animated" data-t-show="1">S</span>
+                <span class="slideDown t-animated" data-t-show="2">c</span>
+                <span class="slideDown t-animated" data-t-show="3">r</span>
+                <span class="slideDown t-animated" data-t-show="4">o</span>
+                <span class="slideDown t-animated" data-t-show="5">l</span>
+                <span class="slideDown t-animated" data-t-show="6">l</span>
+                <span class="slideDown t-animated" data-t-show="7">_</span>
+                <span class="slideDown t-animated" data-t-show="8">D</span>
+                <span class="slideDown t-animated" data-t-show="9">o</span>
+                <span class="slideDown t-animated" data-t-show="10">w</span>
+                <span class="slideDown t-animated" data-t-show="11">n</span>
             </h1>
         </div>
         <button class="btn btn-animation">
@@ -36,42 +36,42 @@
             <div class="row">
                 <div class="col-sm-3 zoomOut">
                     <a target="_blank" href="http://t-scroll.com/t-default.html" class="box-demo">
-                        <div class="box-demo-title">T_default</div>
+                        <div class="box-demo-title">t-default</div>
                     </a>
                 </div>
                 <div class="col-sm-3 zoomOut">
                     <a target="_blank" href="http://t-scroll.com/t-animate.html" class="box-demo">
-                        <div class="box-demo-title">T_animate</div>
+                        <div class="box-demo-title">t-animate</div>
                     </a>
                 </div>
                 <div class="col-sm-3 zoomOut">
                     <a target="_blank" href="http://t-scroll.com/t-show.html" class="box-demo">
-                        <div class="box-demo-title">T_show</div>
+                        <div class="box-demo-title">data-t-show</div>
                     </a>
                 </div>
                 <div class="col-sm-3 zoomOut">
                     <a target="_blank" href="http://t-scroll.com/t-position.html" class="box-demo">
-                        <div class="box-demo-title">T_position</div>
+                        <div class="box-demo-title">t-position</div>
                     </a>
                 </div>
                 <div class="col-sm-3 zoomOut">
                     <a target="_blank" href="http://t-scroll.com/t-duration.html" class="box-demo">
-                        <div class="box-demo-title">T_duration</div>
+                        <div class="box-demo-title">t-duration</div>
                     </a>
                 </div>
                 <div class="col-sm-3 zoomOut">
                     <a target="_blank" href="http://t-scroll.com/t-delay.html" class="box-demo">
-                        <div class="box-demo-title">T_delay</div>
+                        <div class="box-demo-title">t-delay</div>
                     </a>
                 </div>
                 <div class="col-sm-3 zoomOut">
                     <a target="_blank" href="http://t-scroll.com/t-infinite.html" class="box-demo">
-                        <div class="box-demo-title">T_infinite</div>
+                        <div class="box-demo-title">t-infinite</div>
                     </a>
                 </div>
                 <div class="col-sm-3 zoomOut">
                     <a target="_blank" href="http://t-scroll.com/t-function.html" class="box-demo">
-                        <div class="box-demo-title">T_function</div>
+                        <div class="box-demo-title">t-function</div>
                     </a>
                 </div>
             </div>
@@ -81,28 +81,28 @@
         </button>
     </section>
 
-    <section class="section section-demo-chicken">
+    <div class="section section-demo-chicken">
         <div class="container">
             <div class="chicken slideDown">
-                <div class="ck-shadow fadeIn" t_show="2"></div>
+                <div class="ck-shadow fadeIn" data-t-show="2"></div>
                 <div class="ck-body">
                     <div class="ck-hair">
-                        <div class="ck-hair-small bounceDown" t_show="1"></div>
-                        <div class="ck-hair-default bounceDown" t_show="2"></div>
+                        <div class="ck-hair-small bounceDown" data-t-show="1"></div>
+                        <div class="ck-hair-default bounceDown" data-t-show="2"></div>
                     </div>
                     <div class="ck-eye">
-                        <div class="ck-eye-left bounceOut" t_show="2"></div>
-                        <div class="ck-eye-right bounceOut" t_show="2"></div>
+                        <div class="ck-eye-left bounceOut" data-t-show="2"></div>
+                        <div class="ck-eye-right bounceOut" data-t-show="2"></div>
                     </div>
-                    <div class="ck-mouth bounceOut" t_show="3">
+                    <div class="ck-mouth bounceOut" data-t-show="3">
                         <div class="ck-mouth-pink-left"></div>
                         <div class="ck-mouth-default"></div>
                         <!-- <div class="ck-mouth-down"></div> -->
                         <div class="ck-mouth-pink-right"></div>
                     </div>
                     <div class="ck-hand">
-                        <div class="ck-hand-left bounceOut" t_show="4"></div>
-                        <div class="ck-hand-right bounceOut" t_show="4"></div>
+                        <div class="ck-hand-left bounceOut" data-t-show="4"></div>
+                        <div class="ck-hand-right bounceOut" data-t-show="4"></div>
 
                         <!-- <div class="ck-hand-left up"></div>
                         <div class="ck-hand-right up"></div>
@@ -116,39 +116,39 @@
         <button class="btn btn-animation">
             <span class="dot"></span>
         </button>
-    </section>
+    </div>
 
     @@include('./html-global/footer.html')
 
     <script type="text/javascript">
-        Tu.t_scroll({
-            't_element': '.bounceOut'
+        Tu.tScroll({
+            't-element': '.bounceOut'
         })
-        Tu.t_scroll({
-            't_element': '.section-gray .zoomOut',
-            't_duration': 0.5
+        Tu.tScroll({
+            't-element': '.section-gray .zoomOut',
+            't-duration': 0.5
         })
-        Tu.t_scroll({
-            't_element': '.title .slideDown',
-            't_duration': 0.1,
-            't_delay': 0.5
+        Tu.tScroll({
+            't-element': '.title .slideDown',
+            't-duration': 0.1,
+            't-delay': 0.5
         })
-        Tu.t_scroll({
-            't_element': '.chicken.slideDown',
-            't_duration': 0.25
+        Tu.tScroll({
+            't-element': '.chicken.slideDown',
+            't-duration': 0.25
         })
-        Tu.t_scroll({
-            't_element': '.fadeIn',
-            't_duration': 1
+        Tu.tScroll({
+            't-element': '.fadeIn',
+            't-duration': 1
         })
-        Tu.t_scroll({
-            't_element': '.ck-hair .bounceDown',
-            't_duration': 0.25,
-            't_delay': 2
+        Tu.tScroll({
+            't-element': '.ck-hair .bounceDown',
+            't-duration': 0.25,
+            't-delay': 2
         })
-        Tu.t_scroll({
-            't_element': '.chicken .bounceOut',
-            't_duration': 0.5
+        Tu.tScroll({
+            't-element': '.chicken .bounceOut',
+            't-duration': 0.5
         })
     </script>
 </body>

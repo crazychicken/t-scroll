@@ -1,12 +1,12 @@
 /*!
-* t-scroll v1.0.7 (https://t-scroll.com)
+* t-scroll v1.0.9 (https://t-scroll.com)
 * Copyright 2017 Tuds - Crazychicken
 * Licensed under the MIT license
 */
 
 @import './include';
 
-.t_default {
+.t-default {
     opacity: 1;
     animation-direction: normal;
     animation-iteration-count: 1;
@@ -15,9 +15,9 @@
     animation-delay: 0s;
     position: relative;
 }
-.t_infinite {
+.t-infinite {
     animation-iteration-count: infinite;
 }
-.t_animated {
+.t-animated {
     opacity: 0;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>tScroll Index | Animation Scroll | t-scroll tuds</title>
+    <title>Tu.tScroll Index | Animation Scroll | t-scroll tuds</title>
     @@include('./html-global/head.html')
     <link rel="canonical" href="http://t-scroll.com"/>
     <link rel="amphtml" href="http://t-scroll.com"/>
@@ -11,22 +11,22 @@
     <section class="section section-banner">
         <div class="section-content">
             <h1 class="title">
-                <span class="slideDown t_animated" t_show="1">t</span>
-                <span class="slideDown t_animated" t_show="2">-</span>
-                <span class="slideDown t_animated" t_show="3">s</span>
-                <span class="slideDown t_animated" t_show="4">c</span>
-                <span class="slideDown t_animated" t_show="5">r</span>
-                <span class="slideDown t_animated" t_show="6">o</span>
-                <span class="slideDown t_animated" t_show="7">l</span>
-                <span class="slideDown t_animated" t_show="8">l</span>
+                <span class="slideDown t-animated" data-t-show="1">t</span>
+                <span class="slideDown t-animated" data-t-show="2">-</span>
+                <span class="slideDown t-animated" data-t-show="3">s</span>
+                <span class="slideDown t-animated" data-t-show="4">c</span>
+                <span class="slideDown t-animated" data-t-show="5">r</span>
+                <span class="slideDown t-animated" data-t-show="6">o</span>
+                <span class="slideDown t-animated" data-t-show="7">l</span>
+                <span class="slideDown t-animated" data-t-show="8">l</span>
             </h1>
-            <p class="section-info zoomIn t_animated">
+            <p class="section-info zoomIn t-animated">
                 When you start scrolling, you will see interesting events.
             </p>
-            <a href="https://github.com/crazychicken/t-scroll/archive/master.zip" class="btn btn-main btn-lg slideLeft t_animated">DownLoad</a>
-            <a href="https://github.com/crazychicken/t-scroll" class="btn btn-border btn-lg slideRight t_animated">Github</a>
+            <a href="https://goo.gl/myr5D8" class="btn btn-main btn-lg slideLeft t-animated" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button DownLoad'});">DownLoad</a>
+            <a href="https://goo.gl/fo4Zep" class="btn btn-border btn-lg slideRight t-animated" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Github Header'});">Github</a>
             <p>
-                Currently v1.0.8
+                Currently v1.0.9
             </p>
         </div>
         <button class="btn btn-animation">
@@ -38,7 +38,7 @@
         <h2 class="section-title">Why Choose t-scroll</h2>
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-4 slideDown" t_show="1">
+                <div class="col-sm-6 col-md-4 slideDown" data-t-show="1">
                     <div class="box">
                         <div class="box-head">
                             <h3 class="title">
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 slideDown" t_show="2">
+                <div class="col-sm-6 col-md-4 slideDown" data-t-show="2">
                     <div class="box box-es6">
                         <div class="box-head">
                             <h3 class="title">
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 slideDown" t_show="3">
+                <div class="col-sm-6 col-md-4 slideDown" data-t-show="3">
                     <div class="box box-sass">
                         <div class="box-head">
                             <h3 class="title">
@@ -75,7 +75,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4 slideUp" t_show="1">
+                <div class="col-sm-6 col-md-4 slideUp" data-t-show="1">
                     <div class="box box-gulp">
                         <div class="box-head">
                             <h3 class="title">
@@ -87,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 slideUp" t_show="2">
+                <div class="col-sm-6 col-md-4 slideUp" data-t-show="2">
                     <div class="box box-browser">
                         <div class="box-head">
                             <h3 class="title">
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 slideUp" t_show="3">
+                <div class="col-sm-6 col-md-4 slideUp" data-t-show="3">
                     <div class="box box-npm">
                         <div class="box-head">
                             <h3 class="title">
@@ -113,66 +113,45 @@
                 </div>
             </div>
         </div>
+        <button class="btn btn-animation">
+            <span class="dot"></span>
+        </button>
     </section>
     <!-- /end .section-function -->
 
-    <footer class="footer">
-        Another thing from <a href="http://tuds.ninja">Tuds - Crazychicken.</a>
-        <p>
-            <small>Code and documentation copyright 2017, MIT license.</small>
-        </p>
-    </footer>
-</body>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('.btn-animation').on('click', $(this), function(){
-            var st = $(this).parents('.section-banner').next().offset().top;
-            $('html, body').animate({
-                scrollTop: st
-            }, 300);
+    @@include('./html-global/footer.html')
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.btn-animation').on('click', $(this), function(){
+                var st = $(this).parents('.section-banner').next().offset().top;
+                $('html, body').animate({
+                    scrollTop: st
+                }, 300);
+            });
         });
-    });
 
-    Tu.t_scroll({
-        't_element': '.title .slideDown',
-        't_duration': 0.1,
-        't_delay': 0.5
-    })
-    Tu.t_scroll({
-        't_element': '.section-function .slideDown',
-        't_duration': 0.5,
-    })
-    Tu.t_scroll({
-        't_element': '.section-function .slideUp',
-        't_duration': 0.5,
-    })
+        Tu.tScroll({
+            't-element': '.title .slideDown',
+            't-duration': 0.1,
+            't-delay': 0.5
+        })
+        Tu.tScroll({
+            't-element': '.section-function .slideDown',
+            't-duration': 0.5,
+        })
+        Tu.tScroll({
+            't-element': '.section-function .slideUp',
+            't-duration': 0.5,
+        })
 
-    Tu.t_scroll({
-        't_element': '.slideRight'
-    })
-    Tu.t_scroll({
-        't_element': '.slideLeft'
-    })
+        Tu.tScroll({
+            't-element': '.slideRight'
+        })
+        Tu.tScroll({
+            't-element': '.slideLeft'
+        })
 
-
-    // var get_class = document.querySelectorAll('.btn-animation');
-    // var set = document.querySelectorAll('.section-function');
-
-    // get_class.forEach(e => {
-    //     e.onclick = function() {
-    //         set.forEach(el => {
-    //             el.offsetTop;
-    //             var play = 1;
-    //             function scroll_t () {
-    //                 if (play == el.offsetTop) {
-    //                     return false;
-    //                 } else {
-    //                     document.querySelector('body').scrollTop = play++;
-    //                 }
-    //             }
-    //             setInterval(scroll_t, 0);
-    //         })
-    //     }
-    // })
-</script>
+    </script>
+</body>
 </html>
