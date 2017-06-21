@@ -35,17 +35,17 @@ http://t-scroll.com/documents.html
 <div class="zoomIn">"..."</div>
 ```
 
-* If you need `setTimeout`, you need insert the container attribute `t_show="..."`
+* If you need `setTimeout`, you need insert the container attribute `data-t-show="..."`
 ```html
-<div class="zoomIn" t_show="1">"..."</div>
-<div class="zoomIn" t_show="2">"..."</div>
+<div class="zoomIn" data-t-show="1">"..."</div>
+<div class="zoomIn" data-t-show="2">"..."</div>
 ```
 
-* Or you want to `t_show` run see first screen. You have to add `.t_animated`
+* Or you want to `data-t-show` run see first screen. You have to add `.t-animated`
 ```html
 <div class="box-center">
-    <div class="zoomIn t_animated" t_show="1"> ... </div>
-    <div class="zoomIn t_animated" t_show="2"> ... </div>
+    <div class="zoomIn t-animated" data-t-show="1"> ... </div>
+    <div class="zoomIn t-animated" data-t-show="2"> ... </div>
 </div>
 ```
 
@@ -53,8 +53,8 @@ http://t-scroll.com/documents.html
 
 ```html
 <script type="text/javascript">
-    Tu.t_scroll({
-      't_element': '.zoomIn'
+    Tu.tScroll({
+      't-element': '.zoomIn'
     })
 </script>
 ```
