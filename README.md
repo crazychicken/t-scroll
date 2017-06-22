@@ -143,6 +143,7 @@ sass/
 ## Contributors
 
 This project exists thanks to all the people who contribute. [[Contribute]](https://github.com/crazychicken/t-scroll/blob/master/CONTRIBUTING.md).
+
 <a href="graphs/contributors"><img src="https://opencollective.com/t-scroll/contributors.svg" /></a>
 
 
