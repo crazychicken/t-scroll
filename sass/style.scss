@@ -1,5 +1,5 @@
 /*!
-* t-scroll v1.0.10 (https://t-scroll.com)
+* t-scroll v1.1.0 (https://t-scroll.com)
 * Copyright 2017 Tuds - Crazychicken
 * Licensed under the MIT license
 */
@@ -137,6 +137,9 @@ a {
     .section-title {
         margin-top: -20px;
         font-size: 42px;
+    }
+    @media (min-width: 768px) {
+        min-height: 450px;
     }
     height: 100vh;
     width: 100%;

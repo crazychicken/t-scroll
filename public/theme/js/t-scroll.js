@@ -1,5 +1,5 @@
 /*!
-* tScroll v1.0.9 (https://t-scroll.com)
+* tScroll v1.1.0 (https://t-scroll.com)
 * Copyright 2017 Tuds - Crazychicken
 * Licensed under the MIT license
 */
@@ -34,32 +34,37 @@ function checkValueInput( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr
 
     // Check value element selector default when do not value
     if ( pr_el === undefined ) { // t-element
-        return console.log("%c'Thank you for useing tScroll. Please, insert property for element selector t-element: 'element here'", 'background: #f16d99; color: #fff');
+        return console.log("%c'Thank you for using tScroll. Please, insert property for element selector t-element: 'element here'", 'background: #f16d99; color: #fff');
     }
     // Change Array -> forEach find '.' & '#' check element user custom
     pr_el.split(' ').forEach( el => { // t-element
         if ( el.slice(0,1) != '.' && el.slice(0,1) != '#' ) {
-            return console.log("%c'Thank you for useing tScroll. Please, insert property for element selector t-element: '.' or '#'", 'background: #f16d99; color: #fff');
+            return console.log("%c'Thank you for using tScroll. Please, insert property for element selector t-element: '.' or '#'", 'background: #f16d99; color: #fff');
         }
     })
 
     // Check value t-element & t-animate
     if ( pr_el === '.t-default' && pr_ani === undefined ) { // t-elemnt & t-animate
-        return console.log("%c'Thank you for useing tScroll. Please, insert property for element selector t-animate: 'options here'", 'background: #f16d99; color: #fff');
+        return console.log("%c'Thank you for using tScroll. Please, insert property for element selector t-animate: 'options here'", 'background: #f16d99; color: #fff');
     }
 
     // Check value defualt css animation // t-position
-    if ( pr_position != undefined && typeof( pr_position ) === 'string' ) {
-        return console.log("%c'Thank you for useing tScroll. Please, insert property for element selector t-position: 'number here'", 'background: #f16d99; color: #fff');
+    if ( pr_position != undefined && pr_position != 'top' && pr_position != 'bottom' && typeof( pr_position ) != 'number' ) {
+        return console.log("%c'Thank you for using tScroll. Please, insert property for element selector t-position: 'number or string top, bottom here'", 'background: #f16d99; color: #fff');
     }
     // Check value element animation default when do not value
-    if ( pr_position === undefined ) {
+    if ( pr_position != undefined && pr_position === 'top' || pr_position === undefined ) {
         pr_position = 0;
+    }
+    if ( pr_position != undefined && pr_position === 'bottom') {
+        elment_select_html.forEach( e => {
+            pr_position = e.offsetHeight;
+        });
     }
 
     // Check animation-delay user insert custom style // t-delay
     if ( pr_delay != undefined && typeof( pr_delay ) === 'string' ) {
-        return console.log("%c'Thank you for useing tScroll. Please, insert property for element selector t-delay: 'number here'", 'background: #f16d99; color: #fff');
+        return console.log("%c'Thank you for using tScroll. Please, insert property for element selector t-delay: 'number here'", 'background: #f16d99; color: #fff');
     }
 
     // Check animation-direction user insert custom style // t-direction
@@ -72,7 +77,7 @@ function checkValueInput( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr
 
     // Check animation-duration user insert custom style // t-duration
     if ( pr_duration != undefined && typeof( pr_duration ) === 'string' ) {
-        return console.log("%c'Thank you for useing tScroll. Please, insert property for element selector t-duration: 'number here'", 'background: #f16d99; color: #fff');
+        return console.log("%c'Thank you for using tScroll. Please, insert property for element selector t-duration: 'number here'", 'background: #f16d99; color: #fff');
     }
     if ( pr_duration != undefined ) {
         elment_select_html.forEach( e => {
@@ -101,7 +106,6 @@ function checkValueInput( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr
             e.style.WebkitAnimationTimingFunction = pr_timing_function; // Safari4.0 - 8.0
         });
     }
-
     // Call run function when myArray not error
     var myArray = [ pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr_duration, pr_count, pr_timing_function ];
     // console.log(myArray) // result Array is checked
@@ -112,7 +116,7 @@ function include( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr_duratio
     var set_w_height = window.innerHeight; // set height window device
     var elment_select_html = document.querySelectorAll( pr_el ); // find element class or ID
     elment_select_html = [].slice.call(elment_select_html);
-    // console.log(t-position);
+    // console.log(pr_position);
 
     // Set custom css and option animation
     elment_select_html.forEach( e => {
@@ -154,8 +158,10 @@ function include( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr_duratio
             // filter
             pr_position = e.style.opacity *  10000000; // include position only element
             var rect = e.getBoundingClientRect(); // jquery use check element if it has position: relative
-            var sum = set_top + rect.top + e.offsetHeight;
-            if (set_top + set_w_height + pr_position > sum && !e.classList.contains('t-animated')) {
+            // var sum = set_top + rect.top + e.offsetHeight;
+            var sum = set_top + rect.top;
+            if (set_top + set_w_height - pr_position > sum && !e.classList.contains('t-animated')) {
+                // console.log(pr_position);
                 // set position element when event add class
                 // 1. Scroll top window more than element
                 // 2. Stop add class run animation
@@ -164,9 +170,11 @@ function include( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr_duratio
                 if ( pr_delay === undefined ) {
                     pr_delay = pr_duration;
                 }
+                var pr_delay_r = pr_delay;
+                // console.log(pr_delay);
                 if (e.hasAttribute('data-t-show') === true) {
                     // Check show only item, sort 1,2,3,4 ...
-                    var pr_delay_r = pr_duration*num + (pr_delay - pr_duration);
+                    pr_delay_r = pr_duration*num + (pr_delay - pr_duration);
                 }
                 // console.log(pr_delay_r);
                 var class_animation_css = e.className + " " + pr_ani + " " + "t-animated t-default"; // set add class

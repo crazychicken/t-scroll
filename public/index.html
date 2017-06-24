@@ -67,32 +67,17 @@
         <div class="topbar hidden-xs">
             <div class="topbar-content">
                 <strong class="topbar-deal">35,394</strong> Website templates and themes from $2
-                <a class="topbar-button" href="https://themeforest.net/?ref=tuds" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Go Now PC' });">Go now</a>
+                <a class="topbar-button" href="https://goo.gl/4CrSnT" rel="nofollow" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Go Now PC' });">Go now</a>
             </div>
         </div>
 
-        <a class="topbar visible-xs" href="https://themeforest.net/?ref=tuds" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Go Now MB' });">
+        <a class="topbar visible-xs" href="https://goo.gl/4CrSnT" rel="nofollow" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Go Now MB' });">
         <strong class="topbar-deal">35,394</strong> Themes from $2
     </a>
         <button class="topbar-close" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Close' });">
         <img src="theme/images/topbar-close.png" alt="">
     </button>
     </div>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(".topbar-close").on('click', function() {
-                $(this).parents(".topbar-wrapper").hide(400);
-            });
-            $(window).scroll(function() {
-                if ($(window).scrollTop() > 5) {
-                    $(".topbar").addClass("topbar-scroll");
-                } else {
-                    $(".topbar").removeClass("topbar-scroll");
-                }
-            });
-        });
-    </script>
 
     <nav class="navbar navbar-default">
         <div class="container">
@@ -115,7 +100,7 @@
                     <li><a href="http://t-scroll.com/t-animate-options.html">Options</a></li>
                     <!-- <li><a href="http://t-scroll.com/t-fun-demo.html" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Fun Demos' });">Fun Demos</a></li> -->
                     <li>
-                        <a href="https://goo.gl/fo4Zep" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Github Navbar'});">Github</a>
+                        <a href="https://goo.gl/fo4Zep" rel="nofollow" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Github Navbar'});">Github</a>
                     </li>
                 </ul>
             </div>
@@ -123,6 +108,37 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.topbar-close').on('click', function() {
+                $(this).parents('.topbar-wrapper').hide(400);
+                setCookie("close-banner", 1, 1)
+            });
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 5) {
+                    $('.topbar').addClass('topbar-scroll');
+                } else {
+                    $('.topbar').removeClass('topbar-scroll');
+                }
+            });
+            var getCookie = decodeURIComponent(document.cookie);
+            var s = getCookie.search("close-banner=1");
+            if (s != undefined && s > 0) {
+                $('.topbar-wrapper').hide();
+            } else {
+                $('.topbar-wrapper').show();
+            }
+
+            function setCookie(cname, cvalue, exdays) {
+                var d = new Date();
+                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                var expires = "expires=" + d.toUTCString();
+                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            }
+
+        });
+    </script>
     <section class="section section-banner">
         <div class="section-content">
             <h1 class="title">
@@ -141,7 +157,7 @@
             <a href="https://goo.gl/myr5D8" class="btn btn-main btn-lg slideLeft t-animated" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button DownLoad'});">DownLoad</a>
             <a href="https://goo.gl/fo4Zep" class="btn btn-border btn-lg slideRight t-animated" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Github Header'});">Github</a>
             <p>
-                Currently v1.0.9
+                Currently v1.1.0
             </p>
         </div>
         <button class="btn btn-animation">
@@ -245,10 +261,10 @@
             <p>
                 Support the community and keep development going strong.
             </p>
-            <a href="https://goo.gl/fo4Zep" class="btn btn-border btn-lg slideRight" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Github Footer'});">Github</a>
-            <a href="https://goo.gl/C4trd9" class="btn btn-main btn-lg slideLeft" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Donate' });">Donate</a>
+            <a href="https://goo.gl/fo4Zep" class="btn btn-border btn-lg slideRight" rel="nofollow" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Github Footer'});">Github</a>
+            <a href="https://goo.gl/C4trd9" class="btn btn-main btn-lg slideLeft" rel="nofollow" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Donate' });">Donate</a>
             <p>
-                Currently v1.0.9
+                Currently v1.1.0
             </p>
         </div>
         <div class="author">
