@@ -4,14 +4,16 @@
 * Licensed under the MIT license
 */
 
-@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
-@import '../node_modules/checkbox-radio/sass/checkbox_radio_img_sprite.scss';
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import '../node_modules/checkbox-radio/sass/checkbox_radio_img_sprite';
 @import '../node_modules/perfect-scrollbar/dist/css/perfect-scrollbar';
 @import './theme/var';
 @import './theme/mixin';
 @import './theme/buttons';
 @import './theme/fonts';
+@import './theme/form';
 @import './theme/box';
+@import './theme/block';
 @import './theme/navbar';
 @import './theme/section';
 @import './theme/topbar';
@@ -167,6 +169,7 @@ a {
         margin: 0 auto;
         display: block;
         text-align: center;
+        font-size: 14px;
     }
 }
 
@@ -189,13 +192,6 @@ a {
     color: $gray-light-5;
 }
 
-.block-options {
-    border-bottom: 1px solid $gray-light-35;
-    padding-bottom: 15px;
-    .block-title {
-        margin-top: 15px;
-    }
-}
 .docs-options {
     .list-unstyled {
         li {

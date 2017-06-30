@@ -67,11 +67,11 @@
         <div class="topbar hidden-xs">
             <div class="topbar-content">
                 <strong class="topbar-deal">35,394</strong> Website templates and themes from $2
-                <a class="topbar-button" href="https://goo.gl/4CrSnT" rel="nofollow" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Go Now PC' });">Go now</a>
+                <a class="topbar-button" href="https://goo.gl/EAbVAi" rel="nofollow" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Go Now PC' });">Go now</a>
             </div>
         </div>
 
-        <a class="topbar visible-xs" href="https://goo.gl/4CrSnT" rel="nofollow" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Go Now MB' });">
+        <a class="topbar visible-xs" href="https://goo.gl/EAbVAi" rel="nofollow" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Go Now MB' });">
         <strong class="topbar-deal">35,394</strong> Themes from $2
     </a>
         <button class="topbar-close" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Close' });">
@@ -98,6 +98,7 @@
                     <li><a href="http://t-scroll.com/demo.html">Demos</a></li>
                     <li><a href="http://t-scroll.com/documents.html">Docs</a></li>
                     <li><a href="http://t-scroll.com/t-animate-options.html">Options</a></li>
+                    <li><a href="http://t-scroll.com/deal.html" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Link Deal'});">Deal <label class="label label-danger">new</label></a></li>
                     <!-- <li><a href="http://t-scroll.com/t-fun-demo.html" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Fun Demos' });">Fun Demos</a></li> -->
                     <li>
                         <a href="https://goo.gl/fo4Zep" rel="nofollow" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Click Button', 'eventAction': 'Click', 'eventLabel': 'Button Github Navbar'});">Github</a>
@@ -113,7 +114,7 @@
         $(document).ready(function() {
             $('.topbar-close').on('click', function() {
                 $(this).parents('.topbar-wrapper').hide(400);
-                setCookie("close-banner", 1, 1)
+                setCookie("close-banner", 1)
             });
             $(window).scroll(function() {
                 if ($(window).scrollTop() > 5) {
@@ -122,21 +123,57 @@
                     $('.topbar').removeClass('topbar-scroll');
                 }
             });
-            var getCookie = decodeURIComponent(document.cookie);
-            var s = getCookie.search("close-banner=1");
-            if (s != undefined && s > 0) {
-                $('.topbar-wrapper').hide();
-            } else {
-                $('.topbar-wrapper').show();
-            }
 
-            function setCookie(cname, cvalue, exdays) {
+            function setCookie(pr_name, exdays) {
                 var d = new Date();
-                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-                var expires = "expires=" + d.toUTCString();
-                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+                d = (d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                document.cookie = pr_name + "=" + d + ";" + ";path=/";
             }
 
+            function getCookie(pr_name) {
+                var name = pr_name + "=";
+                var ca = document.cookie.split(';');
+
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    c = c.trim();
+                    if (c.indexOf(pr_name + "=") === 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+
+            if ($('body').find('.topbar-wrapper').hasClass('topbar-wrapper') === true) {
+                var c = new Date();
+                c = c.getTime();
+                var get = getCookie('close-banner');
+                if (get > c) {
+                    $('.topbar-wrapper').hide();
+                } else {
+                    $('.topbar-wrapper').show();
+                }
+            }
+
+            // getLink active
+            function getLink() {
+                var path = window.location.pathname;
+                if (path === "/") {
+                    path = "";
+                }
+                var getPath = $('.navbar-nav li a');
+                $('.navbar-nav').find('.active').removeClass('active')
+                getPath.each(function() {
+                    var a = $(this).attr('href');
+                    var b = a.replace('http://t-scroll.com', "");
+                    if (path === b) {
+                        $(this).parent().addClass('active');
+                    }
+                })
+            }
+            if ($('body').find('.navbar-nav').hasClass('navbar-nav') === true) {
+                getLink();
+            }
         });
     </script>
     <section class="section section-banner">
@@ -288,15 +325,15 @@
             });
             Tu.tScroll({
                 't-element': '.thanks .slideDown',
-                't-duration': 1
+                't-duration': 0.5
             })
             Tu.tScroll({
                 't-element': '.thanks .slideRight',
-                't-duration': 1
+                't-duration': 0.75
             })
             Tu.tScroll({
                 't-element': '.thanks .slideLeft',
-                't-duration': 1
+                't-duration': 0.75
             })
         });
     </script>
