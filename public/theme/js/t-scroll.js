@@ -1,5 +1,5 @@
 /*!
-* tScroll v1.1.1 (https://t-scroll.com)
+* tScroll v1.1.2 (https://t-scroll.com)
 * Copyright 2017 Tuds - Crazychicken
 * Licensed under the MIT license
 */
@@ -136,7 +136,7 @@ function include( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr_duratio
 
         if ( e.hasAttribute('data-t-show') === true && pr_duration != undefined && e.classList.contains('t-animated') ) {
             if ( pr_delay === undefined ) {
-                pr_delay = pr_duration;
+                pr_delay = 0;
             }
 
             var num = Number(e.getAttribute('data-t-show'));
@@ -168,7 +168,7 @@ function include( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr_duratio
                 // 3. Stop add class run animation if element has runed for t-animated
                 var num = Number( e.getAttribute('data-t-show') );
                 if ( pr_delay === undefined ) {
-                    pr_delay = pr_duration;
+                    pr_delay = 0;
                 }
                 var pr_delay_r = pr_delay;
                 // console.log(pr_delay);
