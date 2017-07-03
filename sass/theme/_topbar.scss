@@ -1,0 +1,83 @@
+.topbar {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    display: inline-block;
+    font-family: inherit;
+    text-align: center;
+    padding-top: 10px;
+    background: $purple;
+    left: 0;
+    top: 0;
+    color: #fff;
+    &.topbar-scroll {
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        -o-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    }
+    &-wrapper {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        z-index: 999;
+        display: none;
+    }
+    &-content {
+        font-size: 16px;
+        position: relative;
+        letter-spacing: 1px;
+    }
+    &-deal {
+        font-size: 20px;
+        color: $yellow;
+        font-weight: bold;
+        margin-right: 5px;
+        span {
+            font-size: 18px;
+            margin-left: -7px;
+            font-weight: normal;
+        }
+        &-sm {
+            font-size: 24px;
+            color: $yellow;
+            font-weight: bold;
+        }
+    }
+    &-close {
+        // color: #1c8390;
+        top: 10px;
+        right: 20px;
+        position: fixed;
+        // font-size: 16px;
+        z-index: 123;
+        height: 30px;
+        width: 30px;
+        padding: 0;
+        border: none;
+        background: none;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+    }
+    &-button {
+        background-color: $yellow;
+        @include border-radius(4px);
+        padding: 4px 10px 6px 10px;
+        line-height: 1em;
+        margin-left: 5px;
+        color: $gray-dark-95;
+        letter-spacing: 0;
+        &:hover {
+            color: $gray-dark-95;
+            text-decoration: none;
+        }
+    }
+    @media (max-width: 767px) {
+        &:hover, &:active {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}

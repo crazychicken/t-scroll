@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>tScroll Delay | Animation Scroll | t-scroll t-delay tuds</title>
+    @@include('../html-global/head.html')
+</head>
+<body class="demo">
+    @@include('../html-global/navbar.html')
+    <section class="section section-banner">
+    <div class="section-content col-sm-6">
+        <div class="count-down-time">3</div>
+        <h1 class="h2 title_show">
+            <span class="slideDown t-animated" data-t-show="1">t</span>
+            <span class="slideDown t-animated" data-t-show="2">_</span>
+            <span class="slideDown t-animated" data-t-show="3">d</span>
+            <span class="slideDown t-animated" data-t-show="4">e</span>
+            <span class="slideDown t-animated" data-t-show="5">l</span>
+            <span class="slideDown t-animated" data-t-show="6">a</span>
+            <span class="slideDown t-animated" data-t-show="7">y</span>
+        </h1>
+        <h4 class="box-title text-left">
+            Html
+        </h4>
+        <p class="text-left">
+            You can use <code>'t-delay'</code> with <code>'data-t-show'</code>
+        </p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s1">&quot;row classname&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s1">&quot;col-xs-1 zoomOut&quot;</span> <span class="na">data-t-show=</span><span class="s1" style="background-color: #fff0f0">&quot;1&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s1">&quot;col-xs-1 zoomOut&quot;</span> <span class="na">data-t-show=</span><span class="s1" style="background-color: #fff0f0">&quot;2&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></figure>
+            <br>
+            <h4 class="box-title text-left">
+                Javascript
+            </h4>
+            <p class="text-left">You can insert options <code>t-delay: numbers</code> <a href="./t-animate-options.html">view more options</a></p>
+            <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+    <span class="nt">Tu.tScroll</span><span class="p">({</span>
+      <span class="s1">'t-element': '.classname .zoomOut'</span>
+      <span class="s1">'t-delay': 3</span>
+    <span class="p">})</span>
+<span class="nt">&lt;/script</span><span class="nt">&gt;</span></code></pre></figure>
+        </div>
+
+        <button class="btn btn-animation">
+            <span class="dot"></span>
+        </button>
+    </section>
+    <!-- /end .section-banner -->
+
+    <section class="section section-gray">
+        <h2 class="section-title">
+            t-delay
+        </h2>
+        <div class="container">
+            @@include('../html-global/list-demo-12col.html')
+            <p class="text-center mg-bt-20">
+                The t-delay property specifies a delay for the start of an animation
+            </p>
+            @@include('../html-global/list-demo-6col.html')
+
+            @@include('../html-global/box-list-demo.html')
+        </div>
+        <button class="btn btn-animation">
+            <span class="dot"></span>
+        </button>
+    </section>
+    @@include('../html-global/footer.html')
+
+    <div class="modal-subscribe fadeIn t-animated">
+        <div class="modal-sub-body">
+            <button class="modal-sub-close">
+                <img src="theme/images/topbar-close.png" alt="">
+            </button>
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+                <form action="//quoc.us3.list-manage.com/subscribe/post?u=5e857239d1c97854cf7484b65&amp;id=0dcfac981e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <label for="mce-EMAIL">This is demo t-delay show popup</label>
+                        <p class="help-block">But you will earn a free theme if subscribe to our mailing list</p>
+                        <br>
+                        <input type="email" value="" name="EMAIL" class="email slideRight" id="mce-EMAIL" placeholder="Email address" required>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5e857239d1c97854cf7484b65_0dcfac981e" tabindex="-1" value=""></div>
+                        <div class="clear slideLeft">
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-main btn-lg" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Subscribe', 'eventAction': 'Click', 'eventLabel': 'Button Subscribe'});">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--End mc_embed_signup-->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        Tu.tScroll({
+            't-element': '.title_show .slideDown',
+            't-duration': 0.1,
+            't-delay': 3
+        })
+        Tu.tScroll({
+            't-element': '.classname .zoomIn',
+            't-duration': 0.1,
+            't-delay': 0.5
+        })
+        Tu.tScroll({
+            't-element': '.classname .slideDown',
+            't-duration': 0.2,
+            't-delay': 2
+        })
+
+        function countDown(pr, Time) {
+            var n = document.querySelectorAll(pr);
+            setInterval(function(){
+                n[0].innerHTML = Time--;
+                if (Time < 0) {
+                    n[0].style.opacity = "0";
+                }
+            }, 1000)
+        }
+        countDown('.count-down-time', 2);
+    </script>
+</body>
+</html>

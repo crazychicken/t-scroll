@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>tScroll Function | Animation Scroll | t-scroll t-function tuds</title>
+    @@include('../html-global/head.html')
+</head>
+<body class="demo">
+    @@include('../html-global/navbar.html')
+    <section class="section section-banner">
+    <div class="section-content col-sm-6">
+        <h1 class="h2">
+            t-function
+        </h1>
+        <h4 class="box-title text-left">
+            Html
+        </h4>
+        <p class="text-left">
+            You can use <code>'t-function'</code> with all different options
+        </p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s1">&quot;row classname&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s1">&quot;col-xs-1 zoomIn&quot;</span> <span class="na">data-t-show=</span><span class="s1" style="background-color: #fff0f0">&quot;1&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s1">&quot;col-xs-1 zoomIn&quot;</span> <span class="na">data-t-show=</span><span class="s1" style="background-color: #fff0f0">&quot;2&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></figure>
+            <br>
+            <h4 class="box-title text-left">
+                Javascript
+            </h4>
+            <p class="text-left">You can insert options <code>t-element: '.class'</code> or <code>'#id'</code> <a href="./t-animate-options.html">view more options</a></p>
+            <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+    <span class="nt">Tu.tScroll</span><span class="p">({</span>
+      <span class="s1">'t-element': '.classname .zoomIn'</span>
+      <span class="s1">'t-function': 'linear'</span>
+    <span class="p">})</span>
+<span class="nt">&lt;/script</span><span class="nt">&gt;</span></code></pre></figure>
+        </div>
+
+        <button class="btn btn-animation">
+            <span class="dot"></span>
+        </button>
+    </section>
+    <!-- /end .section-banner -->
+
+    <section class="section section-gray">
+        <h2 class="section-title">
+            t-function
+        </h2>
+        <div class="container">
+            @@include('../html-global/list-demo-12col.html')
+            <p class="text-center mg-bt-20">
+                The t-function specifies the speed curve of an animation
+            </p>
+            @@include('../html-global/list-demo-6col.html')
+
+            @@include('../html-global/box-list-demo.html')
+        </div>
+        <button class="btn btn-animation">
+            <span class="dot"></span>
+        </button>
+    </section>
+    @@include('../html-global/footer.html')
+
+    <script type="text/javascript">
+        Tu.tScroll({
+            't-element': '.classname .zoomIn',
+            't-duration': 0.1,
+            't-delay': 0.5,
+            't-function': 'linear'
+        })
+        Tu.tScroll({
+            't-element': '.classname .slideDown',
+            't-duration': 0.2,
+            't-delay': 2,
+            't-function': 'linear'
+        })
+    </script>
+</body>
+</html>

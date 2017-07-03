@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>tScroll Default | Animation Scroll | t-scroll t-default tuds</title>
+    @@include('../html-global/head.html')
+</head>
+<body class="demo">
+    @@include('../html-global/navbar.html')
+    <section class="section section-banner">
+    <div class="section-content col-sm-6">
+        <h1 class="h2">t-default</h1>
+        <h4 class="box-title text-left">
+            Html
+        </h4>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-xs-6 t-default&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-xs-6 t-default&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+            <br>
+            <h4 class="box-title text-left">
+                Javascript
+            </h4>
+            <p class="text-left">You can insert <code>t-element=".class"</code> or <code>t-element="#id"</code> with <code>t-animate: ...</code> <a href="./t-animate-options.html">view more options</a></p>
+            <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+    <span class="nt">Tu.tScroll</span><span class="p">({</span>
+      <span class="s1">'t-element': '.t-default',</span>
+      <span class="s1">'t-animate': 'zoomOut'</span>
+    <span class="p">})</span>
+<span class="nt">&lt;/script</span><span class="nt">&gt;</span></code></pre></figure>
+        </div>
+
+        <button class="btn btn-animation">
+            <span class="dot"></span>
+        </button>
+    </section>
+    <!-- /end .section-banner -->
+
+    <section class="section section-gray">
+        <h2 class="section-title">
+            t-default
+        </h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 t-default" data-t-show="">
+                    <div class="box-demo">
+                        <div class="box-demo-title">zoomOut</div>
+                    </div>
+                </div>
+                <div class="col-sm-2 t-default" data-t-show="">
+                    <div class="box-demo">
+                        <div class="box-demo-title">zoomOut</div>
+                    </div>
+                </div>
+                <div class="col-sm-2 t-default" data-t-show="">
+                    <div class="box-demo">
+                        <div class="box-demo-title">zoomOut</div>
+                    </div>
+                </div>
+                <div class="col-sm-2 t-default" data-t-show="">
+                    <div class="box-demo">
+                        <div class="box-demo-title">zoomOut</div>
+                    </div>
+                </div>
+                <div class="col-sm-2 t-default" data-t-show="">
+                    <div class="box-demo">
+                        <div class="box-demo-title">zoomOut</div>
+                    </div>
+                </div>
+                <div class="col-sm-2 t-default" data-t-show="">
+                    <div class="box-demo">
+                        <div class="box-demo-title">zoomOut</div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center">
+                Define elements for the start of an animation
+            </p>
+
+            @@include('../html-global/box-list-demo.html')
+        </div>
+        <button class="btn btn-animation">
+            <span class="dot"></span>
+        </button>
+    </section>
+    @@include('../html-global/footer.html')
+
+    <script type="text/javascript">
+        Tu.tScroll({
+            't-element': '.section-gray .t-default',
+            't-animate': 'zoomOut'
+        })
+    </script>
+</body>
+</html>

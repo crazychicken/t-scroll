@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>tScroll Animate | Animation Scroll | t-scroll t-animate tuds</title>
+    @@include('../html-global/head.html')
+</head>
+<body class="demo">
+    @@include('../html-global/navbar.html')
+    <section class="section section-banner">
+    <div class="section-content col-sm-6">
+        <h1 class="h2">t-animate</h1>
+        <h4 class="box-title text-left">
+            Html
+        </h4>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-xs-6 zoomOut&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-xs-6 zoomOut&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+            <br>
+            <h4 class="box-title text-left">
+                Javascript
+            </h4>
+            <p class="text-left">You can insert options <code>t-element: '.zoomOut'</code> and <a href="./t-animate-options.html">view more options</a></p>
+            <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+    <span class="nt">Tu.tScroll</span><span class="p">({</span>
+      <span class="s1">'t-element': '.zoomOut'</span>
+    <span class="p">})</span>
+<span class="nt">&lt;/script</span><span class="nt">&gt;</span></code></pre></figure>
+        <p class="text-left"><mark>if you need to use it, you make sure <code>.zoomOut</code> is only website. Or you have to add a different <code>class</code> or <code>id</code> in t-element and its parents Dom HTML</mark>
+        </p>
+        </div>
+
+        <button class="btn btn-animation">
+            <span class="dot"></span>
+        </button>
+    </section>
+    <!-- /end .section-banner -->
+
+    <section class="section section-gray">
+        <h2 class="section-title">
+            t-animate
+        </h2>
+        <div class="container">
+            <div class="row addtop">
+                <div class="col-sm-3 zoomOut">
+                    <div class="box-demo">
+                        <div class="box-demo-title">zoomOut</div>
+                    </div>
+                </div>
+                <div class="col-sm-3 zoomOut">
+                    <div class="box-demo">
+                        <div class="box-demo-title">zoomOut</div>
+                    </div>
+                </div>
+                <div class="col-sm-3 zoomOut">
+                    <div class="box-demo">
+                        <div class="box-demo-title">zoomOut</div>
+                    </div>
+                </div>
+                <div class="col-sm-3 zoomOut">
+                    <div class="box-demo">
+                        <div class="box-demo-title">zoomOut</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3 addbottom zoomOut">
+                    <div class="box-demo">
+                        <div class="box-demo-title">zoomOut</div>
+                    </div>
+                </div>
+                <div class="col-sm-3 addbottom zoomOut">
+                    <div class="box-demo">
+                        <div class="box-demo-title">zoomOut</div>
+                    </div>
+                </div>
+                <div class="col-sm-3 addbottom zoomOut">
+                    <div class="box-demo">
+                        <div class="box-demo-title">zoomOut</div>
+                    </div>
+                </div>
+                <div class="col-sm-3 addbottom zoomOut">
+                    <div class="box-demo">
+                        <div class="box-demo-title">zoomOut</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- @@include('../html-global/box-list-demo.html') -->
+        </div>
+        <button class="btn btn-animation">
+            <span class="dot"></span>
+        </button>
+    </section>
+    @@include('../html-global/footer.html')
+
+    <script type="text/javascript">
+        Tu.tScroll({
+            't-element': '.addtop .zoomOut'
+        })
+        Tu.tScroll({
+            't-element': '.addbottom.zoomOut'
+        })
+    </script>
+</body>
+</html>

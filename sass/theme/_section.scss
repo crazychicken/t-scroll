@@ -1,0 +1,434 @@
+.section {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 20px 0 90px 0;
+    &-title {
+        text-align: center;
+        margin: 60px 0;
+    }
+    @media (max-width: 767px) {
+        .title {
+            font-size: 60px;
+        }
+        .btn-animation {
+            bottom: 35px;
+        }
+    }
+}
+.section-banner {
+    background: #fff;
+    min-height: 500px;
+    height: calc(100vh - 60px);
+    color: #4b4b4b;
+    text-align: center;
+    .title {
+        font-size: 72px;
+        font-weight: normal;
+        margin: 0 0 30px 0;
+    }
+    .btn-lg {
+        min-width: 180px;
+        @include border-radius(30px);
+        margin: 20px 10px;
+        &:hover, &:focus, &:active {
+            color: $purple;
+        }
+    }
+    .btn-main {
+        &:hover, &:focus, &:active {
+            color: #fff;
+        }
+    }
+    @include display(box);
+    @include box-align(center);
+    @include box-pack(center);
+    .section-content {
+        top: -30px;
+        position: relative;
+    }
+    .section-info {
+        font-size: 22px;
+        max-width: 640px;
+        margin-bottom: 40px;
+    }
+    .btn-animation {
+        bottom: 65px;
+    }
+    @media (max-width: 767px) {
+        min-height: auto;
+        .btn-lg {
+            margin-top: 0;
+        }
+        .section-info {
+            padding: 0 10px;
+        }
+        .section-content {
+            top: 0;
+        }
+    }
+}
+
+.section-function {
+    padding: 60px 0;
+    text-align: center;
+    background: $gray-light-95;
+    [class*="col-xs"] {
+        padding: 0 20px;
+    }
+    .section-title {
+        display: block;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+    @media (max-width: 480px) {
+        [class*="col-xs"] {
+            width: 100%;
+        }
+    }
+    .box {
+        text-align: center;
+        min-height: 180px;
+        padding: 15px;
+        margin-bottom: 40px;
+        color: $purple-light-35;
+        background: #fff;
+        border: 1px solid #f7f8f9;
+        @include box-shadow(4px 5px 0 0 rgba(0,0,0,0.1));
+        transition-duration: 0.25s;
+        position: relative;
+        left: 0;
+        top: 0;
+        &-head {
+            .title {
+                font-size: 28px;
+                margin-bottom: 25px;
+            }
+        }
+        &-body {
+            color: $gray-dark-35;
+        }
+        &:hover {
+            color: #fff;
+            border-color: transparent;
+            @include box-shadow(none);
+            background: $purple-light-35;
+            left: 3px;
+            top: 3px;
+            .box-body {
+                color: #fff;
+            }
+        }
+        &-sass {
+            &:hover {
+                background: $pink;
+            }
+        }
+        &-es6 {
+            &:hover {
+                color: #4b4b4b;
+                background: $yellow;
+                .box-body {
+                    color: #4b4b4b;
+                }
+            }
+        }
+        &-browser {
+            &:hover {
+                background: $green;
+            }
+        }
+        &-npm {
+            &:hover {
+                background: $red;
+            }
+        }
+        &-gulp {
+            &:hover {
+                background: #CF4647;
+            }
+        }
+    }
+}
+
+.section-link-my-site {
+    .box {
+        padding: 15px;
+        margin-bottom: 40px;
+        background: #fff;
+        border: 1px solid #f7f8f9;
+        @include box-shadow(4px 5px 0 0 rgba(0,0,0,0.1));
+        transition-duration: 0.25s;
+        position: relative;
+        left: 0;
+        top: 0;
+        display: block;
+        &:hover {
+            @include box-shadow(none);
+            left: 3px;
+            top: 3px;
+        }
+    }
+}
+
+.section-animate-options {
+    @include display(box);
+    @include box-align(center);
+    @include box-pack(center);
+    min-height: calc(100vh - 60px);
+    height: calc(100vh - 60px);
+    .container {
+        width: 680px;
+    }
+    .box-center {
+        margin-top: -100px;
+        [class*="col-xs"] {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+    @media (max-width: 980px) {
+        .container {
+            width: 100%;
+        }
+        .box-animate {
+            top: auto;
+            bottom: 0;
+            height: 220px;
+        }
+    }
+}
+
+.section-deal,
+.section-aff {
+    .container {
+        @media (min-width: 980px) {
+            width: 980px;
+        }
+        @media (max-width: 480px) {
+            [class*="col-xs-"] {
+                .block {
+                    width: 290px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+.section-aff {
+    .block {
+        &-header {
+            background: url('../images/wallpaper-light.jpg') 100% center no-repeat;
+            background-size: 100%;
+        }
+    }
+}
+
+// all section stype
+@media (max-width: 480px) {
+    .section-deal,
+    .section-aff,
+    .section-link-my-site,
+    .section-function {
+        [class*="col-xs"] {
+            width: 100%;
+        }
+    }
+}
+
+// chicken fun demo
+.section-demo-chicken {
+    // background: #f7f8f9;
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 60px;
+    height: 100vh;
+    min-height: 500px;
+    @media (max-width: 767px) {
+        height: auto;
+    }
+}
+.chicken {
+    width: 360px;
+    height: 360px;
+    margin: 0 auto;
+    background: $yellow-light-5;
+    position: relative;
+    border-top-left-radius: 65% 90%;
+    border-top-right-radius: 65% 90%;
+    border-bottom-right-radius: 50% 45%;
+    border-bottom-left-radius: 50% 45%;
+    .ck-body {
+        position: relative;
+    }
+    .ck-shadow {
+        width: 360px;
+        height: 360px;
+        margin: 0 auto;
+        // background: #999;
+        left: 0;
+        top: 0;
+        position: absolute;
+        border-top-left-radius: 65% 90%;
+        border-top-right-radius: 65% 90%;
+        border-bottom-right-radius: 50% 45%;
+        border-bottom-left-radius: 50% 45%;
+        border: 30px solid rgba(0,0,0,0.1);
+        border-top: 0;
+        border-right: 0;
+        border-left-width: 15px;
+        z-index: 2;
+    }
+    @media (max-width: 480px) {
+        width: 240px;
+        height: 240px;
+        .ck-shadow {
+            width: 240px;
+            height: 240px;
+            border-width: 20px;
+            border-left-width: 15px;
+        }
+    }
+}
+.ck-hair {
+    [class*="ck-hair"] {
+        margin: 0 auto;
+        background: $yellow-light-5;
+        border-radius: 50% 50% 0 50%;
+        position: relative;
+    }
+    &-default {
+        top: -100px;
+        left: 30px;
+        height: 80px;
+        width: 40px;
+        transform: rotate(50deg);
+    }
+    &-small {
+        top: -30px;
+        left: -10px;
+        height: 40px;
+        width: 20px;
+        transform: rotate(-20deg);
+    }
+    @media (max-width:480px) {
+        height: 100px;
+    }
+}
+.ck-eye {
+    // height: 30px;
+    // background: green;
+    [class*="ck-eye"] {
+        height: 70px;
+        width: 70px;
+        background: #4b4b4b;
+        border-radius: 50%;
+        display: inline-block;
+        margin: -20px 40px 0 40px;
+        position: relative;
+        &:before {
+            content: "";
+            height: 20px;
+            width: 20px;
+            top: 5px;
+            left: 15px;
+            position: absolute;
+            background: #fff;
+            border-radius: 50%;
+        }
+        @media (max-width:480px) {
+            height: 40px;
+            width: 40px;
+            margin: -20px 25px 0 25px;
+            &:before {
+                height: 16px;
+                width: 16px;
+                left: 5px;
+            }
+        }
+    }
+}
+.ck-mouth {
+    // height: 20px;
+    // background: green;
+    position: relative;
+    &-default {
+        width: 60px;
+        height: 60px;
+        background: brown;
+        display: inline-block;
+        transform: rotate(45deg);
+        border-radius: 50% 5% 10% 5%;
+        opacity: 0.5;
+    }
+    &-pink-left,
+    &-pink-right {
+        height: 20px;
+        width: 20px;
+        border-radius: 20px;
+        display: inline-block;
+        background: pink;
+        position: absolute;
+        top: -10px;
+    }
+    &-pink-left {
+        left: 50px;
+    }
+    &-pink-right {
+        right: 50px;
+    }
+    @media (max-width: 480px) {
+        &-default {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.ck-hand {
+    height: 20px;
+    // background: green;
+    position: relative;
+    [class*="ck-hand"] {
+        width: 60px;
+        height: 80px;
+        background: $yellow-light-5;
+        display: inline-block;
+        position: absolute;
+        top: -50px;
+        border-bottom: 3px solid rgba(0,0,0,0.25);
+        z-index: 3;
+    }
+    &-left {
+        left: -30px;
+        transform: rotate(15deg);
+        border-radius: 70% 20% 100% 7%;
+    }
+    &-right {
+        right: -30px;
+        transform: rotate(-15deg);
+        border-radius: 20% 70% 7% 100%;
+    }
+    @media (max-width: 480px) {
+        [class*="ck-hand"] {
+            width: 40px;
+            height: 60px;
+        }
+        &-left {
+            left: -15px;
+        }
+        &-right {
+            right: -15px;
+        }
+    }
+}
+// end chicken fun demo
+
+
+
+
+
+
+
+

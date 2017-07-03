@@ -1,0 +1,75 @@
+.block {
+    background: #fff;
+    @include border-radius(6px)
+    display: block;
+    overflow: hidden;
+    border: 1px solid $gray-light-65;
+    margin-bottom: 30px;
+    transition-duration: 0.5s;
+    &, &:focus, &:hover, &:active {
+        color: #4b4b4b;
+        text-decoration: none;
+    }
+    &:hover {
+        @media (min-width: 1024px) {
+            @include box-shadow(0 0 5px $gray-light-65);
+        }
+    }
+    a {
+        &, &:focus, &:hover, &:active {
+            color: #4b4b4b;
+            text-decoration: none;
+        }
+    }
+    &-header {
+        border-bottom: 4px solid $purple;
+        @include display(box);
+	    @include box-pack(center);
+	    @include box-align(center);
+	    height: 180px;
+	    background: url('../images/block-bg.png') 100% center no-repeat;
+        background-size: 100%;
+	    @include border-radius(6px 6px 0 0)
+    }
+    &-body {
+    	text-align: center;
+    	padding: 15px 20px;
+    }
+    .logo-project {
+    	height: 60px;
+        max-width: 180px;
+    	@include border-radius(10px)
+    	// @include box-shadow(0 0 15px rgba(0,0,0,0.75));
+    }
+    &-name {
+    	font-size: 20px;
+    	margin: 10px 0 20px 0;
+    }
+    &-description {
+    	font-size: 14px;
+    	height: 80px;
+    	overflow: hidden;
+    }
+    &-footer {
+        padding: 10px 0 15px 0;
+        text-align: center;
+    	border-top: 1px solid $gray-light-65;
+        display: inline-block;
+        width: 100%;
+        a {
+            font-size: 13px;
+            width: 50%;
+            text-align: center;
+            display: inline-block;
+            margin: 0 auto;
+            float: left;
+            // background: #ddd;
+            font-weight: bold;
+            margin: 5px 0 -5px 0;
+            & + a {
+                border-left: 1px solid $gray-light-65;
+                font-weight: normal;
+            }
+        }
+    }
+}

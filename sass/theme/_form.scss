@@ -1,0 +1,24 @@
+#mc-embedded-subscribe-form {
+    label {
+        font-size: 18px;
+        font-weight: normal;
+        padding: 0 10px;
+    }
+    #mce-EMAIL {
+        margin-top: 15px;
+        clear: both;
+        @include border-radius(6px);
+        border: 2px solid #ddd;
+        height: 48px;
+        padding: 8px 15px 10px 15px;
+        width: 520px;
+        @media (max-width: 767px) {
+            width: 300px;
+        }
+    }
+    #mc-embedded-subscribe {
+        border: none;
+        height: 44px;
+        @include border-radius(30px);
+    }
+}

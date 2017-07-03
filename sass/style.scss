@@ -137,15 +137,14 @@ a {
 // End slide bar
 
 .thanks {
+    height: 100vh;
+    width: 100%;
+    min-height: 500px;
+    padding: 30px 0;
     .section-title {
         margin-top: -20px;
         font-size: 42px;
     }
-    @media (min-width: 768px) {
-        min-height: 450px;
-    }
-    height: 100vh;
-    width: 100%;
     @include display(box);
     @include box-pack(center);
     @include box-align(center);
@@ -171,6 +170,12 @@ a {
         display: block;
         text-align: center;
         font-size: 14px;
+    }
+    @media (max-width: 767px) {
+        padding: 15px 0;
+        .btn-lg {
+            margin: 10px;
+        }
     }
 }
 

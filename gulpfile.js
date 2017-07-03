@@ -15,9 +15,8 @@ gulp.task('include-html', function(){
         "indent_size": 4
     };
     gulp.src([
-        './html/index.html',
-        './html/demo.html',
-        './html/documents.html'
+        './html/*.html',
+        './html/demos/*.html'
     ])
     .pipe(gulp_file_include())
     .pipe(htmlbeautify(options))
@@ -29,7 +28,7 @@ gulp.task('include-html', function(){
 gulp.task('sass', function(){
     gulp.src(['./sass/*.scss'])
     .pipe(sass())
-    // .pipe(cssmin())
+    .pipe(cssmin())
     .pipe(gulp.dest('./public/theme/css'))
     .pipe(browser_sync.stream());
 });
@@ -68,7 +67,8 @@ gulp.task('copy-img', function(){
     gulp.src([
         './theme/images/**/*.png',
         './theme/images/**/*.jpg',
-        './theme/images/**/*.gif'
+        './theme/images/**/*.gif',
+        './theme/images/**/*.svg'
     ])
     .pipe(gulp.dest('./public/theme/images'));
 });

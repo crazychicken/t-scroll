@@ -110,15 +110,13 @@ http://t-scroll.com/documents.html
 ```
 public/
   └── theme/
-  └── css/
-  |   ├── style.css
-  |   └── t-scroll.min.css
-  └── js/
-        └── t-scroll.min.js
+      └── css/
+      |   └── t-scroll.min.css
+      └── js/
+            └── t-scroll.min.js
 sass/
   ├── // All Folders Sass Files
-  ├── style.scss
-  └── t-scroll.min.scss
+  └── t-scroll.min.scss // @import 'path sass file your project';
 ```
 
 ## Template full feature list
@@ -144,7 +142,7 @@ sass/
 
 This project exists thanks to all the people who contribute. [[Contribute]](https://github.com/crazychicken/t-scroll/blob/master/CONTRIBUTING.md).
 
-<a href="graphs/contributors"><img src="https://opencollective.com/t-scroll/contributors.svg" /></a>
+<a href="https://github.com/crazychicken/t-scroll/blob/master/CONTRIBUTING.md"><img src="https://opencollective.com/t-scroll/contributors.svg" /></a>
 
 
 ## Backers

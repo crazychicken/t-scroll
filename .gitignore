@@ -1,15 +1,15 @@
-html/demos
-html/docs
-html/html-global
 node_modules
-sass/theme
-/theme
+public
+!public/theme/css/t-scroll.min.css
+!public/theme/js/t-scroll.js
+!public/theme/js/t-scroll.min.js
 **.DS_Store
 .DS_Store?
 
 .*.swp
 ._*
 .git
+.npmignore
 .hg
 .npmrc
 .lock-wscript
