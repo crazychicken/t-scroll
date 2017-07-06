@@ -1,12 +1,12 @@
 /*!
-* t-scroll v1.1.3 (https://t-scroll.com)
+* t-scroll v1.1.4 (https://t-scroll.com)
 * Copyright 2017 Tuds - Crazychicken
-* Licensed under the MIT license
+* Licensed under the MIT license    
 */
 
 @import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 @import '../node_modules/checkbox-radio/sass/checkbox_radio_img_sprite';
-@import '../node_modules/perfect-scrollbar/dist/css/perfect-scrollbar';
+@import '../node_modules/perfect-scrollbar/src/css/main';
 @import './theme/var';
 @import './theme/mixin';
 @import './theme/buttons';
@@ -18,6 +18,7 @@
 @import './theme/section';
 @import './theme/topbar';
 @import './theme/modal';
+@import './theme/media';
 
 body {
     background: #fff;
@@ -175,7 +176,7 @@ a {
         font-size: 14px;
     }
     @media (max-width: 767px) {
-        padding: 15px 0;
+        padding: 15px 10px;
         .btn-lg {
             margin: 10px;
         }

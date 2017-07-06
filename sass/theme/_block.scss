@@ -1,6 +1,6 @@
 .block {
     background: #fff;
-    @include border-radius(6px)
+    @include border-radius(6px);
     display: block;
     overflow: hidden;
     border: 1px solid $gray-light-65;
@@ -29,7 +29,10 @@
 	    height: 180px;
 	    background: url('../images/block-bg.png') 100% center no-repeat;
         background-size: 100%;
-	    @include border-radius(6px 6px 0 0)
+	    @include border-radius(6px 6px 0 0);
+        @media (max-width: 768px) {
+            height: 140px;
+        }
     }
     &-body {
     	text-align: center;

@@ -1,0 +1,11 @@
+// device 768 <<<
+.section {
+    @media (max-width: 767px) {
+        .title {
+            font-size: 60px;
+        }
+        .btn-animation {
+            bottom: 35px;
+        }
+    }
+}

@@ -44,11 +44,11 @@
 (pink, $pink),
 (purple, $purple),
 (gray, $gray-light-95) {
-    .box-#{$name} {
+    .box-#{"" + $name} {
         color: #fff;
-        background: #{$color};
+        background: #{"" + $color};
         &:hover {
-            background: #{$color};
+            background: #{"" + $color};
             border-color: transparent;
             @include box-shadow(none);
             background: $purple-light-35;
@@ -56,8 +56,8 @@
             top: 3px;
         }
     }
-    .section-#{$name} {
-        background: #{$color};
+    .section-#{"" + $name} {
+        background: #{"" + $color};
         padding-bottom: 100px;
         .box-demo {
             margin-bottom: 30px;
