@@ -55,3 +55,14 @@
         background: $purple;
     }
 }
+.btn-link {
+    & {
+        line-height: 1em;
+        padding: 0;
+        vertical-align: baseline;
+    }
+    &:hover, &:active, &:focus {
+        background: none;
+        @include box-shadow(none);
+    }
+}

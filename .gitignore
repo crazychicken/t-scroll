@@ -18,6 +18,7 @@ public
 config.gypi
 CVS
 npm-debug.log
+robots.txt
 
 # compass watch cache
 .sass-cache

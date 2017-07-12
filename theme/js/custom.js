@@ -1,5 +1,5 @@
 /*!
-* tScroll v1.1.2 (https://t-scroll.com)
+* tScroll v1.1.4 (https://t-scroll.com)
 * Copyright 2017 Tuds - Crazychicken
 * Licensed under the MIT license
 */
@@ -25,6 +25,12 @@ $(function () {
     }
     if ($('body').find('.navbar-nav').hasClass('navbar-nav') === true) {
         getLink();
+    }
+    
+    if ($('link').attr('rel')==='alternate') {
+        var path = window.location.pathname;
+        path = 'http://t-scroll.com'+path;
+        $('html').find('[rel="alternate"]').attr("href", path);
     }
 
     $('.topbar-close').on('click', function () {
@@ -96,5 +102,7 @@ $(function () {
         't-delay': 7,
         't-duration': 0.75
     })
-        
+    $('.open-modal').on('click', function(){
+        $('.modal-subscribe').show();
+    });
 });
