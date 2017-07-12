@@ -21,7 +21,7 @@ social_logo_path: http://t-scroll.com/theme/images/favicon.png
 social_image_path: http://t-scroll.com/theme/images/about.png
 
 # Custom vars
-current_version:  1.1.5
+current_version:  1.1.6
 repo:             https://github.com/crazychicken/t-scroll.git
 
 download:
