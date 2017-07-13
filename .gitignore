@@ -1,3 +1,7 @@
+html/**/*.html
+!html/*.html
+!html/html-global/*.html
+
 node_modules
 public
 !public/theme/css/t-scroll.min.css
