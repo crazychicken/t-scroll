@@ -1,15 +1,15 @@
 .modal-subscribe {
     position: fixed;
-    @include display(box);
-    @include box-pack(center);
-    @include box-align(center);
     height: 100%;
     width: 100%;
     background: rgba(0,0,0,0.75);
+    @include display(box);
+    @include box-pack(center);
+    @include box-align(center);
     top: 0;
     bottom: 0;
     opacity: 1;
-    z-index: -1;
+    z-index: 1;
     &.t-default {
         z-index: 10000;
     }
@@ -21,6 +21,8 @@
         @include border-radius(6px);
     }
     .modal-sub-close {
+        width: 34px;
+        height: 34px;
         right: 10px;
         top: 10px;
         position: absolute;
@@ -29,10 +31,6 @@
         padding: 0;
         @include border-radius(50%);
         box-sizing: normal;
-        img {
-            width: 30px;
-            height: 30px;
-        }
     }
     #mc_embed_signup {
         text-align: center;
@@ -46,6 +44,10 @@
     #mc-embedded-subscribe {
         min-width: 180px;
     }
+    .email-none {
+        position: absolute;
+        left: -5000px;
+    }
     @media (max-width: 767px) {
         .modal-sub-body {
             width: 300px;
@@ -57,6 +59,12 @@
         }
         #mc-embedded-subscribe-form #mce-EMAIL {
             width: 260px;
+        }
+        #mce-EMAIL {
+            margin: 15px 0 10px 0;
+        }
+        p {
+            margin: 0;
         }
     }
 }

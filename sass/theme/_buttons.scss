@@ -31,6 +31,9 @@
         animation-iteration-count: infinite;
     }
 }
+a.btn-animation {
+    line-height: 3em;
+}
 @keyframes dot {
     0% {
         top: 0;

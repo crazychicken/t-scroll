@@ -1,0 +1,213 @@
+.section {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 20px 10px 90px 10px;
+    &-title {
+        text-align: center;
+        margin: 60px 0;
+    }
+}
+.section-banner {
+    background: #fff;
+    min-height: 500px;
+    height: calc(100vh - 60px);
+    color: #4b4b4b;
+    text-align: center;
+    .title {
+        font-size: 72px;
+        font-weight: normal;
+        margin: 0 0 30px 0;
+    }
+    .btn-lg {
+        min-width: 180px;
+        @include border-radius(30px);
+        margin: 20px 10px;
+        &:hover, &:focus, &:active {
+            color: $purple;
+        }
+    }
+    .btn-main {
+        &:hover, &:focus, &:active {
+            color: #fff;
+        }
+    }
+    @include display(box);
+    @include box-align(center);
+    @include box-pack(center);
+    .section-content {
+        top: -30px;
+        position: relative;
+    }
+    .section-info {
+        font-size: 22px;
+        max-width: 640px;
+        margin-bottom: 40px;
+    }
+    .btn-animation {
+        bottom: 65px;
+    }
+    @media (max-width: 767px) {
+        min-height: auto;
+        height: auto;
+        .btn-lg {
+            margin-top: 0;
+        }
+        .section-info {
+            padding: 0 10px;
+        }
+        .section-content {
+            top: 0;
+        }
+    }
+}
+
+.section-function {
+    text-align: center;
+    background: $gray-light-95;
+    [class*="col-xs"] {
+        padding: 0 20px;
+    }
+    .box {
+        text-align: center;
+        min-height: 180px;
+        padding: 15px;
+        margin-bottom: 40px;
+        color: $purple-light-35;
+        background: #fff;
+        border: 1px solid #f7f8f9;
+        @include box-shadow(4px 5px 0 0 rgba(0,0,0,0.1));
+        transition-duration: 0.25s;
+        position: relative;
+        left: 0;
+        top: 0;
+        &-head {
+            .title {
+                font-size: 28px;
+                margin-bottom: 25px;
+            }
+        }
+        &-body {
+            color: $gray-dark-35;
+        }
+        &:hover {
+            color: #fff;
+            border-color: transparent;
+            @include box-shadow(none);
+            background: $purple-light-35;
+            left: 3px;
+            top: 3px;
+            .box-body {
+                color: #fff;
+            }
+        }
+        &-sass {
+            &:hover {
+                background: $pink;
+            }
+        }
+        &-es6 {
+            &:hover {
+                color: #4b4b4b;
+                background: $yellow;
+                .box-body {
+                    color: #4b4b4b;
+                }
+            }
+        }
+        &-browser {
+            &:hover {
+                background: $green;
+            }
+        }
+        &-npm {
+            &:hover {
+                background: $red;
+            }
+        }
+        &-gulp {
+            &:hover {
+                background: #CF4647;
+            }
+        }
+    }
+}
+
+.section-link-my-site {
+    .box {
+        padding: 15px;
+        margin-bottom: 40px;
+        background: #fff;
+        border: 1px solid #f7f8f9;
+        @include box-shadow(4px 5px 0 0 rgba(0,0,0,0.1));
+        transition-duration: 0.25s;
+        position: relative;
+        left: 0;
+        top: 0;
+        display: block;
+        &:hover {
+            @include box-shadow(none);
+            left: 3px;
+            top: 3px;
+        }
+    }
+}
+
+.section-deal {
+    background: $gray-light-95;
+}
+.section-deal,
+.section-aff {
+    .container {
+        @media (min-width: 980px) {
+            width: 980px;
+        }
+        @media (max-width: 360px) {
+            [class*="col-xs-"] {
+                .block {
+                    width: 270px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+.section-aff {
+    .block {
+        &-header {
+            background: url('../images/wallpaper-light.jpg') 100% center no-repeat;
+            background-size: 100%;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .section {
+        padding: 20px 10px 20px 10px;
+        &-banner {
+            padding: 20px 10px 90px 10px;
+        }
+        &-title {
+            text-align: center;
+            margin: 20px 0 40px 0;
+        }
+    }
+}
+// all section stype
+@media (max-width: 568px) {
+    .section-function {
+        [class*="col-xs"] {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .section-deal,
+    .section-aff,
+    .section-link-my-site,
+    .section-function {
+        [class*="col-xs"] {
+            width: 100%;
+        }
+    }
+}

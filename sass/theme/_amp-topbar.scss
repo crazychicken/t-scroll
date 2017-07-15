@@ -1,4 +1,4 @@
-.topbar {
+.amp-topbar {
     position: fixed;
     height: 50px;
     width: 100%;
@@ -10,7 +10,7 @@
     left: 0;
     top: 0;
     color: #fff;
-    &.topbar-scroll {
+    &.amp-topbar-scroll {
         -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
         -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
         -o-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
@@ -21,7 +21,7 @@
         height: 50px;
         position: relative;
         z-index: 999;
-        display: none;
+        // display: none;
     }
     &-content {
         font-size: 16px;
@@ -60,9 +60,6 @@
         -moz-border-radius: 0;
         -o-border-radius: 0;
         border-radius: 0;
-        img {
-            width: 30px;
-        }
     }
     &-button {
         background-color: $yellow;

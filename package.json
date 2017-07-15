@@ -1,6 +1,6 @@
 {
   "name": "t-scroll",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "The t-scroll JavaScript library lets you apply more than 45 pretty cool animations to any elements when they appear in the viewport.",
   "main": ".gulpfile.js",
   "scripts": {
@@ -87,6 +87,7 @@
     "gulp-cssmin": "^0.1.7",
     "gulp-file-include": "^1.0.0",
     "gulp-html-beautify": "^1.0.1",
+    "gulp-htmlmin": "^3.0.0",
     "gulp-jsmin": "^0.1.5",
     "gulp-sass": "^3.1.0",
     "jquery": "^1.9.1",

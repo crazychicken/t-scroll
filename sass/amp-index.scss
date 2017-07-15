@@ -1,0 +1,267 @@
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables';
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins';
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navs';
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/buttons';
+@import './theme/var';
+@import './theme/mixin';
+
+@import './theme/navbar';
+@import './theme/buttons';
+@import './theme/block';
+@import './theme/amp-modal';
+@import './theme/form';
+@import './theme/amp-section';
+@import './theme/amp-topbar';
+@import './theme/amp-fonts';
+@import './theme/media';
+
+// ##########################################
+// ----------- Grid system ----------
+// ##########################################
+.container {
+  @include container-fixed;
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.row {
+    @include make-row;
+}
+@include make-grid-columns;
+@include make-grid(xs);
+
+@media (min-width: $screen-md-min) {
+    @include make-grid(md);
+}
+
+// ##########################################
+// ------ END Grid Bootstrap ------------
+// ##########################################
+
+
+// ##########################################
+// ----------- Label system ----------
+// ##########################################
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: $label-color;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+.label-danger {
+  @include label-variant($label-danger-bg);
+}
+// ##########################################
+// ----------- Label system ----------
+// ##########################################
+
+.block {
+    &-header {
+        background: url('./theme/images/block-bg.png') 100% center no-repeat;
+        background-size: 100%;
+    }
+}
+
+mark {
+    background-color: #fcf8e3;
+    padding: .2em;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+// mobile
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none;
+    }    
+}
+@media (min-width: 767px) {
+    .visible-xs {
+        display: none;
+    }
+}
+
+body {
+    background: #fff;
+    font-size: 16px;
+    font-family: 'Lato';
+    font-weight: normal;
+    color: #4b4b4b;
+}
+
+a {
+    text-decoration: none;
+    &:active, &:focus {
+        color: $purple-dark-35;
+    }
+}
+
+
+.footer {
+    float: left;
+    width: 100%;
+    clear: both;
+    padding: 50px 0 25px 0;
+    background: #fff;
+    text-align: center;
+    small {
+        font-size: 12px;
+    }
+    &-gray {
+        margin-top: 50px;
+        background: $gray-light-95;
+    }
+}
+
+.thanks {
+    height: 100vh;
+    width: 100%;
+    min-height: 500px;
+    padding: 30px 0;
+    @media (max-width: 767px) {
+        min-height: 600px;
+    }
+    .section-title {
+        margin-top: -20px;
+        font-size: 42px;
+    }
+    @include display(box);
+    @include box-pack(center);
+    @include box-align(center);
+    .btn-lg {
+        min-width: 180px;
+        @include border-radius(30px);
+        margin: 20px 10px;
+        &:hover, &:focus, &:active {
+            color: $purple;
+        }
+    }
+    .btn-main {
+        &:hover, &:focus, &:active {
+            color: #fff;
+        }
+    }
+    .author {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        font-size: 14px;
+    }
+    @media (max-width: 767px) {
+        padding: 15px 10px;
+        .btn-lg {
+            margin: 10px;
+        }
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.well {
+    margin-top: 30px;
+}
+
+.mg-bt-20 {
+    margin-bottom: 20px;
+}
+
+$name: 'slideDown';
+@for $i from 1 through 8 {
+    .#{$name}[data-t-show='#{$i}'] {
+        animation-name: slideDown;
+        animation-duration: $i*0.25+s;
+    }
+}
+
+// span[display="text"] {}
+
+.t-animated {
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    position: relative;
+}
+
+@keyframes slideDown {
+    0% {
+        bottom: 100vh;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+.zoomIn {
+    animation-name: zoomIn;
+    animation-duration: 0.75s;
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.slideLeft {
+    animation-name: slideLeft;
+    animation-duration: 0.75s;
+}
+@keyframes slideLeft {
+    0% {
+        right: 100vw;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.slideRight {
+    animation-name: slideRight;
+    animation-duration: 0.75s;
+}
+@keyframes slideRight {
+    0% {
+        left: 100vw;
+    }
+    100% {
+        left: 0;
+    }
+}
+

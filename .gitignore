@@ -1,6 +1,7 @@
 html/**/*.html
 !html/index.html
 !html/html-global/head.html
+!html/html-global/amp-index.html
 !html/html-global/navbar.html
 !html/html-global/footer.html
 

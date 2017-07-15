@@ -30,6 +30,14 @@
     opacity: $opacity;
 }
 
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
 // display: box, box-pack: center; box-align: center
 @mixin display($display) {
     display: -webkit-#{$display};

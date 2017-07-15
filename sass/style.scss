@@ -1,10 +1,35 @@
 /*!
-* t-scroll v1.1.6 (https://t-scroll.com)
+* t-scroll v1.1.7 (https://t-scroll.com)
 * Copyright 2017 Tuds - Crazychicken
 * Licensed under the MIT license    
 */
 
-@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+// Core variables and mixins
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+
+// Core CSS
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/code";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+
+// Components
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navs";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/labels";
+
+// Components w/ JavaScript
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/modals";
+
+// Utility classes
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
+
+
 @import '../node_modules/checkbox-radio/sass/checkbox_radio_img_sprite';
 @import '../node_modules/perfect-scrollbar/src/css/main';
 @import './theme/var';
@@ -19,6 +44,7 @@
 @import './theme/topbar';
 @import './theme/modal';
 @import './theme/media';
+@import './theme/doc.min';
 
 body {
     background: #fff;
@@ -129,6 +155,17 @@ a {
                 > a {
                     &, &:focus, &:hover, &:active {
                         color: #fff;
+                        @media (max-width: 767px) {
+                            background: none;
+                        }
+                    }
+                }
+                &.active {
+                    > a {
+                        &, &:focus, &:hover, &:active {
+                            background: $purple-light-35;
+                            color: #fff;
+                        }
                     }
                 }
             }
@@ -215,3 +252,7 @@ a {
         margin: 20px 0 0 0;
     }
 }
+
+
+
+

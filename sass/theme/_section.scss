@@ -48,7 +48,7 @@
         bottom: 65px;
     }
     @media (max-width: 767px) {
-        min-height: auto;
+        min-height: calc(100vh - 120px);
         height: auto;
         .btn-lg {
             margin-top: 0;
@@ -58,108 +58,6 @@
         }
         .section-content {
             top: 0;
-        }
-    }
-}
-
-.section-function {
-    padding: 60px 0;
-    text-align: center;
-    background: $gray-light-95;
-    [class*="col-xs"] {
-        padding: 0 20px;
-    }
-    .section-title {
-        display: block;
-        margin: 0;
-        margin-bottom: 50px;
-    }
-    @media (max-width: 480px) {
-        [class*="col-xs"] {
-            width: 100%;
-        }
-    }
-    .box {
-        text-align: center;
-        min-height: 180px;
-        padding: 15px;
-        margin-bottom: 40px;
-        color: $purple-light-35;
-        background: #fff;
-        border: 1px solid #f7f8f9;
-        @include box-shadow(4px 5px 0 0 rgba(0,0,0,0.1));
-        transition-duration: 0.25s;
-        position: relative;
-        left: 0;
-        top: 0;
-        &-head {
-            .title {
-                font-size: 28px;
-                margin-bottom: 25px;
-            }
-        }
-        &-body {
-            color: $gray-dark-35;
-        }
-        &:hover {
-            color: #fff;
-            border-color: transparent;
-            @include box-shadow(none);
-            background: $purple-light-35;
-            left: 3px;
-            top: 3px;
-            .box-body {
-                color: #fff;
-            }
-        }
-        &-sass {
-            &:hover {
-                background: $pink;
-            }
-        }
-        &-es6 {
-            &:hover {
-                color: #4b4b4b;
-                background: $yellow;
-                .box-body {
-                    color: #4b4b4b;
-                }
-            }
-        }
-        &-browser {
-            &:hover {
-                background: $green;
-            }
-        }
-        &-npm {
-            &:hover {
-                background: $red;
-            }
-        }
-        &-gulp {
-            &:hover {
-                background: #CF4647;
-            }
-        }
-    }
-}
-
-.section-link-my-site {
-    .box {
-        padding: 15px;
-        margin-bottom: 40px;
-        background: #fff;
-        border: 1px solid #f7f8f9;
-        @include box-shadow(4px 5px 0 0 rgba(0,0,0,0.1));
-        transition-duration: 0.25s;
-        position: relative;
-        left: 0;
-        top: 0;
-        display: block;
-        &:hover {
-            @include box-shadow(none);
-            left: 3px;
-            top: 3px;
         }
     }
 }
