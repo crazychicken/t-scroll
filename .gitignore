@@ -1,12 +1,14 @@
-html/**/*.html
-!html/index.html
-!html/html-global/amp-index.html
-
 node_modules
-public
-!public/theme/css/t-scroll.min.css
-!public/theme/js/t-scroll.js
-!public/theme/js/t-scroll.min.js
+theme/*
+images
+public/theme/fonts
+*.css
+
+*.js
+
+!/html/public/index.html
+!/public/theme/css/t-scroll.min.css
+!/public/theme/js/t-scroll.min.js
 **.DS_Store
 .DS_Store?
 
