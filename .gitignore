@@ -3,9 +3,10 @@ theme/*
 images
 public/theme/fonts
 *.css
-
+*.html
 *.js
-
+!/html/index.html
+!/html/html-global/amp-index.html
 !/html/public/index.html
 !/public/theme/css/t-scroll.min.css
 !/public/theme/js/t-scroll.min.js
