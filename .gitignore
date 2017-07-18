@@ -3,6 +3,7 @@ theme/*
 images
 public/theme/fonts
 *.css
+*.html
 *.js
 !/public/index.html
 !/public/theme/css/t-scroll.min.css
