@@ -91,8 +91,7 @@
     "gulp-jsmin": "^0.1.5",
     "gulp-sass": "^3.1.0",
     "jquery": "^1.9.1",
-    "perfect-scrollbar": "^0.7.0",
-    "tuds-project": "^1.0.2"
+    "perfect-scrollbar": "^0.7.0"
   },
   "dependencies": {
     "checkbox-radio": "^1.1.0"
