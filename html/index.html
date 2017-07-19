@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>tScroll Index | Animation Scroll | t-scroll tuds</title>
+    <meta name="description" content="A modern reveal-on-scroll library with useful options and animations. The tScroll more than 45 pretty cool animations to any elements when they appear in the viewport.">
+    <!-- amp -->
+    <!-- <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script> -->
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="canonical" href="http://t-scroll.com/"/>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- components -->
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <!-- <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script> -->
+    <!-- <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script> -->
+    <!-- /components -->
+    <!-- /amp -->
+
+    <!-- master tool -->
+    <script type="application/ld+json">
+        {
+            "@context" : "https://schema.org",
+            "@type": "WebSite",
+            "url" : "http://t-scroll.com",
+            "name": "t-scroll.com",
+            "alternateName": "t-scroll.com",
+            "author": {
+                "@type": "Person",
+                "name": "Tu Truong",
+                "url": "https://twitter.com/mtu_truong"
+            },
+            "description":"A modern reveal-on-scroll library with useful options and animations. The tScroll more than 45 pretty cool animations to any elements when they appear in the viewport.",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "http://t-scroll.com/"
+            },
+            "image": {
+                "@type": "ImageObject",
+                "width": 256,
+                "height": 256,
+                "url": "http://t-scroll.com/theme/images/favicon.png"
+            },
+            "creator": ["Tu Truong"],
+            "sameAs": ["https://www.facebook.com/tudscss",
+            "https://plus.google.com/u/0/111272361722398364018",
+            "https://twitter.com/mtu_truong",
+            "https://www.youtube.com/channel/UCDACe-7BFGDucQoxTDfPotw"],
+            "keywords": ["t-scroll", "tScroll", "Animate Elements On Reveal", "tuds", "crazychicken", "Animate Elements", "JavaScript", "Animate", "Animation", "CSS3", "ES6"]
+        }
+    </script>
+    <meta name="google-site-verification" content="RpjQcxeoQYyuXRapJgQqgHIaciI_KJoxXqSns4JjMg0"/>
+    <!-- /master tool -->
+    
+    <!-- SEO -->
+    <meta name="keywords" content="t-scroll, tScroll, Animate Elements, HTML, CSS, XML, JavaScript, Animate, Animation, CSS3, ES6, Npm, tuds, Crazychicken, animate, animation-name, animation-duration, animation-timing-function, animation-delay">
+    <meta name="author" content="Tuds - Crazychicken">
+    <meta name="robots" content="noodp,index,follow" />
+    <meta name="language" content="english"/>
+    <link rel="alternate" href="http://t-scroll.com" hreflang="en"/>
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="http://t-scroll.com/theme/images/favicon.png">
+    <!-- SEO -->
+
+    <!-- include css style min -->
+    <style amp-custom>
+        @@include('./html-global/amp-index.html')
+    </style>
+    <!-- /include css style min -->
+</head>
+<body>
+
+    <!-- Tracking google -->
+    <amp-analytics type="googleanalytics">
+        <script type="application/json">
+            {
+                "vars": {
+                    "account": "UA-46711522-3"
+                },
+                "triggers": {
+                    "trackPageview": {
+                        "on": "visible",
+                        "request": "pageview"
+                    },
+                    "trackEvent": {
+                        "selector": "#amp-pc-go-now",
+                        "on": "click",
+                        "request": "event",
+                        "vars": {
+                            "eventCategory": "amp-track",
+                            "eventAction": "click",
+                            "eventLabel": "AMP Go Now PC"
+                        }
+                    },
+                    "trackEvent": {
+                        "selector": "#amp-mb-go-now",
+                        "on": "click",
+                        "request": "event",
+                        "vars": {
+                            "eventCategory": "amp-track",
+                            "eventAction": "click",
+                            "eventLabel": "AMP Go Now MB"
+                        }
+                    },
+                    "trackEvent": {
+                        "selector": "#amp-link-deal",
+                        "on": "click",
+                        "request": "event",
+                        "vars": {
+                            "eventCategory": "amp-track",
+                            "eventAction": "click",
+                            "eventLabel": "AMP Link Deal"
+                        }
+                    },
+                    "trackEvent": {
+                        "selector": "#download-github",
+                        "on": "click",
+                        "request": "event",
+                        "vars": {
+                            "eventCategory": "amp-download-github",
+                            "eventAction": "Click",
+                            "eventLabel": "AMP Download Github"
+                        }
+                    },
+                    "trackEvent": {
+                        "selector": "#amp-donate",
+                        "on": "click",
+                        "request": "event",
+                        "vars": {
+                            "eventCategory": "amp-donate",
+                            "eventAction": "Click",
+                            "eventLabel": "AMP Button Donate"
+                        }
+                    },
+                    "trackEvent": {
+                        "selector": "#amp-subscribe",
+                        "on": "click",
+                        "request": "event",
+                        "vars": {
+                            "eventCategory": "amp-subscribe",
+                            "eventAction": "Click",
+                            "eventLabel": "AMP Subscribe"
+                        }
+                    }
+                }
+            }
+        </script>
+    </amp-analytics>
+    <!-- /Tracking google -->
+
+    <div class="amp-topbar-wrapper" id="amp-home-close">
+    
+        <a class="amp-topbar visible-xs" href="https://goo.gl/EAbVAi" rel="nofollow" id="amp-mb-go-now">
+            <strong class="amp-topbar-deal">35,394</strong> Themes from $2
+        </a>
+
+        <div class="amp-topbar hidden-xs">
+            <div class="amp-topbar-content">
+                <strong class="amp-topbar-deal">35,394</strong> Website templates and themes from $2
+                <a class="amp-topbar-button" rel="nofollow" href="https://goo.gl/EAbVAi" id="amp-pc-go-now">Go now</a>
+            </div>
+        </div>
+
+        <button class="amp-topbar-close" on="tap:amp-home-close.hide">
+            <amp-img
+                width="30"
+                height="30"
+                alt=""
+                src="theme/images/topbar-close.png">
+            </amp-img>
+        </button>
+    </div>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://t-scroll.com">t-scroll</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+            <input type="checkbox" id="amp-click-navbar-toggle" class="visible-xs"/>
+            <button type="button" class="navbar-toggle collapsed amp-navbar-toggle" class="visible-xs">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="amp-navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="http://t-scroll.com">Home</a></li>
+                    <li><a href="http://t-scroll.com/demo.html">Demos</a></li>
+                    <li><a href="http://t-scroll.com/documents.html">Docs</a></li>
+                    <li><a href="http://t-scroll.com/t-animate-options.html">Animate</a></li>
+                    <li><a href="http://t-scroll.com/deal.html" id="amp-link-deal">Deal <label class="label label-danger">new</label></a></li>
+                    <li><a href="https://goo.gl/fo4Zep">Github</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <section class="section section-banner">
+        <div class="section-content">
+            <h1 class="title">
+                <span class="slideDown t-animated" data-t-show="1">t</span>
+                <span class="slideDown t-animated" data-t-show="2">-</span>
+                <span class="slideDown t-animated" data-t-show="3">s</span>
+                <span class="slideDown t-animated" data-t-show="4">c</span>
+                <span class="slideDown t-animated" data-t-show="5">r</span>
+                <span class="slideDown t-animated" data-t-show="6">o</span>
+                <span class="slideDown t-animated" data-t-show="7">l</span>
+                <span class="slideDown t-animated" data-t-show="8">l</span>
+            </h1>
+            <p class="section-info zoomIn t-animated">
+                When you start scrolling, you will see interesting events.
+            </p>
+            <a href="https://goo.gl/myr5D8" class="btn btn-main btn-lg slideLeft t-animated" id="download-github">DownLoad</a>
+            <a href="https://goo.gl/fo4Zep" class="btn btn-border btn-lg slideRight t-animated">Github</a>
+            <p>
+                Currently v1.1.7
+            </p>
+        </div>
+        <a href="#section-function" class="btn btn-animation">
+            <span class="dot"></span>
+        </a>
+    </section>
+
+    <section class="section section-function" id="section-function">
+        <h2 class="section-title">Why Choose t-scroll</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-md-4">
+                    <div class="box">
+                        <div class="box-head">
+                            <h3 class="title">
+                                Fully Customisable
+                            </h3>
+                        </div>
+                        <div class="box-body">
+                            Over 45 options. Easy for novice users and even more powerful for advanced developers.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="box box-es6">
+                        <div class="box-head">
+                            <h3 class="title">
+                                ES6 / Babel
+                            </h3>
+                        </div>
+                        <div class="box-body">
+                            t-scroll do not used jQuery. It's used ES6
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="box box-sass">
+                        <div class="box-head">
+                            <h3 class="title">
+                                SASS / CSS3
+                            </h3>
+                        </div>
+                        <div class="box-body">
+                            t-scroll ships with vanilla Sass. Quickly get started with precompiled CSS or build on the source.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-4">
+                    <div class="box box-gulp">
+                        <div class="box-head">
+                            <h3 class="title">
+                                Gulp
+                            </h3>
+                        </div>
+                        <div class="box-body">
+                            t-scroll had is built by gulp
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="box box-browser">
+                        <div class="box-head">
+                            <h3 class="title">
+                                Browser support
+                            </h3>
+                        </div>
+                        <div class="box-body">
+                            Cross browser compatible ( Internet Explorer 10+, Firefox, Safari, Opera, Chrome etc. )
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="box box-npm">
+                        <div class="box-head">
+                            <h3 class="title">
+                                npm
+                            </h3>
+                        </div>
+                        <div class="box-body">
+                            Setup t-scroll easily with node.js
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#section-link-my-site" class="btn btn-animation hidden-xs">
+            <span class="dot"></span>
+        </a>
+    </section>
+    <!-- /end .section-function -->
+
+    <!-- section-link-my-site -->
+    <section class="section section-link-my-site" id="section-link-my-site">
+        <h2 class="section-title">News About t-scroll</h2>
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3">
+                            <a rel="nofollow" target="_blank" href="https://goo.gl/Ev6u5v" class="box">
+                                <amp-img
+                                    src="./theme/images/logo-link-my-site/logo-codrops.png"
+                                    width="360"
+                                    height="180"
+                                    layout="responsive"
+                                    alt="logo-codrops">
+                                </amp-img>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a rel="nofollow" target="_blank" href="https://goo.gl/8RVEZA" class="box">
+                                <div class="box-body">
+                                    <amp-img
+                                        src="./theme/images/logo-link-my-site/logo-coliss.png"
+                                        width="360"
+                                        height="180"
+                                        layout="responsive"
+                                        alt="logo-coliss">
+                                    </amp-img>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a rel="nofollow" target="_blank" href="https://goo.gl/MRWKyb" class="box">
+                                <div class="box-body">
+                                    <amp-img
+                                        src="./theme/images/logo-link-my-site/logo-bashooka.png"
+                                        width="360"
+                                        height="180"
+                                        layout="responsive"
+                                        alt="logo-bashooka">
+                                    </amp-img>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-6 col-md-3">
+                            <a rel="nofollow" target="_blank" href="https://goo.gl/u4HZkM" class="box">
+                                <div class="box-body">
+                                    <amp-img
+                                        src="./theme/images/logo-link-my-site/logo-jQueryPlusgin.png"
+                                        width="360"
+                                        height="180"
+                                        layout="responsive"
+                                        alt="jQueryPlusgin">
+                                    </amp-img>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a rel="nofollow" target="_blank" href="https://goo.gl/V7PUR4" class="box">
+                                <div class="box-body">
+                                    <amp-img
+                                        src="./theme/images/logo-link-my-site/logo-freebiesbug.png"
+                                        width="360"
+                                        height="180"
+                                        layout="responsive"
+                                        alt="freebiesbug">
+                                    </amp-img>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- <div class="col-xs-6 col-md-3">
+                            <a rel="nofollow" target="_blank" href="https://goo.gl/sJ2jhm" class="box">
+                                <div class="box-body">
+                                    <amp-img
+                                        src="./theme/images/logo-link-my-site/logo-bl6.png"
+                                        width="360"
+                                        height="180"
+                                        layout="responsive"
+                                        alt="logo-bl6">
+                                    </amp-img>
+                                </div>
+                            </a>
+                        </div> -->
+                        <div class="col-xs-6 col-md-3">
+                            <a rel="nofollow" target="_blank" href="https://goo.gl/A5D6Lu" class="box">
+                                <div class="box-body">
+                                    <amp-img
+                                        src="./theme/images/logo-link-my-site/logo-cssscript.png"
+                                        width="360"
+                                        height="180"
+                                        layout="responsive"
+                                        alt="logo-cssscript">
+                                    </amp-img>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-6 col-md-3">
+                            <a rel="nofollow" target="_blank" href="https://goo.gl/G8zGrr" class="box">
+                                <div class="box-body">
+                                    <amp-img
+                                        src="./theme/images/logo-link-my-site/logo-jQueryScript.png"
+                                        width="360"
+                                        height="180"
+                                        layout="responsive"
+                                        alt="logo-jQueryScript">
+                                    </amp-img>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a rel="nofollow" target="_blank" href="https://goo.gl/nTqoG5" class="box">
+                                <div class="box-body">
+                                    <amp-img
+                                        src="./theme/images/logo-link-my-site/logo-moongift.png"
+                                        width="360"
+                                        height="180"
+                                        layout="responsive"
+                                        alt="logo-moongift">
+                                    </amp-img>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#section-deal" class="btn btn-animation hidden-xs">
+            <span class="dot"></span>
+        </a>
+    </section>
+    <!-- ./section-link-my-site -->
+
+    <!-- Deal tScroll -->
+    <section class="section section-deal" id="section-deal">
+        <h2 class="section-title">
+            Website Templates Using t-scroll
+        </h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-md-4">
+                    <div class="block">
+                        <a href="http://t-scroll.com/login-theme/">
+                            <div class="block-header">
+                                <amp-img 
+                                    src="./theme/images/favicon.png"
+                                    width="60"
+                                    height="60"
+                                    alt="favicon">
+                                </amp-img>
+                            </div>
+                            <div class="block-body">
+                                <h3 class="block-name">
+                                    Login theme
+                                </h3>
+                                <div class="block-description">
+                                    Tow page login and forgot password.
+                                    Build by html/css
+                                </div>
+                            </div>
+                        </a>
+                        <div class="block-footer">
+                            <a rel="nofollow" href="https://goo.gl/Qcuuo3">Paypal $2</a>
+                            <a href="http://t-scroll.com/login-theme/">View more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 bounceOut">
+                    <div class="block">
+                        <a href="http://t-scroll.com/cv-animate/">
+                            <div class="block-header">
+                                <amp-img 
+                                    src="./theme/images/favicon.png"
+                                    width="60"
+                                    height="60"
+                                    alt="favicon">
+                                </amp-img>
+                            </div>
+                        
+                            <div class="block-body">
+                                <h3 class="block-name">
+                                    Cv Animation
+                                </h3>
+                                <div class="block-description">
+                                    Resume CV portfolio theme had build by gulp, sass, node. Cross browser and responsive layout
+                                </div>
+                            </div>
+                        </a>
+                        <div class="block-footer">
+                            <a rel="nofollow" href="https://goo.gl/sg1Q7h">Paypal $4</a>
+                            <a href="http://t-scroll.com/cv-animate/">View more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-4 bounceOut">
+                    <div class="block">
+                        <a href="http://t-scroll.com/tube/">
+                            <div class="block-header">
+                                <amp-img 
+                                    src="./theme/images/favicon.png"
+                                    width="60"
+                                    height="60"
+                                    alt="favicon">
+                                </amp-img>
+                            </div>
+                        
+                            <div class="block-body">
+                                <h3 class="block-name">
+                                    Tube theme
+                                </h3>
+                                <div class="block-description">
+                                    Video - Blog theme. Cross browser and responsive layout
+                                </div>
+                            </div>
+                        </a>
+                        <div class="block-footer">
+                            <a href="https://goo.gl/TpW2FN">Download</a>
+                            <a href="http://t-scroll.com/tube/">View more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center col-xs-12 col-md-12">
+                    <mark>
+                        If you are contributor, backer or sponsor or you have subscribed to our mailing list. You can click download button. <a class="btn btn-link" href="http://t-scroll.com/deal.html">Subscribe Now</a>
+                        <!-- <button class="btn btn-link open-modal caps m2"
+                            on="tap:my-lightbox"
+                            role="button"
+                            tabindex="0">
+                            Subscribe Now
+                        </button> -->
+                    </mark>
+                </div>
+            </div>
+        </div>
+        <a href="#thanks" class="btn btn-animation hidden-xs">
+            <span class="dot"></span>
+        </a>
+    </section>
+    <!-- /End Deal tScroll -->
+
+    <!-- Footer -->
+    <footer class="section thanks" id="thanks">
+        <div class="text-center">
+            <h2 class="section-title">
+                Thank you ;)
+            </h2>
+            <p>
+                <a href="https://opencollective.com/t-scroll#backers" target="_blank">
+                    <amp-img
+                        src="https://opencollective.com/t-scroll/backers.svg"
+                        width="414"
+                        height="74"
+                        layout="responsive"
+                        alt="backers"
+                    ></amp-img>
+                </a>
+            </p>
+            <p class="h3">
+                Become a backer
+            </p>
+            <p>
+                Support the community and keep development going strong.
+            </p>
+            <a href="https://goo.gl/fo4Zep" class="btn btn-border btn-lg" rel="nofollow">Github</a>
+            <a href="https://goo.gl/C4trd9" class="btn btn-main btn-lg" rel="nofollow" id="amp-donate">Donate</a>
+            <p>
+                Currently v1.1.7
+            </p>
+        </div>
+        <div class="author">
+            Another thing from <a href="http://tuds.ninja">Tuds - Crazychicken.</a>
+            <p>
+                <small>Code and documentation copyright 2017, MIT license.</small>
+            </p>
+        </div>
+        <div class="hide">
+            <strong>bounceIn</strong><strong>bounceOut</strong><strong>bounceUp</strong><strong>bounceDown</strong><strong>bounceLeft</strong><strong>bounceRight</strong><strong>fadeIn</strong><strong>fadeUp</strong><strong>fadeDown</strong><strong>fadeLeft</strong><strong>fadeRight</strong><strong>fadeUpBig</strong><strong>fadeDownBig</strong><strong>fadeLeftBig</strong><strong>fadeRightBig</strong><strong>flip</strong><strong>flipX</strong><strong>flipY</strong><strong>lightSpeedUp</strong><strong>lightSpeedRight</strong><strong>lightSpeedDown</strong><strong>lightSpeedLeft</strong><strong>rollUp</strong><strong>rollRight</strong><strong>rollDown</strong><strong>rollLeft</strong><strong>rotate</strong><strong>rotateUpLeft</strong><strong>rotateUpRight</strong><strong>rotateDownLeft</strong><strong>rotateDownRight</strong><strong>slideUp</strong><strong>slideDown</strong><strong>slideLeft</strong><strong>slideRight</strong><strong>zoomIn</strong><strong>zoomInUp</strong><strong>zoomInLeft</strong><strong>zoomInDown</strong><strong>zoomInRight</strong><strong>zoomOut</strong><strong>zoomOutUp</strong><strong>zoomOutLeft</strong><strong>zoomOutDown</strong>
+            <strong>zoomOutRight</strong>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- <amp-lightbox id="my-lightbox"
+      layout="nodisplay">
+        <div class="modal-subscribe">
+            <div class="modal-sub-body">
+                <button class="modal-sub-close lightbox"
+                    on="tap:my-lightbox.close"
+                    role="button"
+                    tabindex="0">
+                    <amp-img 
+                        src="./theme/images/topbar-close.png"
+                        width="30"
+                        height="30"
+                        alt="close icon">
+                    </amp-img>
+                </button>
+                
+                <div id="mc_embed_signup">
+                    <form method="post"
+                    action-xhr="//quoc.us3.list-manage.com/subscribe/post?u=5e857239d1c97854cf7484b65&amp;id=0dcfac981e"
+                    id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <label for="mce-EMAIL">Subscribe to our mailing list. You will earn a free theme.</label>
+                            <br>
+                            <input type="email" value="" name="EMAIL" class="email slideRight" id="mce-EMAIL" placeholder="Email address" required>
+                            <div class="email-none" aria-hidden="true"><input type="text" name="b_5e857239d1c97854cf7484b65_0dcfac981e" tabindex="-1" value=""></div>
+                            <div class="clear slideLeft">
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-main btn-lg">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <br>
+                <p class="text-center">
+                    You will soon receive it within a week.
+                </p>
+            </div>
+        </div>
+    </amp-lightbox> -->
+</body>
+</html>
