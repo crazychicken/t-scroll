@@ -245,6 +245,10 @@ a {
             margin-bottom: 10px;
         }
     }
+    .block-options {
+        padding-bottom: 25px;
+        border-bottom: 1px solid $gray-light-65;
+    }
     .block-options:last-child {
         border: none;
     }
