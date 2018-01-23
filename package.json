@@ -90,7 +90,7 @@
     "gulp-htmlmin": "^3.0.0",
     "gulp-jsmin": "^0.1.5",
     "gulp-sass": "^3.1.0",
-    "jquery": "^1.9.1",
+    "jquery": "^3.3.1",
     "perfect-scrollbar": "^0.7.0"
   },
   "dependencies": {

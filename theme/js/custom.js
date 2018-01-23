@@ -26,12 +26,6 @@ $(function () {
     if ($('body').find('.navbar-nav').hasClass('navbar-nav') === true) {
         getLink();
     }
-    
-    if ($('link').attr('rel')==='alternate') {
-        var path = window.location.pathname;
-        path = 'http://t-scroll.com'+path;
-        $('html').find('[rel="alternate"]').attr("href", path);
-    }
 
     $('.topbar-close').on('click', function () {
         $(this).parents('.topbar-wrapper').hide(400);
