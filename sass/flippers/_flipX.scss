@@ -1,7 +1,7 @@
 @keyframes flipX {
     from {
         opacity: 0;
-
+        filter: alpha(opacity=0);
         animation-timing-function: ease-in;
         transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     }
@@ -13,6 +13,7 @@
 
     60% {
         opacity: 1;
+        filter: alpha(opacity=100);
         transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
     }
 

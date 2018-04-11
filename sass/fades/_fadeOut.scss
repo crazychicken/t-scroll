@@ -1,9 +1,11 @@
 @keyframes fadeOut {
     from {
         opacity: 0;
+        filter: alpha(opacity=0);
     }
     to {
         opacity: 1;
+        filter: alpha(opacity=100);
     }
 }
 .fadeOut.t-default {

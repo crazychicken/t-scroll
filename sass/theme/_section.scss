@@ -259,6 +259,7 @@
         transform: rotate(45deg);
         border-radius: 50% 5% 10% 5%;
         opacity: 0.5;
+        filter: alpha(opacity=50);
     }
     &-pink-left,
     &-pink-right {

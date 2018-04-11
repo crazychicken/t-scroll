@@ -1,5 +1,5 @@
 /*!
-* t-scroll v1.1.7 (https://t-scroll.com)
+* t-scroll v1.1.8 (https://t-scroll.com)
 * Copyright 2017 Tuds - Crazychicken
 * Licensed under the MIT license
 */
@@ -8,6 +8,7 @@
 
 .t-default {
     opacity: 1;
+    filter: alpha(opacity=100);
     animation-direction: normal;
     animation-iteration-count: 1;
     animation-timing-function: ease;
@@ -20,4 +21,5 @@
 }
 .t-animated {
     opacity: 0;
+    filter: alpha(opacity=0);
 }

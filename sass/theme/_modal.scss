@@ -9,6 +9,7 @@
     top: 0;
     bottom: 0;
     opacity: 1;
+    filter: alpha(opacity=100);
     z-index: -1;
     &.t-default {
         z-index: 10000;
