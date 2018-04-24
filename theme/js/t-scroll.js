@@ -1,5 +1,5 @@
 /*!
-* tScroll v1.1.8 (https://t-scroll.com)
+* tScroll v1.1.9 (https://t-scroll.com)
 * Copyright 2017 Tuds - Crazychicken
 * Licensed under the MIT license
 */
