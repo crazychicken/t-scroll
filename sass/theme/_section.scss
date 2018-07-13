@@ -41,7 +41,6 @@
     }
     .section-info {
         font-size: 22px;
-        max-width: 640px;
         margin-bottom: 40px;
     }
     .btn-animation {
@@ -63,16 +62,14 @@
 }
 
 .section-animate-options {
-    @include display(box);
-    @include box-align(center);
-    @include box-pack(center);
+    padding: 0;
     min-height: calc(100vh - 60px);
     height: calc(100vh - 60px);
     .container {
         width: 680px;
+        height: 90%;
     }
     .box-center {
-        margin-top: -100px;
         [class*="col-xs"] {
             padding-left: 8px;
             padding-right: 8px;

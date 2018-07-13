@@ -23,12 +23,10 @@
     }
     &-header {
         border-bottom: 4px solid $purple;
-        @include display(box);
-	    @include box-pack(center);
-	    @include box-align(center);
 	    height: 180px;
 	    background: url('../images/block-bg.png') 100% center no-repeat;
         background-size: 100%;
+        text-align: center;
 	    @include border-radius(6px 6px 0 0);
         @media (max-width: 768px) {
             height: 140px;
@@ -39,8 +37,11 @@
     	padding: 15px 20px;
     }
     .logo-project {
-    	height: 60px;
+        position: relative;
+        top: 50%;
+        height: 60px;
         max-width: 180px;
+        transform: translate(0, -50%);
     	@include border-radius(10px)
     	// @include box-shadow(0 0 15px rgba(0,0,0,0.75));
     }

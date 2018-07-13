@@ -9,6 +9,7 @@
     color: $gray-light-5;
     background: #fff;
     border: 1px solid #f7f8f9;
+    text-align: center;
     @include display(box);
     @include box-pack(center);
     @include box-align(center);
@@ -20,6 +21,9 @@
     top: 0;
     &-title {
         font-size: 24px;
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
     }
     &:hover {
         color: #fff;
@@ -69,9 +73,9 @@
 }
 
 .box-center {
-    @include display(box);
-    @include box-pack(center);
-    @include box-align(center);
+    top: 50%;
+    position: relative;
+    transform: translate(0, -50%);
 }
 
 // demo position

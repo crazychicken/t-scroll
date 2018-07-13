@@ -1,5 +1,5 @@
 /*!
-* tScroll v1.1.9 (https://t-scroll.com)
+* tScroll v1.1.10 (https://t-scroll.com)
 * Copyright 2017 Tuds - Crazychicken
 * Licensed under the MIT license
 */
@@ -15,7 +15,7 @@ var Tu = {
         // Options Library => libSort
         var libArray = ['t-element', 't-animate','t-position', 't-delay', 't-direction', 't-duration', 't-count', 't-function'];
 
-        libArray.forEach (el => {
+        libArray.forEach ( function(el) {
             myArray.push( options[el] );
         });
 
@@ -37,7 +37,7 @@ function checkValueInput( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr
         return console.log("%c'Thank you for using tScroll. Please, insert property for element selector t-element: 'element here'", 'background: #f16d99; color: #fff');
     }
     // Change Array -> forEach find '.' & '#' check element user custom
-    pr_el.split(' ').forEach( el => { // t-element
+    pr_el.split(' ').forEach( function(el) { // t-element
         if ( el.slice(0,1) != '.' && el.slice(0,1) != '#' ) {
             return console.log("%c'Thank you for using tScroll. Please, insert property for element selector t-element: '.' or '#'", 'background: #f16d99; color: #fff');
         }
@@ -57,7 +57,7 @@ function checkValueInput( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr
         pr_position = 0;
     }
     if ( pr_position != undefined && pr_position === 'bottom') {
-        elment_select_html.forEach( e => {
+        elment_select_html.forEach( function(e) {
             pr_position = e.offsetHeight;
         });
     }
@@ -69,7 +69,7 @@ function checkValueInput( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr
 
     // Check animation-direction user insert custom style // t-direction
     if ( pr_direction != undefined ) {
-        elment_select_html.forEach( e => {
+        elment_select_html.forEach( function(e) {
             e.style.animationDirection = pr_direction;
             e.style.WebkitAnimationDirection = pr_direction; // Safari4.0 - 8.0
         });
@@ -80,20 +80,20 @@ function checkValueInput( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr
         return console.log("%c'Thank you for using tScroll. Please, insert property for element selector t-duration: 'number here'", 'background: #f16d99; color: #fff');
     }
     if ( pr_duration != undefined ) {
-        elment_select_html.forEach( e => {
+        elment_select_html.forEach( function(e) {
             pr_duration = pr_duration;
             e.style.animationDuration = pr_duration + 's';
             e.style.WebkitAnimationDuration = pr_duration + 's'; // Safari4.0 - 8.0
         });
     } else {
-        elment_select_html.forEach( e => {
+        elment_select_html.forEach( function(e) {
             pr_duration = 0.25;
         });
     }
 
     // Check animation-interation-count user insert custom style
     if ( pr_count != undefined ) {
-        elment_select_html.forEach( e => {
+        elment_select_html.forEach( function(e) {
             e.style.animationIterationCount = pr_count;
             e.style.WebkitAnimationIterationCount = pr_count; // Safari4.0 - 8.0
         });
@@ -101,7 +101,7 @@ function checkValueInput( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr
 
     // Check animation-timing-function user insert custom style
     if ( pr_timing_function != undefined ) {
-        elment_select_html.forEach( e => {
+        elment_select_html.forEach( function(e) {
             e.style.animationTimingFunction = pr_timing_function;
             e.style.WebkitAnimationTimingFunction = pr_timing_function; // Safari4.0 - 8.0
         });
@@ -119,13 +119,15 @@ function include( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr_duratio
     // console.log(pr_position);
 
     // Set custom css and option animation
-    elment_select_html.forEach( e => {
+    elment_select_html.forEach( function(e) {
         e.style.opacity = 0.0000001 * pr_position; // hack position only element
+        e.style.filter = 'alpha(opacity=' + 0.0000001*pr_position + ')';
         if ( e.classList.contains('t-animated') && e.hasAttribute('data-t-show') === false ) {
             var class_animation_css = e.className + " " + pr_ani + " " + "t-default"; // set add class
             setTimeout( function () {
                 e.setAttribute('class', class_animation_css); // set class run animate
                 e.style.opacity = 1;
+                e.style.filter = 'alpha(opacity=' + 100 + ')'; // IE
             }, pr_delay * 1000);
         } // set run function first load, full screen with t-animated
 
@@ -147,16 +149,17 @@ function include( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr_duratio
             setTimeout(function () {
                 e.setAttribute('class', class_animation_css); // set class run animate
                 e.style.opacity = 1;
+                e.style.filter = 'alpha(opacity=' + 100 + ')'; // IE
             }, pr_delay_r * 1000);
         } // set run function first load, sort 1,2,3 ... full screen with t-animated
     });
 
     // Run animation when action scroll apply
     window.addEventListener( 'scroll', function () {
-        var set_top = window.scrollY; // set scroll top
-        elment_select_html.forEach( e => {
+        var set_top = window.pageYOffset; // set scroll top
+        elment_select_html.forEach( function(e) {
             // filter
-            pr_position = e.style.opacity *  10000000; // include position only element
+            pr_position = e.style.opacity * 10000000; // include position only element
             var rect = e.getBoundingClientRect(); // jquery use check element if it has position: relative
             // var sum = set_top + rect.top + e.offsetHeight;
             var sum = set_top + rect.top;
@@ -181,6 +184,7 @@ function include( pr_el, pr_ani, pr_position, pr_delay, pr_direction, pr_duratio
                 setTimeout( function () {
                     e.setAttribute('class', class_animation_css); // set class run animate
                     e.style.opacity = 1;
+                    e.style.filter = 'alpha(opacity=' + 100 + ')'; // IE
                 }, pr_delay_r * 1000);
             }
         });
